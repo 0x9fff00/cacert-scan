@@ -14,7 +14,7 @@ const MAX_DEPTH: usize = 4;
 const MAX_UNPACKED: u64 = 1 << 30;
 const MIN_BARE_B64: usize = 600;
 // common store passwords seen in Java truststores; "" covers password-less PKCS12
-const P12_PASSWORDS: &[&str] = &["changeit", "", "changeme", "password", "secret", "123456", "truststore", "keystore"];
+const P12_PASSWORDS: &[&str] = &["changeit", "", "changeme", "password", "secret", "123456", "truststore", "keystore", "notasecret"];
 
 #[derive(Clone, Copy, PartialEq)]
 enum Kind {

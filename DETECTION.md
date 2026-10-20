@@ -46,7 +46,7 @@ Limits:
 |---|---|
 | JKS, JCEKS, BKS | certificates are plain DER: raw match |
 | PKCS12 without a password (JDK ≥18 `cacerts`) | cert bags are plain DER: raw match |
-| PKCS12 with encrypted cert bags (AES from JDK ≥12, RC2-40/3DES from older JDKs) | decrypted with OpenSSL, legacy provider loaded, trying `changeit`, ``, `changeme`, `password`, `secret`, `123456`, `truststore`, `keystore` |
+| PKCS12 with encrypted cert bags (AES from JDK ≥12, RC2-40/3DES from older JDKs) | decrypted with OpenSSL, legacy provider loaded, trying `changeit`, ``, `changeme`, `password`, `secret`, `123456`, `truststore`, `keystore`, `notasecret` (google-api-client) |
 | any of these inside a jar/war/zip | unpacked first |
 
 A PKCS12 file whose password is not in the list gets the note "password not in list". It is classed `keystore-locked`.
