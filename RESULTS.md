@@ -15,7 +15,7 @@ Data: `report/findings.tsv` (one row per file), `report/packages.tsv` (one row p
 |---|---|---|---|
 | vendored-pem-file | 435 | 118 | Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`, or point the program at it. |
 | vendored-in-archive | 371 | 123 | Patch the bundle inside the wheel/jar at build time, or patch the code to use the system store. |
-| vendored-keystore (Java) | 133 | 41 | Replace with `${cacert}/etc/ssl/certs/java/cacerts`. |
+| vendored-keystore (Java) | 133 | 41 | Generate the keystore from `${cacert}/etc/ssl/certs/ca-bundle.crt` at build time with `jre-generate-cacerts`, as openjdk does. `cacert` has no Java keystore output. |
 | compiled-in | 1849 | 685 | You cannot inject a file. Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`, NSS) or bump the root crate. |
 
 In total, 1033 store paths (880 bases) need action. 947 of them contain `emSign ECC Root CA - G3`, and 527 contain `AAA Certificate Services` as a plain anchor.

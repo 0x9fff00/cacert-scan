@@ -52,7 +52,7 @@ def classify(f):
 FIX = {
     "vendored-pem-file": "inject: replace the file with a symlink to ${cacert}/etc/ssl/certs/ca-bundle.crt (or point the program at it)",
     "vendored-in-archive": "inject: patch the bundle inside the wheel/jar at build time, or patch the code to use the system store",
-    "vendored-keystore": "inject: replace with ${cacert}/etc/ssl/certs/java/cacerts (cacert.passthru / jdk pattern)",
+    "vendored-keystore": "inject: Generate the keystore from ${cacert}/etc/ssl/certs/ca-bundle.crt at build time with jre-generate-cacerts, as openjdk does. cacert has no Java keystore output.",
     "compiled-in": "cannot inject a file: rebuild with a system-store option (rustls-native-certs / --use-system-ca / NSS from cacert) or bump the embedded root crate",
     "vendored-other": "inspect",
 }

@@ -4,7 +4,7 @@ import csv, re, sys, collections
 ORDER = [
     ("vendored-pem-file", "Vendored PEM bundle", "Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`, or point the program at it."),
     ("vendored-in-archive", "Bundle inside a wheel, jar or zip", "Patch the bundle inside the archive at build time, or patch the code to use the system store."),
-    ("vendored-keystore", "Java keystore", "Replace with `${cacert}/etc/ssl/certs/java/cacerts`."),
+    ("vendored-keystore", "Java keystore", "Generate the keystore from `${cacert}/etc/ssl/certs/ca-bundle.crt` at build time with `jre-generate-cacerts`, as openjdk does. `cacert` has no Java keystore output."),
     ("compiled-in", "Compiled into a binary", "Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`, NSS from cacert), or bump the embedded root crate."),
 ]
 

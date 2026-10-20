@@ -245,7 +245,7 @@ Fix: Patch the bundle inside the archive at build time, or patch the code to use
 
 ### Java keystore (37)
 
-Fix: Replace with `${cacert}/etc/ssl/certs/java/cacerts`.
+Fix: Generate the keystore from `${cacert}/etc/ssl/certs/ca-bundle.crt` at build time with `jre-generate-cacerts`, as openjdk does. `cacert` has no Java keystore output.
 
 - [ ] **corretto11** — `/lib/corretto/lib/security/cacerts`
 - [ ] **corretto17** — `/lib/corretto/lib/security/cacerts`
