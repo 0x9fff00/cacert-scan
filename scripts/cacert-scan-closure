@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# usage: cacert-scan-closure [--json] PATH...
+# scans the runtime closure of each PATH (store path, result link, /run/current-system)
+set -euo pipefail
+
+json=0
+if [[ ${1:-} == --json ]]; then
+  json=1
+  shift
+fi
+if [[ $# -eq 0 ]]; then
+  echo "usage: cacert-scan-closure [--json] PATH..." >&2
+  exit 2
+fi
+
+mapfile -t paths < <(nix-store -qR "$@" | sort -u)
+
+if [[ $json == 1 ]]; then
+  exec cacert-scan --path "${paths[@]}"
+fi
+
+# files byte-identical to a cacert bundle in the closure were injected by nixpkgs and are fine
+cacert-scan --path "${paths[@]}" | jq -rs '
+  ([ .[] | select(.nar | test("-nss-cacert-")) | .sha256 ] | map(select(. != null))) as $cacert
+  | .[]
+  | select((.known_roots | length) >= 20)
+  | select(.nar | test("-nss-cacert-") | not)
+  | select(.sha256 as $h | $cacert | index($h) | not)
+  | [ (.nar | sub("^/nix/store/[a-z0-9]{32}-"; "")),
+      (.file[(.nar | length):]),
+      "\(.known_roots | length) roots",
+      ([ (if (.watch | index("emSign ECC Root CA - G3")) then "ECC G3" else empty end),
+         (if (.watch | index("AAA Certificate Services")) then "AAA" else empty end) ] | join(",")) ]
+  | @tsv'

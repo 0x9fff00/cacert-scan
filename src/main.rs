@@ -555,9 +555,12 @@ fn walk(ctx: &mut Ctx, p: &Path) -> io::Result<()> {
 
 fn main() {
     let args: Vec<String> = std::env::args().collect();
-    let usage = "usage: cacert-scan --roots ROOTS.pem --watch WATCH.pem (--nar LABEL < file.nar | --path DIR...)";
+    let usage = "usage: cacert-scan [--roots ROOTS.pem] [--watch WATCH.pem] (--nar LABEL < file.nar | --path DIR...)\n\
+                 --roots and --watch default to $CACERT_SCAN_ROOTS and $CACERT_SCAN_WATCH";
     let get = |k: &str| args.iter().position(|a| a == k).and_then(|i| args.get(i + 1)).cloned();
-    let (Some(roots), Some(watch)) = (get("--roots"), get("--watch")) else {
+    let roots = get("--roots").or_else(|| std::env::var("CACERT_SCAN_ROOTS").ok());
+    let watch = get("--watch").or_else(|| std::env::var("CACERT_SCAN_WATCH").ok());
+    let (Some(roots), Some(watch)) = (roots, watch) else {
         eprintln!("{usage}");
         std::process::exit(2);
     };
