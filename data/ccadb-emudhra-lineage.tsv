@@ -1,0 +1,155 @@
+Intermediate Certificate	EM DV TLS CA - G2A-1	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	122A5433D8A2A8C5
+Intermediate Certificate	EM DV TLS CA - G2A-1	<-	emSign Root TLS CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	3F13597D3355D341
+Intermediate Certificate	EM DV TLS CA - G2A	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	72A9442AC03AF1E9
+Intermediate Certificate	EM DV TLS CA - G2A	<-	emSign Root TLS CA - G1	moz=Not Trusted	chrome=Not Trusted	Revoked	D6961022F9A55BBD
+Intermediate Certificate	EM DV TLS CA - G2B	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	5F0D6380B345D409
+Intermediate Certificate	EM DV TLS CA - G2B	<-	emSign Root TLS CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	829EC444B8BE3DFD
+Intermediate Certificate	EM DV TLS CA - G2C	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	8FE4701D088C2250
+Intermediate Certificate	EM DV TLS CA - G2C	<-	emSign Root TLS CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	0427EA3CB4A7B4CB
+Intermediate Certificate	EM DV TLS CA - G3A-1	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	ECB8D30846BEF4B3
+Intermediate Certificate	EM DV TLS CA - G3A-1	<-	emSign Root TLS CA - G3	moz=Trusted	chrome=Trusted	Not Revoked	4896D51F6537A532
+Intermediate Certificate	EM DV TLS CA - G3A	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	7C71CF3473266C9D
+Intermediate Certificate	EM DV TLS CA - G3A	<-	emSign Root TLS CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	C83980CF0440CDEA
+Intermediate Certificate	EM DV TLS CA - G3B	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	45A883F349AEDFD5
+Intermediate Certificate	EM DV TLS CA - G3B	<-	emSign Root TLS CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	42C4ACCD12C4F595
+Intermediate Certificate	EM DV TLS CA - G3C	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	62B7F9868263F72F
+Intermediate Certificate	EM DV TLS CA - G3C	<-	emSign Root TLS CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	0164D7CEAE5BB909
+Intermediate Certificate	EM EV TLS CA - G2A-1	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	A57FACB931C9A203
+Intermediate Certificate	EM EV TLS CA - G2A-1	<-	emSign Root TLS CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	684B11E56AB72502
+Intermediate Certificate	EM EV TLS CA - G2A	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	CD0EDF0FEB612D80
+Intermediate Certificate	EM EV TLS CA - G2A	<-	emSign Root TLS CA - G1	moz=Not Trusted	chrome=Not Trusted	Revoked	6984C2CCC0749F56
+Intermediate Certificate	EM EV TLS CA - G2B	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	43785B01437218B8
+Intermediate Certificate	EM EV TLS CA - G2B	<-	emSign Root TLS CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	E072B30D7F5B8BCF
+Intermediate Certificate	EM EV TLS CA - G2C	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	0307BC756AAEA539
+Intermediate Certificate	EM EV TLS CA - G2C	<-	emSign Root TLS CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	C3BC2B480FB1A1AB
+Intermediate Certificate	EM EV TLS CA - G3A-1	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	D62657961AC9C5A9
+Intermediate Certificate	EM EV TLS CA - G3A-1	<-	emSign Root TLS CA - G3	moz=Trusted	chrome=Trusted	Not Revoked	BA0A3DA706F47DAC
+Intermediate Certificate	EM EV TLS CA - G3A	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	E21D0AE9D727D235
+Intermediate Certificate	EM EV TLS CA - G3A	<-	emSign Root TLS CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	8344188BCBD9CECB
+Intermediate Certificate	EM EV TLS CA - G3B	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	579480AEA166290B
+Intermediate Certificate	EM EV TLS CA - G3B	<-	emSign Root TLS CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	E7568FE6E12331F4
+Intermediate Certificate	EM EV TLS CA - G3C	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	FD9D5C2DBBD4995A
+Intermediate Certificate	EM EV TLS CA - G3C	<-	emSign Root TLS CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	432EC25F0D28DE90
+Intermediate Certificate	EM OV CS CA - G2A-1	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	53BB70186A0D70A2
+Intermediate Certificate	EM OV CS CA - G2A-1	<-	emSign Root CS CA - G2	moz=Not Trusted	chrome=Not Trusted	Not Revoked	6CE3E43327FD6694
+Intermediate Certificate	EM OV CS CA - G2A	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	B861BBFBAF92E1FD
+Intermediate Certificate	EM OV CS CA - G2A	<-	emSign Root CS CA - G2	moz=Not Trusted	chrome=Not Trusted	Revoked	D5B4A8E4B3E881B6
+Intermediate Certificate	EM OV CS CA - G2B	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	FBD14D574D7D5223
+Intermediate Certificate	EM OV CS CA - G2B	<-	emSign Root CS CA - G2	moz=Not Trusted	chrome=Not Trusted	Not Revoked	913F1A04B02814B6
+Intermediate Certificate	EM OV CS CA - G2C	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	0250C8D47AC74406
+Intermediate Certificate	EM OV CS CA - G2C	<-	emSign Root CS CA - G2	moz=Not Trusted	chrome=Not Trusted	Not Revoked	EBAC91B8EC985332
+Intermediate Certificate	EM OV CS CA - G3A-1	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	BCDFEE2D58C7BF98
+Intermediate Certificate	EM OV CS CA - G3A-1	<-	emSign Root CS CA - G3	moz=Not Trusted	chrome=Not Trusted	Not Revoked	F3E525E51E2BB27C
+Intermediate Certificate	EM OV CS CA - G3A	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	62CED756E591FA0B
+Intermediate Certificate	EM OV CS CA - G3A	<-	emSign Root CS CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	4FFC3046410087C2
+Intermediate Certificate	EM OV CS CA - G3B	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	A496E23AC0CAB815
+Intermediate Certificate	EM OV CS CA - G3B	<-	emSign Root CS CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	9E39DE2881273ACC
+Intermediate Certificate	EM OV CS CA - G3C	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	84112972B8E59D14
+Intermediate Certificate	EM OV CS CA - G3C	<-	emSign Root CS CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	4B2460A466F95FD4
+Intermediate Certificate	EM OV TLS CA - G2A-1	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	E0DA30FF7384B987
+Intermediate Certificate	EM OV TLS CA - G2A-1	<-	emSign Root TLS CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	291804EC866837CD
+Intermediate Certificate	EM OV TLS CA - G2A	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	1CFC49C38642E8AC
+Intermediate Certificate	EM OV TLS CA - G2A	<-	emSign Root TLS CA - G1	moz=Not Trusted	chrome=Not Trusted	Revoked	F95D99B74A0FC39B
+Intermediate Certificate	EM OV TLS CA - G2B	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	121C42490FECA63B
+Intermediate Certificate	EM OV TLS CA - G2B	<-	emSign Root TLS CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	6A7A93861982B664
+Intermediate Certificate	EM OV TLS CA - G2C	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	ED82135F7D946673
+Intermediate Certificate	EM OV TLS CA - G2C	<-	emSign Root TLS CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	DE767792E870BD32
+Intermediate Certificate	EM OV TLS CA - G3A-1	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Not Revoked	1159D471B5746802
+Intermediate Certificate	EM OV TLS CA - G3A-1	<-	emSign Root TLS CA - G3	moz=Trusted	chrome=Trusted	Not Revoked	259FF0963A0665BF
+Intermediate Certificate	EM OV TLS CA - G3A	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	E91CAD3A096E6C8A
+Intermediate Certificate	EM OV TLS CA - G3A	<-	emSign Root TLS CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	775BB88FB7FECCCA
+Intermediate Certificate	EM OV TLS CA - G3B	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	5F1DED4DD590AF74
+Intermediate Certificate	EM OV TLS CA - G3B	<-	emSign Root TLS CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	98B896625C0C230A
+Intermediate Certificate	EM OV TLS CA - G3C	<-	AAA Certificate Services	moz=Not Trusted	chrome=Not Trusted	Revoked	7485B51C0ED19287
+Intermediate Certificate	EM OV TLS CA - G3C	<-	emSign Root TLS CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	CB6E15165AC802E9
+Intermediate Certificate	emSign Class 1 CA - C1	<-	emSign Root CA - C1	moz=Trusted	chrome=Not Trusted	Not Revoked	0EF7B863FAABC384
+Intermediate Certificate	emSign Class 1 CA - G1	<-	emSign Root CA - G1	moz=Not Trusted	chrome=Not Trusted	Revoked	CF6D0333D0BE2C69
+Intermediate Certificate	emSign Class 2 CA - C1	<-	emSign Root CA - C1	moz=Trusted	chrome=Not Trusted	Not Revoked	05B30B3FC44F8575
+Intermediate Certificate	emSign Class 2 CA - G1	<-	emSign Root CA - G1	moz=Not Trusted	chrome=Not Trusted	Revoked	63A8369DC824A42B
+Intermediate Certificate	emSign Class 3 CA - C1	<-	emSign Root CA - C1	moz=Trusted	chrome=Not Trusted	Not Revoked	69B0DD09B98F36A9
+Intermediate Certificate	emSign Class 3 CA - G1	<-	emSign Root CA - G1	moz=Not Trusted	chrome=Not Trusted	Revoked	42DA1C562F80E46D
+Intermediate Certificate	emSign Client Auth CA - G1	<-	emSign Root Client Auth CA - G1	moz=Not Trusted	chrome=Not Trusted	Not Revoked	A2F8EA7537CD5AF8
+Intermediate Certificate	emSign Client Auth CA - G3	<-	emSign Root Client Auth CA - G3	moz=Not Trusted	chrome=Not Trusted	Not Revoked	2997C32BEFC8DFBF
+Intermediate Certificate	emSign CS CA - C2	<-	emSign Root CA - C2	moz=Not Trusted	chrome=Not Trusted	Not Revoked	B0E6BB9D6E7A94BC
+Intermediate Certificate	emSign CS CA - G2	<-	emSign Root CA - G2	moz=Not Trusted	chrome=Not Trusted	Not Revoked	C2E4D1765005D5CA
+Intermediate Certificate	emSign CS CA - G2	<-	emSign Root CS CA - G2	moz=Not Trusted	chrome=Not Trusted	Not Revoked	C58E88B283F4C11B
+Intermediate Certificate	emSign CS CA - G3	<-	emSign Root CS CA - G3	moz=Not Trusted	chrome=Not Trusted	Not Revoked	945CAA768EF29EF4
+Intermediate Certificate	emSign Device CA - C1	<-	emSign Root CA - C1	moz=Trusted	chrome=Not Trusted	Not Revoked	D034B18751BEE10A
+Intermediate Certificate	emSign Device CA - G1	<-	emSign Root CA - G1	moz=Not Trusted	chrome=Not Trusted	Revoked	4C9198B673550858
+Intermediate Certificate	emSign ECC Class 1 CA - C3	<-	emSign ECC Root CA - C3	moz=Trusted	chrome=Not Trusted	Not Revoked	FAD2E98649F1C606
+Intermediate Certificate	emSign ECC Class 1 CA - G3	<-	emSign ECC Root CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	ABA6A65DCE8955BA
+Intermediate Certificate	emSign ECC Class 2 CA - C3	<-	emSign ECC Root CA - C3	moz=Trusted	chrome=Not Trusted	Not Revoked	DB4591F878F6672F
+Intermediate Certificate	emSign ECC Class 2 CA - G3	<-	emSign ECC Root CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	4E9B731567177E17
+Intermediate Certificate	emSign ECC Class 3 CA - C3	<-	emSign ECC Root CA - C3	moz=Trusted	chrome=Not Trusted	Not Revoked	5A9A03F2D3FE589B
+Intermediate Certificate	emSign ECC Class 3 CA - G3	<-	emSign ECC Root CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	7066A0F42F530E0D
+Intermediate Certificate	emSign ECC CS CA - C3	<-	emSign ECC Root CA - C3	moz=Not Trusted	chrome=Not Trusted	Not Revoked	A3AFD72375C1D7A8
+Intermediate Certificate	emSign ECC CS CA - G3	<-	emSign ECC Root CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	0D6869A2B4F5DF77
+Intermediate Certificate	emSign ECC Device CA - C3	<-	emSign ECC Root CA - C3	moz=Trusted	chrome=Not Trusted	Not Revoked	3D4511D0A80AA949
+Intermediate Certificate	emSign ECC Device CA - G3	<-	emSign ECC Root CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	70B9BA595412CF86
+Intermediate Certificate	emSign ECC EV CS CA - C3	<-	emSign ECC Root CA - C3	moz=Not Trusted	chrome=Not Trusted	Not Revoked	CB21097992402097
+Intermediate Certificate	emSign ECC EV CS CA - G3	<-	emSign ECC Root CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	0BADA979B71402FE
+Intermediate Certificate	emSign ECC EV SSL CA - C3	<-	emSign ECC Root CA - C3	moz=Trusted	chrome=Not Trusted	Not Revoked	C0A578F2109E6F42
+Intermediate Certificate	emSign ECC EV SSL CA - G3	<-	emSign ECC Root CA - G3	moz=Trusted	chrome=Trusted	Not Revoked	0116F17F97CDEF4A
+Intermediate Certificate	emSign ECC SMIME CA - G3	<-	emSign ECC Root CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	F5B3E914CDE2954F
+Intermediate Certificate	emSign ECC SSL CA - C3	<-	emSign ECC Root CA - C3	moz=Trusted	chrome=Not Trusted	Not Revoked	A061D445399714C3
+Intermediate Certificate	emSign ECC SSL CA - G3	<-	emSign ECC Root CA - G3	moz=Trusted	chrome=Trusted	Not Revoked	6B51D1DCF4EB7AEE
+Intermediate Certificate	emSign ECC Time stamping CA - C3	<-	emSign ECC Root CA - C3	moz=Not Trusted	chrome=Not Trusted	Not Revoked	71D2EE4DDA251D92
+Intermediate Certificate	emSign ECC Time stamping CA - G3	<-	emSign ECC Root CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	C422AB86C1729E88
+Intermediate Certificate	emSign EV CS CA - C2	<-	emSign Root CA - C2	moz=Not Trusted	chrome=Not Trusted	Not Revoked	024998101210644F
+Intermediate Certificate	emSign EV CS CA - G2	<-	emSign Root CA - G2	moz=Not Trusted	chrome=Not Trusted	Not Revoked	69E2448C5F03EEDE
+Intermediate Certificate	emSign EV SSL CA - C1	<-	emSign Root CA - C1	moz=Trusted	chrome=Not Trusted	Not Revoked	F6F159286A1401DE
+Intermediate Certificate	emSign EV SSL CA - G1	<-	emSign Root CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	4334EEB2CC114F82
+Intermediate Certificate	emSign Root Client Auth CA - G1	<-	emSign Root CA - G1	moz=Not Trusted	chrome=Not Trusted	Revoked	6FB75190477405C2
+Intermediate Certificate	emSign Root Client Auth CA - G3	<-	emSign ECC Root CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	63088538028E233C
+Intermediate Certificate	emSign Root CS CA - G2	<-	emSign Root CA - G2	moz=Not Trusted	chrome=Not Trusted	Not Revoked	A455EB8D8DC03CC7
+Intermediate Certificate	emSign Root CS CA - G3	<-	emSign ECC Root CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	7137FA71AD46BA68
+Intermediate Certificate	emSign Root SMIME CA - G1	<-	emSign Root CA - G1	moz=Not Trusted	chrome=Not Trusted	Revoked	A65160E9770D70D8
+Intermediate Certificate	emSign Root SMIME CA - G3	<-	emSign ECC Root CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	B4CEEBA48EF8CCC6
+Intermediate Certificate	emSign Root TLS CA - G1	<-	emSign Root CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	9B913476EAB476E2
+Intermediate Certificate	emSign Root TLS CA - G3	<-	emSign ECC Root CA - G3	moz=Trusted	chrome=Trusted	Not Revoked	3094025792039A68
+Intermediate Certificate	emSign Root TSA CA - G2	<-	emSign Root CA - G2	moz=Not Trusted	chrome=Not Trusted	Not Revoked	2C15C5E31F6C837D
+Intermediate Certificate	emSign Root TSA CA - G3	<-	emSign ECC Root CA - G3	moz=Not Trusted	chrome=Not Trusted	Revoked	873BE6F9EF305722
+Intermediate Certificate	emSign SMIME CA - G1	<-	emSign Root CA - G1	moz=Not Trusted	chrome=Not Trusted	Revoked	BA9E8A1FCC4154B0
+Intermediate Certificate	emSign SMIME CA - G1	<-	emSign Root SMIME CA - G1	moz=Not Trusted	chrome=Not Trusted	Not Revoked	B9E2588E93B5E536
+Intermediate Certificate	emSign SMIME CA - G3	<-	emSign Root SMIME CA - G3	moz=Not Trusted	chrome=Not Trusted	Not Revoked	30444F40CAC26FFF
+Intermediate Certificate	emSign SSL CA - C1	<-	emSign Root CA - C1	moz=Trusted	chrome=Not Trusted	Not Revoked	F91AACA0E4E53374
+Intermediate Certificate	emSign SSL CA - G1	<-	emSign Root CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	47B2EFBC3670E7DB
+Intermediate Certificate	emSign Time Stamping CA - C1	<-	emSign Root CA - C1	moz=Not Trusted	chrome=Not Trusted	Not Revoked	4D15E5199D88EAB1
+Intermediate Certificate	emSign Time Stamping CA - C2	<-	emSign Root CA - C2	moz=Not Trusted	chrome=Not Trusted	Not Revoked	571FC70654AB8C1A
+Intermediate Certificate	emSign Time Stamping CA - G2	<-	emSign Root CA - G2	moz=Not Trusted	chrome=Not Trusted	Not Revoked	C3BE06C6B0A92334
+Intermediate Certificate	emSign TLS CA - G1	<-	emSign Root TLS CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	DE029E40F6BB851D
+Intermediate Certificate	emSign TLS CA - G3	<-	emSign Root TLS CA - G3	moz=Trusted	chrome=Trusted	Not Revoked	04E6DEA261B8720E
+Intermediate Certificate	emSign TSA CA - G2	<-	emSign Root TSA CA - G2	moz=Not Trusted	chrome=Not Trusted	Not Revoked	D4317853D206E7C3
+Intermediate Certificate	emSign TSA CA - G3	<-	emSign Root TSA CA - G3	moz=Not Trusted	chrome=Not Trusted	Not Revoked	7D9E3951568A20EF
+Intermediate Certificate	InCommon Intermediate CA - DVG2C	<-	emSign Root TLS CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	830905812307DF14
+Intermediate Certificate	InCommon Intermediate CA - DVG3C	<-	emSign Root TLS CA - G3	moz=Trusted	chrome=Trusted	Not Revoked	3460C02F0B4B06C2
+Intermediate Certificate	InCommon Intermediate CA - EVG2C	<-	emSign Root TLS CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	A83559D892F4692D
+Intermediate Certificate	InCommon Intermediate CA - EVG3C	<-	emSign Root TLS CA - G3	moz=Trusted	chrome=Trusted	Not Revoked	5F2F050F9CDD928F
+Intermediate Certificate	InCommon Intermediate CA - OVG2C	<-	emSign Root TLS CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	BA02F2F97BA481D1
+Intermediate Certificate	InCommon Intermediate CA - OVG3C	<-	emSign Root TLS CA - G3	moz=Trusted	chrome=Trusted	Not Revoked	566B3AF3CB6663A9
+Intermediate Certificate	InCommon RSA IGTF Server CA 4	<-	emSign Root TLS CA - G1	moz=Trusted	chrome=Trusted	Not Revoked	F1A78E13D7AB3107
+Intermediate Certificate	Soft-Net Secure Signing CA - C1	<-	emSign Root CA - C1	moz=Trusted	chrome=Not Trusted	Not Revoked	CCEC157DA0F0BD58
+Intermediate Certificate	UAE QTSP Advanced CA	<-	emSign Root CA - C1	moz=Trusted	chrome=Not Trusted	Not Revoked	029F54FDDC7EC492
+Intermediate Certificate	UAE QTSP Device and Management CA	<-	emSign Root CA - C1	moz=Trusted	chrome=Not Trusted	Not Revoked	D9656F4E4D83F627
+Intermediate Certificate	UAE QTSP Qualified eSeal CA LP	<-	emSign Root CA - C1	moz=Trusted	chrome=Not Trusted	Not Revoked	E3473AECEF108B1E
+Intermediate Certificate	UAE QTSP Qualified eSeal CA LP-QSCD	<-	emSign Root CA - C1	moz=Trusted	chrome=Not Trusted	Not Revoked	6B1EA2DEE0F34A7E
+Intermediate Certificate	UAE QTSP Qualified eSignature CA (NP)	<-	emSign Root CA - C1	moz=Trusted	chrome=Not Trusted	Not Revoked	8C5710BF16019197
+Intermediate Certificate	UAE QTSP Qualified eSignature CA NP-QSCD	<-	emSign Root CA - C1	moz=Trusted	chrome=Not Trusted	Not Revoked	DB9F48A53106A06A
+Intermediate Certificate	UAE QTSP TSA Issuing CA	<-	emSign Root CA - C1	moz=Not Trusted	chrome=Not Trusted	Not Revoked	407418904F71B2A0
+Intermediate Certificate	UAE QTSP Validation Service CA	<-	emSign Root CA - C1	moz=Trusted	chrome=Not Trusted	Not Revoked	3213CE37224C4E95
+Root Certificate	emSign ECC Root CA - C3	<-	eMudhra Technologies Limited	moz=Included	chrome=Removed		BC4D809B15189D78
+Root Certificate	emSign ECC Root CA - G3	<-	eMudhra Technologies Limited	moz=Included	chrome=Included		86A1ECBA089C4A8D
+Root Certificate	emSign Root CA - C1	<-	eMudhra Technologies Limited	moz=Included	chrome=Removed		125609AA301DA0A2
+Root Certificate	emSign Root CA - C2	<-	eMudhra Technologies Limited	moz=Not Included	chrome=Not Included		46CD083B47E80402
+Root Certificate	emSign Root CA - G1	<-	eMudhra Technologies Limited	moz=Included	chrome=Included		40F6AF0346A99AA1
+Root Certificate	emSign Root CA - G2	<-	eMudhra Technologies Limited	moz=Not Included	chrome=Not Included		1AA0C2709E831BD6
+Root Certificate	emSign Root Client Auth CA - G1	<-	eMudhra Technologies Limited	moz=Not Included	chrome=Not Included		8ABFC40FAEAF13CB
+Root Certificate	emSign Root Client Auth CA - G3	<-	eMudhra Technologies Limited	moz=Not Included	chrome=Not Included		BBD8B3D745EFB791
+Root Certificate	emSign Root CS CA - G2	<-	eMudhra Technologies Limited	moz=Not Included	chrome=Not Included		0D74EF67C88DE356
+Root Certificate	emSign Root CS CA - G3	<-	eMudhra Technologies Limited	moz=Not Included	chrome=Not Included		F2EDAAFF3D9B701F
+Root Certificate	emSign Root SMIME CA - G1	<-	eMudhra Technologies Limited	moz=Not Included	chrome=Not Included		47911BC8F32A11B0
+Root Certificate	emSign Root SMIME CA - G3	<-	eMudhra Technologies Limited	moz=Not Included	chrome=Not Included		F76A0D440C418DC5
+Root Certificate	emSign Root TLS CA - G1	<-	eMudhra Technologies Limited	moz=Not Included	chrome=Not Included		CEF71E70B7C29ADD
+Root Certificate	emSign Root TLS CA - G3	<-	eMudhra Technologies Limited	moz=Not Included	chrome=Not Included		7DD78D5F4F13459A
+Root Certificate	emSign Root TSA CA - G2	<-	eMudhra Technologies Limited	moz=Not Included	chrome=Not Included		1997770A5633FB6D
+Root Certificate	emSign Root TSA CA - G3	<-	eMudhra Technologies Limited	moz=Not Included	chrome=Not Included		75D2CE75979CF2A4
