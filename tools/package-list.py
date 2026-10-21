@@ -14,18 +14,20 @@ def name(storename):
     n = re.sub(r"^ruby\d\.\d-", "rubyPackages.", n)
     return n
 
-pkgs = collections.defaultdict(lambda: {"files": set(), "ecc": False})
+pkgs = collections.defaultdict(lambda: {"files": set(), "ecc": False, "aaa": False})
 for r in csv.DictReader(open(sys.argv[1]), delimiter="\t"):
     p = pkgs[(r["class"], name(r["package"]))]
     p["files"].add(r["path"])
     p["ecc"] |= r["ecc_g3"] == "1"
+    p["aaa"] |= r["aaa_anchor"] == "1"
 
 for c, title, fix in ORDER:
     rows = sorted((n, p) for (cc, n), p in pkgs.items() if cc == c)
     print(f"### {title} ({len(rows)})\n\nFix: {fix}\n")
     for n, p in rows:
-        files = sorted(p["files"], key=len)
+        files = sorted(p["files"], key=lambda f: (len(f), f))
         more = f" (+{len(files) - 1} more)" if len(files) > 1 else ""
         stale = "" if p["ecc"] else " · stale bundle, no ECC G3"
-        print(f"- [ ] **{n}** — `{files[0]}`{more}{stale}")
+        aaa = " · trusts AAA" if p["aaa"] else ""
+        print(f"- [ ] **{n}** — `{files[0]}`{more}{stale}{aaa}")
     print()
