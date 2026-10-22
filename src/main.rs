@@ -1,10 +1,12 @@
 use aho_corasick::{AhoCorasick, AhoCorasickBuilder, MatchKind};
 use base64::Engine;
+use clap::{ArgGroup, Parser};
 use serde::Serialize;
 use sha2::{Digest, Sha256};
 use std::collections::{BTreeSet, HashMap};
+use std::fs;
 use std::io::{self, BufReader, Cursor, Read, Write};
-use std::path::Path;
+use std::path::{Path, PathBuf};
 
 const MAX_IN_MEMORY: u64 = 1 << 30;
 const CHUNK: usize = 256 << 20;
@@ -638,22 +640,30 @@ fn walk(ctx: &mut Ctx, p: &Path) -> io::Result<()> {
     Ok(())
 }
 
+#[derive(Parser)]
+#[command(group(ArgGroup::new("input").required(true)))]
+struct Args {
+    /// Custom PEM file containing known root certificates
+    #[arg(long, env = "CACERT_SCAN_ROOTS")]
+    roots: Option<PathBuf>,
+
+    /// Custom PEM file containing compromised certificates
+    #[arg(long, env = "CACERT_SCAN_WATCH")]
+    watch: Option<PathBuf>,
+
+    /// Read a Nix NAR archive from stdin and label findings with LABEL
+    #[arg(long, group = "input", value_name = "LABEL")]
+    nar: Option<String>,
+
+    /// Scan files or directories
+    #[arg(long, group = "input", num_args = 1..)]
+    path: Vec<PathBuf>,
+}
+
 fn main() {
-    let args: Vec<String> = std::env::args().collect();
-    let usage = "usage: cacert-scan [--roots ROOTS.pem] [--watch WATCH.pem] (--nar LABEL < file.nar | --path DIR...)\n\
-                 --roots and --watch default to $CACERT_SCAN_ROOTS and $CACERT_SCAN_WATCH or built-in patterns";
-    let get = |k: &str| {
-        args.iter()
-            .position(|a| a == k)
-            .and_then(|i| args.get(i + 1))
-            .cloned()
-    };
-    let roots = get("--roots")
-        .or_else(|| std::env::var("CACERT_SCAN_ROOTS").ok())
-        .map(|p| std::fs::read(p).expect("roots"));
-    let watch = get("--watch")
-        .or_else(|| std::env::var("CACERT_SCAN_WATCH").ok())
-        .map(|p| std::fs::read(p).expect("watch"));
+    let args = Args::parse();
+    let roots = args.roots.map(|p| fs::read(p).expect("roots"));
+    let watch = args.watch.map(|p| fs::read(p).expect("watch"));
     let m = build_matcher(
         roots
             .as_deref()
@@ -671,18 +681,15 @@ fn main() {
         bytes: 0,
         findings: 0,
     };
-    let res = if let Some(label) = get("--nar") {
+    let res = if let Some(label) = args.nar {
         ctx.nar.clone_from(&label);
         let mut r = BufReader::with_capacity(1 << 20, io::stdin().lock());
         nar_expect(&mut r, b"nix-archive-1").and_then(|_| nar_node(&mut ctx, &mut r, &label))
-    } else if let Some(i) = args.iter().position(|a| a == "--path") {
-        args[i + 1..].iter().try_for_each(|p| {
-            ctx.nar.clone_from(p);
-            walk(&mut ctx, Path::new(p))
-        })
     } else {
-        eprintln!("{usage}");
-        std::process::exit(2);
+        args.path.into_iter().try_for_each(|p| {
+            ctx.nar = p.to_string_lossy().into_owned();
+            walk(&mut ctx, &p)
+        })
     };
     eprintln!(
         "files={} bytes={} findings={}",
