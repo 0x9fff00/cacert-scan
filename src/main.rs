@@ -14,7 +14,17 @@ const MAX_DEPTH: usize = 4;
 const MAX_UNPACKED: u64 = 1 << 30;
 const MIN_BARE_B64: usize = 600;
 // common store passwords seen in Java truststores; "" covers password-less PKCS12
-const P12_PASSWORDS: &[&str] = &["changeit", "", "changeme", "password", "secret", "123456", "truststore", "keystore", "notasecret"];
+const P12_PASSWORDS: &[&str] = &[
+    "changeit",
+    "",
+    "changeme",
+    "password",
+    "secret",
+    "123456",
+    "truststore",
+    "keystore",
+    "notasecret",
+];
 
 #[derive(Clone, Copy, PartialEq)]
 enum Kind {
@@ -68,7 +78,11 @@ fn der_inner(der: &[u8]) -> &[u8] {
         return der;
     }
     let l = der[1];
-    let hdr = if l & 0x80 == 0 { 2 } else { 2 + (l & 0x7f) as usize };
+    let hdr = if l & 0x80 == 0 {
+        2
+    } else {
+        2 + (l & 0x7f) as usize
+    };
     der.get(hdr..).unwrap_or(der)
 }
 
@@ -101,21 +115,41 @@ fn build_matcher(roots: &[u8], watch: &[u8]) -> Matcher {
     };
     for der in pem_ders(roots) {
         if let Ok((_, c)) = x509_parser::parse_x509_certificate(&der) {
-            add(der_inner(c.subject().as_raw()).to_vec(), Kind::Root, cn_of(&c));
+            add(
+                der_inner(c.subject().as_raw()).to_vec(),
+                Kind::Root,
+                cn_of(&c),
+            );
         }
     }
     for der in pem_ders(watch) {
         if let Ok((_, c)) = x509_parser::parse_x509_certificate(&der) {
             let name = cn_of(&c);
-            add(der_inner(c.subject().as_raw()).to_vec(), Kind::Watch, name.clone());
+            add(
+                der_inner(c.subject().as_raw()).to_vec(),
+                Kind::Watch,
+                name.clone(),
+            );
             let spki = c.public_key().raw;
             add(der_inner(spki).to_vec(), Kind::WatchSpki, name.clone());
             let h = Sha256::digest(spki);
             add(h.to_vec(), Kind::BlockHash, format!("{name} (raw sha256)"));
-            add(hex::encode(h).into_bytes(), Kind::BlockHash, format!("{name} (hex)"));
-            add(hex::encode_upper(h).into_bytes(), Kind::BlockHash, format!("{name} (HEX)"));
+            add(
+                hex::encode(h).into_bytes(),
+                Kind::BlockHash,
+                format!("{name} (hex)"),
+            );
+            add(
+                hex::encode_upper(h).into_bytes(),
+                Kind::BlockHash,
+                format!("{name} (HEX)"),
+            );
             let b64 = base64::engine::general_purpose::STANDARD.encode(h);
-            add(b64.into_bytes(), Kind::BlockHash, format!("{name} (base64)"));
+            add(
+                b64.into_bytes(),
+                Kind::BlockHash,
+                format!("{name} (base64)"),
+            );
         }
     }
     let (keys, pats): (Vec<_>, Vec<_>) = map.into_iter().unzip();
@@ -158,7 +192,12 @@ fn clean_b64(body: &[u8]) -> Vec<u8> {
         if c == b'"' || c == b'\'' {
             // skip a string-literal break such as `" +\n  "` or `"\n"`
             let mut j = i + 1;
-            while j < body.len() && matches!(body[j], b' ' | b'\t' | b'\r' | b'\n' | b'+' | b',' | b'&' | b'.' | b'_') {
+            while j < body.len()
+                && matches!(
+                    body[j],
+                    b' ' | b'\t' | b'\r' | b'\n' | b'+' | b',' | b'&' | b'.' | b'_'
+                )
+            {
                 j += 1;
             }
             if j < body.len() && (body[j] == b'"' || body[j] == b'\'') {
@@ -180,7 +219,9 @@ fn b64_decode(s: &[u8]) -> Option<Vec<u8>> {
     let e = &base64::engine::general_purpose::STANDARD;
     e.decode(s).ok().or_else(|| {
         let t: Vec<u8> = s.iter().copied().filter(|&c| c != b'=').collect();
-        base64::engine::general_purpose::STANDARD_NO_PAD.decode(&t).ok()
+        base64::engine::general_purpose::STANDARD_NO_PAD
+            .decode(&t)
+            .ok()
     })
 }
 
@@ -192,13 +233,14 @@ fn pem_blocks(data: &[u8]) -> Vec<(usize, Option<Vec<u8>>)> {
     let mut pos = 0;
     while let Some(b) = begin.find(&data[pos..]) {
         let start = pos + b;
-        let label_end = match memchr::memmem::find(&data[start + 11..(start + 80).min(data.len())], b"-----") {
-            Some(e) => start + 11 + e,
-            None => {
-                pos = start + 11;
-                continue;
-            }
-        };
+        let label_end =
+            match memchr::memmem::find(&data[start + 11..(start + 80).min(data.len())], b"-----") {
+                Some(e) => start + 11 + e,
+                None => {
+                    pos = start + 11;
+                    continue;
+                }
+            };
         let label = &data[start + 11..label_end];
         let body_start = label_end + 5;
         let Some(e) = end.find(&data[body_start..(body_start + 64 * 1024).min(data.len())]) else {
@@ -221,7 +263,9 @@ fn bare_base64(m: &Matcher, data: &[u8], f: &mut Finding) {
     while let Some(i) = finder.find(&data[pos..]) {
         let s = pos + i;
         let mut e = s;
-        while e < data.len() && (data[e].is_ascii_alphanumeric() || matches!(data[e], b'+' | b'/' | b'=')) {
+        while e < data.len()
+            && (data[e].is_ascii_alphanumeric() || matches!(data[e], b'+' | b'/' | b'='))
+        {
             e += 1;
         }
         if e - s >= MIN_BARE_B64 {
@@ -241,7 +285,9 @@ fn certdata_octal(m: &Matcher, data: &[u8], f: &mut Finding) {
         let mut der = Vec::new();
         while j + 3 < data.len() {
             if data[j] == b'\\' && data[j + 1..j + 4].iter().all(|c| (b'0'..=b'7').contains(c)) {
-                der.push((data[j + 1] - b'0') * 64 + (data[j + 2] - b'0') * 8 + (data[j + 3] - b'0'));
+                der.push(
+                    (data[j + 1] - b'0') * 64 + (data[j + 2] - b'0') * 8 + (data[j + 3] - b'0'),
+                );
                 j += 4;
             } else if data[j..].starts_with(b"END") {
                 break;
@@ -270,11 +316,19 @@ fn load_openssl_providers() {
 
 fn pkcs12_decrypt(m: &Matcher, data: &[u8], f: &mut Finding) {
     load_openssl_providers();
-    let Ok(p12) = openssl::pkcs12::Pkcs12::from_der(data) else { return };
+    let Ok(p12) = openssl::pkcs12::Pkcs12::from_der(data) else {
+        return;
+    };
     for pw in P12_PASSWORDS {
         let Ok(parsed) = p12.parse2(pw) else { continue };
         let mut n = 0;
-        for c in parsed.ca.iter().flatten().map(|c| c.to_owned()).chain(parsed.cert) {
+        for c in parsed
+            .ca
+            .iter()
+            .flatten()
+            .map(|c| c.to_owned())
+            .chain(parsed.cert)
+        {
             if let Ok(der) = c.to_der() {
                 apply(m, &der, f, "pkcs12-decrypted");
                 n += 1;
@@ -287,8 +341,12 @@ fn pkcs12_decrypt(m: &Matcher, data: &[u8], f: &mut Finding) {
 }
 
 fn magic(data: &[u8]) -> Option<&'static str> {
-    const P12_BAG: &[u8] = &[0x06, 0x0b, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x0c, 0x0a, 0x01];
-    const P7_DATA: &[u8] = &[0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x07, 0x01];
+    const P12_BAG: &[u8] = &[
+        0x06, 0x0b, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x0c, 0x0a, 0x01,
+    ];
+    const P7_DATA: &[u8] = &[
+        0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x07, 0x01,
+    ];
     match data {
         [0xfe, 0xed, 0xfe, 0xed, ..] => Some("jks"),
         [0xce, 0xce, 0xce, 0xce, ..] => Some("jceks"),
@@ -297,9 +355,10 @@ fn magic(data: &[u8]) -> Option<&'static str> {
         [0xfd, b'7', b'z', b'X', b'Z', 0, ..] => Some("xz"),
         [0x28, 0xb5, 0x2f, 0xfd, ..] => Some("zstd"),
         [0x7f, b'E', b'L', b'F', ..] => Some("elf"),
-        [0x30, ..] if data.len() < 4 << 20
-            && memchr::memmem::find(&data[..data.len().min(256)], P7_DATA).is_some()
-            && (memchr::memmem::find(data, P12_BAG).is_some() || data.len() > 1024) =>
+        [0x30, ..]
+            if data.len() < 4 << 20
+                && memchr::memmem::find(&data[..data.len().min(256)], P7_DATA).is_some()
+                && (memchr::memmem::find(data, P12_BAG).is_some() || data.len() > 1024) =>
         {
             Some("pkcs12")
         }
@@ -328,7 +387,12 @@ impl Ctx<'_> {
     }
 
     fn scan_buf(&mut self, path: &str, data: &[u8], depth: usize) {
-        let mut f = Finding { nar: self.nar.clone(), file: path.to_owned(), size: data.len() as u64, ..Default::default() };
+        let mut f = Finding {
+            nar: self.nar.clone(),
+            file: path.to_owned(),
+            size: data.len() as u64,
+            ..Default::default()
+        };
         f.magic = magic(data);
         apply(self.m, data, &mut f, "der");
         let blocks = pem_blocks(data);
@@ -351,7 +415,12 @@ impl Ctx<'_> {
             return;
         }
         match f.magic {
-            Some("gzip") => self.unpack(path, "gunzip", flate2::read::MultiGzDecoder::new(data), depth),
+            Some("gzip") => self.unpack(
+                path,
+                "gunzip",
+                flate2::read::MultiGzDecoder::new(data),
+                depth,
+            ),
             Some("xz") => self.unpack(path, "unxz", xz2::read::XzDecoder::new(data), depth),
             Some("zstd") => {
                 if let Ok(d) = zstd::stream::read::Decoder::new(data) {
@@ -372,7 +441,9 @@ impl Ctx<'_> {
     }
 
     fn zip(&mut self, path: &str, data: &[u8], depth: usize) {
-        let Ok(mut z) = zip::ZipArchive::new(Cursor::new(data)) else { return };
+        let Ok(mut z) = zip::ZipArchive::new(Cursor::new(data)) else {
+            return;
+        };
         for i in 0..z.len() {
             let Ok(mut e) = z.by_index(i) else { continue };
             if !e.is_file() || e.size() > MAX_UNPACKED {
@@ -395,7 +466,12 @@ impl Ctx<'_> {
             if !e.header().entry_type().is_file() || e.size() > MAX_UNPACKED {
                 continue;
             }
-            let name = format!("{path}!{}", e.path().map(|p| p.display().to_string()).unwrap_or_default());
+            let name = format!(
+                "{path}!{}",
+                e.path()
+                    .map(|p| p.display().to_string())
+                    .unwrap_or_default()
+            );
             let mut buf = Vec::new();
             if e.read_to_end(&mut buf).is_ok() {
                 self.scan_buf(&name, &buf, depth + 1);
@@ -490,7 +566,11 @@ fn nar_str(r: &mut impl Read) -> io::Result<Vec<u8>> {
 fn nar_expect(r: &mut impl Read, tok: &[u8]) -> io::Result<()> {
     let s = nar_str(r)?;
     if s != tok {
-        return Err(bad(&format!("expected {:?}, got {:?}", String::from_utf8_lossy(tok), String::from_utf8_lossy(&s))));
+        return Err(bad(&format!(
+            "expected {:?}, got {:?}",
+            String::from_utf8_lossy(tok),
+            String::from_utf8_lossy(&s)
+        )));
     }
     Ok(())
 }
@@ -548,7 +628,11 @@ fn walk(ctx: &mut Ctx, p: &Path) -> io::Result<()> {
             walk(ctx, &e)?;
         }
     } else if md.is_file() {
-        ctx.scan_reader(&p.display().to_string(), BufReader::new(std::fs::File::open(p)?), md.len())?;
+        ctx.scan_reader(
+            &p.display().to_string(),
+            BufReader::new(std::fs::File::open(p)?),
+            md.len(),
+        )?;
     }
     Ok(())
 }
@@ -557,16 +641,31 @@ fn main() {
     let args: Vec<String> = std::env::args().collect();
     let usage = "usage: cacert-scan [--roots ROOTS.pem] [--watch WATCH.pem] (--nar LABEL < file.nar | --path DIR...)\n\
                  --roots and --watch default to $CACERT_SCAN_ROOTS and $CACERT_SCAN_WATCH";
-    let get = |k: &str| args.iter().position(|a| a == k).and_then(|i| args.get(i + 1)).cloned();
+    let get = |k: &str| {
+        args.iter()
+            .position(|a| a == k)
+            .and_then(|i| args.get(i + 1))
+            .cloned()
+    };
     let roots = get("--roots").or_else(|| std::env::var("CACERT_SCAN_ROOTS").ok());
     let watch = get("--watch").or_else(|| std::env::var("CACERT_SCAN_WATCH").ok());
     let (Some(roots), Some(watch)) = (roots, watch) else {
         eprintln!("{usage}");
         std::process::exit(2);
     };
-    let m = build_matcher(&std::fs::read(roots).expect("roots"), &std::fs::read(watch).expect("watch"));
+    let m = build_matcher(
+        &std::fs::read(roots).expect("roots"),
+        &std::fs::read(watch).expect("watch"),
+    );
     let out = io::stdout().lock();
-    let mut ctx = Ctx { m: &m, nar: String::new(), out, files: 0, bytes: 0, findings: 0 };
+    let mut ctx = Ctx {
+        m: &m,
+        nar: String::new(),
+        out,
+        files: 0,
+        bytes: 0,
+        findings: 0,
+    };
     let res = if let Some(label) = get("--nar") {
         ctx.nar = label.clone();
         let mut r = BufReader::with_capacity(1 << 20, io::stdin().lock());
@@ -580,7 +679,10 @@ fn main() {
         eprintln!("{usage}");
         std::process::exit(2);
     };
-    eprintln!("files={} bytes={} findings={}", ctx.files, ctx.bytes, ctx.findings);
+    eprintln!(
+        "files={} bytes={} findings={}",
+        ctx.files, ctx.bytes, ctx.findings
+    );
     if let Err(e) = res {
         eprintln!("error: {e}");
         std::process::exit(1);
