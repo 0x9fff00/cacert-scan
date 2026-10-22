@@ -32,6 +32,7 @@ Runs forever and prints one line per event. Every 5 minutes it:
 - reports new or changed PR links on the six issues (including the CVE tracking issue #576485), from NixOS/nixpkgs, numtide and zimbatm repositories only;
 - searches for nixpkgs PRs that mention the category issues, as a backup for missed links;
 - reports new or edited comments;
-- reports edits to the issue titles and bodies.
+- reports edits to the issue titles and bodies;
+- reports activity on PRs by `$PR_AUTHOR` (default zimbatm) in any repository: new comments, reviews, inline review comments, merges or closes, and new CI failures. Bot comments and the author's own comments are left out.
 
 State is kept in `$CACERT_TRACKING_STATE` (default `~/.cache/cacert-tracking`). On the first run it records the current state and reports nothing.

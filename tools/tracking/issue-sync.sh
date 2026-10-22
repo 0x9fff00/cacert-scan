@@ -36,6 +36,29 @@ check_edits() {
   done
 }
 
+# PRs by $PR_AUTHOR updated since the last cycle: new comments, reviews, state and CI failures
+PR_AUTHOR=${PR_AUTHOR:-zimbatm}
+watch_prs() {
+  local since now pr repo num title state merged sha c
+  now=$(date -u +%FT%TZ)
+  [[ -e $S/prs-since ]] || { echo "$now" > $S/prs-since; return; }
+  since=$(cat $S/prs-since)
+  gh api -X GET search/issues -f q="is:pr author:$PR_AUTHOR updated:>=$since" -f per_page=100 \
+    -q '.items[] | "\(.repository_url | sub("https://api.github.com/repos/"; ""))\t\(.number)\t\(.title)"' 2>/dev/null |
+  while IFS=$'\t' read -r repo num title; do
+    pr="$repo#$num"
+    gh api "repos/$repo/issues/$num/comments?since=$since" -q '.[] | select(.user.login != "'"$PR_AUTHOR"'" and (.user.type != "Bot")) | "\(.user.login): \(.body | gsub("\\s+"; " ") | .[:160])"' 2>/dev/null | sed "s|^|$pr comment: |"
+    gh api "repos/$repo/pulls/$num/reviews" -q '.[] | select(.submitted_at >= "'"$since"'" and .user.login != "'"$PR_AUTHOR"'") | "\(.user.login) \(.state): \(.body | gsub("\\s+"; " ") | .[:160])"' 2>/dev/null | sed "s|^|$pr review: |"
+    gh api "repos/$repo/pulls/$num/comments?since=$since" -q '.[] | select(.user.login != "'"$PR_AUTHOR"'") | "\(.user.login) on \(.path): \(.body | gsub("\\s+"; " ") | .[:160])"' 2>/dev/null | sed "s|^|$pr inline: |"
+    read -r state merged sha < <(gh api "repos/$repo/pulls/$num" -q '"\(.state) \(.merged_at != null) \(.head.sha)"' 2>/dev/null)
+    [[ $state == closed ]] && { [[ $merged == true ]] && echo "$pr merged: $title" || echo "$pr closed: $title"; }
+    c=$(gh api "repos/$repo/commits/$sha/check-runs?per_page=100" -q '[.check_runs[] | select(.conclusion == "failure") | .name] | join(", ")' 2>/dev/null)
+    [[ -n $c && $c != "$(cat "$S/ci-${repo//\//_}-$num" 2>/dev/null)" ]] && echo "$pr CI failed: $c"
+    printf '%s' "$c" > "$S/ci-${repo//\//_}-$num"
+  done
+  echo "$now" > $S/prs-since
+}
+
 rest_body() {
   gh api "repos/$R/issues/$1" -q .body 2>/dev/null
 }
@@ -72,6 +95,7 @@ for i in $WATCH; do [[ -e $S/refs-$i ]] || refs $i > $S/refs-$i; [[ -e $S/commen
 while true; do
   sync_table
   check_edits
+  watch_prs
   for i in $WATCH; do
     cur=$(refs $i) && [[ -n $cur ]] && { comm -13 <(grep -v '^$' $S/refs-$i | sort) <(grep -v '^$' <<<"$cur" | sort) | grep -E "^(NixOS/nixpkgs|numtide/|zimbatm/)" | sed "s/^/#$i pr: /"; echo "$cur" > $S/refs-$i; }
     cur=$(comments $i) && { comm -13 <(grep -v '^$' $S/comments-$i | sort) <(grep -v '^$' <<<"$cur" | sort) | sed "s/^/#$i comment: /"; echo "$cur" > $S/comments-$i; }
