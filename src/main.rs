@@ -626,7 +626,7 @@ fn walk(ctx: &mut Ctx, p: &Path) -> io::Result<()> {
         let mut ents: Vec<_> = std::fs::read_dir(p)?.flatten().map(|e| e.path()).collect();
         ents.sort();
         for e in ents {
-            walk(ctx, &e)?;
+            walk(ctx, &e).unwrap_or_else(|err| eprintln!("failed to walk {}: {err}", e.display()));
         }
     } else if md.is_file() {
         ctx.scan_reader(
