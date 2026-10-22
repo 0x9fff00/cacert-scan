@@ -449,7 +449,11 @@ impl Ctx<'_> {
             if !e.is_file() || e.size() > MAX_UNPACKED {
                 continue;
             }
-            let name = format!("{path}!{}", e.name());
+            let name = format!(
+                "{path}!{}",
+                e.name()
+                    .unwrap_or_else(|_| String::from_utf8_lossy(e.name_raw())),
+            );
             let mut buf = Vec::with_capacity(e.size() as usize);
             if e.read_to_end(&mut buf).is_ok() {
                 drop(e);
