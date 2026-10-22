@@ -18,8 +18,3 @@ x509-parser = "0.18.0"
 xz2 = "0.1.0"
 zip = { version = "9.0.0", default-features = false, features = ["deflate-flate2-zlib-rs"] }
 zstd = "0.14.0"
-
-[profile.release]
-opt-level = 3
-lto = "thin"
-codegen-units = 1

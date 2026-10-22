@@ -91,8 +91,7 @@ fn cn_of(c: &x509_parser::certificate::X509Certificate) -> String {
         .iter_common_name()
         .next()
         .and_then(|a| a.as_str().ok())
-        .map(str::to_owned)
-        .unwrap_or_else(|| c.subject().to_string())
+        .map_or_else(|| c.subject().to_string(), str::to_owned)
 }
 
 fn pem_ders(data: &[u8]) -> Vec<Vec<u8>> {
@@ -233,14 +232,14 @@ fn pem_blocks(data: &[u8]) -> Vec<(usize, Option<Vec<u8>>)> {
     let mut pos = 0;
     while let Some(b) = begin.find(&data[pos..]) {
         let start = pos + b;
-        let label_end =
-            match memchr::memmem::find(&data[start + 11..(start + 80).min(data.len())], b"-----") {
-                Some(e) => start + 11 + e,
-                None => {
-                    pos = start + 11;
-                    continue;
-                }
-            };
+        let label_end = if let Some(e) =
+            memchr::memmem::find(&data[start + 11..(start + 80).min(data.len())], b"-----")
+        {
+            start + 11 + e
+        } else {
+            pos = start + 11;
+            continue;
+        };
         let label = &data[start + 11..label_end];
         let body_start = label_end + 5;
         let Some(e) = end.find(&data[body_start..(body_start + 64 * 1024).min(data.len())]) else {
@@ -424,7 +423,7 @@ impl Ctx<'_> {
             Some("xz") => self.unpack(path, "unxz", xz2::read::XzDecoder::new(data), depth),
             Some("zstd") => {
                 if let Ok(d) = zstd::stream::read::Decoder::new(data) {
-                    self.unpack(path, "unzstd", d, depth)
+                    self.unpack(path, "unzstd", d, depth);
                 }
             }
             Some("zip") => self.zip(path, data, depth),
@@ -472,9 +471,7 @@ impl Ctx<'_> {
             }
             let name = format!(
                 "{path}!{}",
-                e.path()
-                    .map(|p| p.display().to_string())
-                    .unwrap_or_default()
+                e.path().map_or_default(|p| p.display().to_string())
             );
             let mut buf = Vec::new();
             if e.read_to_end(&mut buf).is_ok() {
@@ -671,12 +668,12 @@ fn main() {
         findings: 0,
     };
     let res = if let Some(label) = get("--nar") {
-        ctx.nar = label.clone();
+        ctx.nar.clone_from(&label);
         let mut r = BufReader::with_capacity(1 << 20, io::stdin().lock());
         nar_expect(&mut r, b"nix-archive-1").and_then(|_| nar_node(&mut ctx, &mut r, &label))
     } else if let Some(i) = args.iter().position(|a| a == "--path") {
         args[i + 1..].iter().try_for_each(|p| {
-            ctx.nar = p.clone();
+            ctx.nar.clone_from(p);
             walk(&mut ctx, Path::new(p))
         })
     } else {
