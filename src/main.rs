@@ -641,22 +641,26 @@ fn walk(ctx: &mut Ctx, p: &Path) -> io::Result<()> {
 fn main() {
     let args: Vec<String> = std::env::args().collect();
     let usage = "usage: cacert-scan [--roots ROOTS.pem] [--watch WATCH.pem] (--nar LABEL < file.nar | --path DIR...)\n\
-                 --roots and --watch default to $CACERT_SCAN_ROOTS and $CACERT_SCAN_WATCH";
+                 --roots and --watch default to $CACERT_SCAN_ROOTS and $CACERT_SCAN_WATCH or built-in patterns";
     let get = |k: &str| {
         args.iter()
             .position(|a| a == k)
             .and_then(|i| args.get(i + 1))
             .cloned()
     };
-    let roots = get("--roots").or_else(|| std::env::var("CACERT_SCAN_ROOTS").ok());
-    let watch = get("--watch").or_else(|| std::env::var("CACERT_SCAN_WATCH").ok());
-    let (Some(roots), Some(watch)) = (roots, watch) else {
-        eprintln!("{usage}");
-        std::process::exit(2);
-    };
+    let roots = get("--roots")
+        .or_else(|| std::env::var("CACERT_SCAN_ROOTS").ok())
+        .map(|p| std::fs::read(p).expect("roots"));
+    let watch = get("--watch")
+        .or_else(|| std::env::var("CACERT_SCAN_WATCH").ok())
+        .map(|p| std::fs::read(p).expect("watch"));
     let m = build_matcher(
-        &std::fs::read(roots).expect("roots"),
-        &std::fs::read(watch).expect("watch"),
+        roots
+            .as_deref()
+            .unwrap_or(include_bytes!("../patterns/roots.pem")),
+        watch
+            .as_deref()
+            .unwrap_or(include_bytes!("../patterns/watch.pem")),
     );
     let out = io::stdout().lock();
     let mut ctx = Ctx {
