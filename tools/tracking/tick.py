@@ -10,7 +10,7 @@ An entry line looks like: "- [ ] **name** — `path` (+N more) · marks — #PR 
 PACKAGE must match **name** exactly. The body is written only if it did not
 change since it was read (GitHub has no conditional issue update).
 """
-import argparse, json, re, subprocess, sys
+import argparse, json, os, re, subprocess, sys
 
 REPO = "NixOS/nixpkgs"
 ISSUES = ["576541", "576542", "576543", "576544"]
@@ -25,6 +25,15 @@ def gh(*args, data=None):
 
 def body(issue):
     return json.loads(gh(f"repos/{REPO}/issues/{issue}"))["body"]
+
+
+# keep issue-sync.sh's copy current so it does not report this tool's own edits
+def remember(issue, title, text):
+    state = os.environ.get("CACERT_TRACKING_STATE", os.path.expanduser("~/.cache/cacert-tracking"))
+    path = os.path.join(state, f"body-{issue}")
+    if os.path.isdir(state):
+        with open(path, "w") as f:
+            f.write("title: " + title + "\n" + text.replace("\r", "").rstrip("\n") + "\n")
 
 
 def entry_re(pkg):
@@ -80,8 +89,9 @@ def main():
             continue
         if body(issue) != before:
             sys.exit(f"#{issue}: changed while editing, nothing written; run again")
-        gh("-X", "PATCH", f"repos/{REPO}/issues/{issue}", "--input", "-",
-           data=json.dumps({"body": after}))
+        res = json.loads(gh("-X", "PATCH", f"repos/{REPO}/issues/{issue}", "--input", "-",
+                            data=json.dumps({"body": after})))
+        remember(issue, res["title"], res["body"])
     if not found:
         sys.exit(f"no entry named {a.package!r} in #{a.issues}")
 
