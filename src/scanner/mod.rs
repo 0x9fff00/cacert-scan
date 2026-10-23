@@ -14,6 +14,7 @@ use zstd::stream::read::Decoder as ZstdDecoder;
 use crate::b64;
 use crate::matcher::{Kind, Matcher};
 
+mod arch_pkg;
 mod file;
 mod nar;
 

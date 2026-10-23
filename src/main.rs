@@ -25,6 +25,10 @@ struct Args {
     #[arg(long, group = "input", value_name = "LABEL")]
     nar: Option<String>,
 
+    /// Read an Arch Linux .pkg.tar.zst from stdin and label findings with LABEL
+    #[arg(long, group = "input", value_name = "LABEL")]
+    arch_pkg: Option<String>,
+
     /// Scan files or directories
     #[arg(long, group = "input", num_args = 1..)]
     path: Vec<PathBuf>,
@@ -54,6 +58,9 @@ fn main() {
     let res = if let Some(label) = args.nar {
         let mut r = stdin_buf_reader();
         ctx.scan_nar(&mut r, &label)
+    } else if let Some(label) = args.arch_pkg {
+        let mut r = stdin_buf_reader();
+        ctx.scan_arch_pkg(&mut r, &label)
     } else {
         args.path.into_iter().try_for_each(|p| ctx.scan_fs(&p))
     };
