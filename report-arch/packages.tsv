@@ -9,7 +9,7 @@ aws-cli-1.46.1-1-any	aws-cli	vendored-pem-file:1	0	1	1	/usr/lib/python3.14/site-
 aws-cli-v2-2.37.9-1-any	aws-cli-v2	vendored-pem-file:1	0	1	1	/usr/lib/python3.14/site-packages/awscli/botocore/cacert.pem
 azure-cli-2.90.0-1-any	azure-cli	vendored-pem-file:2	1	1	2	/opt/azure-cli/lib/python3.14/site-packages/certifi/cacert.pem /opt/azure-cli/lib/python3.14/site-packages/pip/_vendor/certifi/cacert.pem
 bigloo-4.7a-1-x86_64	bigloo	compiled-in:4	0	1	4	/usr/lib/bigloo/4.7a/libbigloossl_s-4.7a.so /usr/lib/bigloo/4.7a/libbigloossl_s_mt-4.7a.so /usr/lib/bigloo/4.7a/libbigloossl_u-4.7a.so
-biome-2.6.2-1-x86_64	biome	compiled-in:1	0	0	1	/usr/bin/biome
+biome-2.6.3-1-x86_64	biome	compiled-in:1	0	0	1	/usr/bin/biome
 bun-1.4.4-1-x86_64	bun	compiled-in:1	0	0	1	/usr/bin/bun
 ca-certificates-mozilla-3.132-1-x86_64	ca-certificates-mozilla	vendored-pem-file:1	0	1	1	/usr/share/ca-certificates/trust-source/mozilla.trust.p11-kit
 caddy-2.11.7-1-x86_64	caddy	compiled-in:1	1	0	1	/usr/bin/caddy
@@ -21,8 +21,8 @@ cargo-pgrx-0.19.3-1-x86_64	cargo-pgrx	compiled-in:1	1	0	1	/usr/bin/cargo-pgrx
 cargo-release-1.1.7-1-x86_64	cargo-release	compiled-in:1	0	0	1	/usr/bin/cargo-release
 cargo-shuttle-0.57.3-2-x86_64	cargo-shuttle	compiled-in:2	1	0	2	/usr/bin/cargo-shuttle /usr/bin/shuttle
 cargo-tauri-2.11.5-1-x86_64	cargo-tauri	compiled-in:1	1	0	1	/usr/bin/cargo-tauri
-cef-152.0.6-1-x86_64	cef	compiled-in:1	1	1	1	/usr/lib/cef/libcef.so
-chromium-155.0.8059.84-1-x86_64	chromium	compiled-in:2	1	1	2	/usr/bin/chromedriver /usr/lib/chromium/chromium
+cef-154.0.34-2-x86_64	cef	compiled-in:1	1	1	1	/usr/lib/cef/libcef.so
+chromium-156.0.8078.47-1-x86_64	chromium	compiled-in:2	1	1	2	/usr/bin/chromedriver /usr/lib/chromium/chromium
 cilium-cli-0.19.5-1-x86_64	cilium-cli	compiled-in:1	1	1	1	/usr/bin/cilium-cli
 cloudflare-speed-cli-1.0.10-1-x86_64	cloudflare-speed-cli	compiled-in:1	1	0	1	/usr/bin/cloudflare-speed-cli
 code-1.138.0-1-x86_64	code	compiled-in:2,vendored-pem-file:1	1	1	3	/usr/lib/code/node_modules.asar /usr/lib/code/node_modules.asar.unpacked/@microsoft/mxc-sdk/bin/x64/lxc-exec /usr/lib/code/node_modules.asar.unpacked/@microsoft/mxc-sdk/bin/x64/wxc-exec.exe
@@ -36,12 +36,12 @@ dotnet-sdk-10.0-10.0.13.sdk113-1-x86_64	dotnet-sdk-10.0	vendored-pem-file:2	1	1	
 dotnet-sdk-10.0.13.sdk113-1-x86_64	dotnet-sdk	vendored-pem-file:2	1	1	2	/usr/share/dotnet/sdk/10.0.113/trustedroots/codesignctl.pem /usr/share/dotnet/sdk/10.0.113/trustedroots/timestampctl.pem
 dotnet-sdk-8.0-8.0.32.sdk132-1-x86_64	dotnet-sdk-8.0	vendored-pem-file:2	1	1	2	/usr/share/dotnet/sdk/8.0.132/trustedroots/codesignctl.pem /usr/share/dotnet/sdk/8.0.132/trustedroots/timestampctl.pem
 dotnet-sdk-9.0-9.0.21.sdk122-1-x86_64	dotnet-sdk-9.0	vendored-pem-file:2	1	1	2	/usr/share/dotnet/sdk/9.0.122/trustedroots/codesignctl.pem /usr/share/dotnet/sdk/9.0.122/trustedroots/timestampctl.pem
-dprint-0.61.1-1-x86_64	dprint	compiled-in:1	1	1	1	/usr/bin/dprint
+dprint-0.63.0-1-x86_64	dprint	compiled-in:1	1	1	1	/usr/bin/dprint
 dra-0.10.3-1-x86_64	dra	compiled-in:1	1	0	1	/usr/bin/dra
 dsq-0.23.0-3-x86_64	dsq	compiled-in:1	1	1	1	/usr/bin/dsq
 ducker-0.6.5-2-x86_64	ducker	compiled-in:1	1	0	1	/usr/bin/ducker
 dump_syms-2.3.9-1-x86_64	dump_syms	compiled-in:1	1	0	1	/usr/bin/dump_syms
-ejabberd-26.09-1-x86_64	ejabberd	vendored-pem-file:1	1	1	1	/usr/lib/pkix-1.0.10/priv/cacert.pem
+ejabberd-26.09.1-1-x86_64	ejabberd	vendored-pem-file:1	1	1	1	/usr/lib/pkix-1.0.10/priv/cacert.pem
 electron39-39.8.10-3-x86_64	electron39	compiled-in:1	1	1	1	/usr/lib/electron39/electron
 electron40-40.10.6-2-x86_64	electron40	compiled-in:1	1	1	1	/usr/lib/electron40/electron
 electron41-41.10.7-2-x86_64	electron41	compiled-in:1	1	1	1	/usr/lib/electron41/electron
@@ -88,7 +88,7 @@ kwaak-0.19.0-1-x86_64	kwaak	compiled-in:1	1	0	1	/usr/bin/kwaak
 lact-0.10.1-1-x86_64	lact	compiled-in:1	1	0	1	/usr/bin/lact
 legba-1.3.0-1-x86_64	legba	compiled-in:1	1	1	1	/usr/bin/legba
 libressl-4.4.0-1-x86_64	libressl	vendored-pem-file:1	0	0	1	/etc/libressl/cert.pem
-librewolf-158.0.1_1-1-x86_64	librewolf	compiled-in:1	1	1	1	/usr/lib/librewolf/libxul.so
+librewolf-158.0.1_2-1-x86_64	librewolf	compiled-in:1	1	1	1	/usr/lib/librewolf/libxul.so
 libtg_owt-1:r500.d1cf250-1-x86_64	libtg_owt	compiled-in:1	0	1	1	/usr/lib/libtg_owt.a
 links-2.30-2-x86_64	links	compiled-in:1	1	1	1	/usr/bin/links
 llmfit-1.1.17-1-x86_64	llmfit	compiled-in:1	1	0	1	/usr/bin/llmfit
@@ -101,28 +101,27 @@ mdfried-0.22.8-1-x86_64	mdfried	compiled-in:1	1	1	1	/usr/bin/mdfried
 meilisearch-1:1.55.0-1-x86_64	meilisearch	compiled-in:1	1	0	1	/usr/bin/meilisearch
 metasploit-6.5.6-1-x86_64	metasploit	vendored-pem-file:3	0	1	3	/opt/metasploit/vendor/bundle/ruby/3.4.0/gems/aws-sdk-core-3.220.1/ca-bundle.crt /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.9.0/lib/httpclient/cacert.pem /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.9.0/lib/httpclient/cacert1024.pem
 mirro-rs-0.2.3-2-x86_64	mirro-rs	compiled-in:1	1	1	1	/usr/bin/mirro-rs
-mise-2026.10.17-1-x86_64	mise	compiled-in:1	0	0	1	/usr/bin/mise
-modrinth-app-0.21.9-1-x86_64	modrinth-app	compiled-in:1	1	0	1	/usr/lib/modrinth-app
+mise-2026.10.19-1-x86_64	mise	compiled-in:1	0	0	1	/usr/bin/mise
+modrinth-app-0.21.10-1-x86_64	modrinth-app	compiled-in:1	1	0	1	/usr/lib/modrinth-app
 mullvad-vpn-daemon-2026.5-1-x86_64	mullvad-vpn-daemon	compiled-in:1	1	0	1	/usr/bin/mullvad-daemon
 naev-0.13.5-2-x86_64	naev	compiled-in:1	1	0	1	/usr/bin/naev
 nethsm-cli-0.10.0-1-x86_64	nethsm-cli	compiled-in:1	1	0	1	/usr/bin/nethsm
 nethsm-pkcs11-3.0.1-1-x86_64	nethsm-pkcs11	compiled-in:1	0	0	1	/usr/lib/pkcs11/libnethsm_pkcs11.so
-netsurf-3.11-10-x86_64	netsurf	vendored-pem-file:1	1	1	1	/usr/share/netsurf/ca-bundle.txt
+netsurf-3.11-11-x86_64	netsurf	vendored-pem-file:1	1	1	1	/usr/share/netsurf/ca-bundle.txt
 nextcloud-35.0.2-1-any	nextcloud	vendored-pem-file:1	1	0	1	/usr/share/webapps/nextcloud/resources/config/ca-bundle.crt
 nextcloud-app-notify_push-1.4.2-1-x86_64	nextcloud-app-notify_push	compiled-in:1	0	0	1	/usr/share/webapps/nextcloud/apps/notify_push/bin/x86_64/notify_push
 nim-2.2.12-1-x86_64	nim	compiled-in:1	1	0	1	/usr/bin/nimble
 nmap-7.992-1-x86_64	nmap	vendored-pem-file:1	0	1	1	/usr/share/ncat/ca-bundle.crt
-nodejs-26.12.0-1-x86_64	nodejs	compiled-in:1	1	0	1	/usr/bin/node
-nodejs-lts-iron-20.20.2-1-x86_64	nodejs-lts-iron	compiled-in:1	1	0	1	/usr/bin/node
-nodejs-lts-jod-22.23.3-2-x86_64	nodejs-lts-jod	compiled-in:1	1	0	1	/usr/bin/node
-nodejs-lts-krypton-24.22.0-1-x86_64	nodejs-lts-krypton	compiled-in:1	1	0	1	/usr/bin/node
+nodejs-26.12.1-1-x86_64	nodejs	compiled-in:1	0	0	1	/usr/bin/node
+nodejs-lts-jod-22.23.4-1-x86_64	nodejs-lts-jod	compiled-in:1	0	0	1	/usr/bin/node
+nodejs-lts-krypton-24.22.1-1-x86_64	nodejs-lts-krypton	compiled-in:1	0	0	1	/usr/bin/node
 nsight-compute-2026.3.1.2-1-x86_64	nsight-compute	vendored-pem-file:2,compiled-in:1,vendored-in-archive:1	1	1	4	/usr/lib/nsight-compute/extras/python/cacert.pem /usr/lib/nsight-compute/host/linux-desktop-glibc_2_11_3-x64/libQt6WebEngineCore.so.6 /usr/lib/nsight-compute/host/target-linux-x64/python/lib/python3.12/ensurepip/_bundled/pip-26.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem
 nsight-systems-2026.3.2.476-1-x86_64	nsight-systems	vendored-in-archive:2,vendored-pem-file:2,compiled-in:1	1	1	5	/usr/lib/nsight-systems/host-linux-x64/libQt6WebEngineCore.so.6 /usr/lib/nsight-systems/host-linux-x64/python/lib/python3.12/ensurepip/_bundled/pip-26.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem /usr/lib/nsight-systems/host-linux-x64/python/lib/python3.12/site-packages/pip/_vendor/certifi/cacert.pem
 numa-0.24.1-1-x86_64	numa	compiled-in:1	1	0	1	/usr/bin/numa
 numbat-1.24.0-1-x86_64	numbat	compiled-in:1	1	0	1	/usr/bin/numbat
 nushell-0.116.1-1-x86_64	nushell	compiled-in:1	1	0	1	/usr/bin/nu
 oculante-0.9.6-1-x86_64	oculante	compiled-in:1	1	0	1	/usr/bin/oculante
-openai-codex-0.163.0-1-x86_64	openai-codex	compiled-in:3	1	0	3	/usr/lib/openai-codex/bin/codex /usr/lib/openai-codex/bin/codex-code-mode-host /usr/lib/openai-codex/bin/codex-responses-api-proxy
+openai-codex-0.164.0-1-x86_64	openai-codex	compiled-in:3	0	0	3	/usr/lib/openai-codex/bin/codex /usr/lib/openai-codex/bin/codex-code-mode-host /usr/lib/openai-codex/bin/codex-responses-api-proxy
 opencode-2.1.3-1-x86_64	opencode	compiled-in:1	0	0	1	/usr/bin/opencode
 opendeck-2.14.2-1-x86_64	opendeck	compiled-in:1	1	0	1	/usr/bin/opendeck
 openfire-5.1.2-1-any	openfire	vendored-keystore:1	1	1	1	/etc/openfire/security/truststore
@@ -131,7 +130,7 @@ opensearch-discovery-gce-plugin-3.9.0-1-x86_64	opensearch-discovery-gce-plugin	v
 opensearch-ml-commons-plugin-3.9.0.0-1-x86_64	opensearch-ml-commons-plugin	vendored-in-archive:4	1	1	4	/usr/share/opensearch/plugins/opensearch-ml/tokenizers-0.31.1.jar!native/lib/win-x86_64/cpu/tokenizers.dll /usr/share/opensearch/plugins/opensearch-ml/tokenizers-0.31.1.jar!native/lib/linux-x86_64/cpu/libtokenizers.so /usr/share/opensearch/plugins/opensearch-ml/tokenizers-0.31.1.jar!native/lib/osx-aarch64/cpu/libtokenizers.dylib
 opensearch-repository-gcs-plugin-3.9.0-1-x86_64	opensearch-repository-gcs-plugin	vendored-in-archive:2	0	1	2	/usr/share/opensearch/plugins/repository-gcs/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.p12 /usr/share/opensearch/plugins/repository-gcs/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.jks
 osquery-5.23.1-1-x86_64	osquery	vendored-pem-file:1	1	1	1	/usr/share/osquery/certs/certs.pem
-pixi-0.82.1-1-x86_64	pixi	compiled-in:1	0	0	1	/usr/bin/pixi
+pixi-0.83.0-1-x86_64	pixi	compiled-in:1	0	0	1	/usr/bin/pixi
 pnpm-12.15.0-1-x86_64	pnpm	compiled-in:1	0	0	1	/usr/bin/pnpm
 pop-launcher-1.2.7-2-x86_64	pop-launcher	compiled-in:1	1	0	1	/usr/bin/pop-launcher
 probe-rs-0.32.0-1-x86_64	probe-rs	compiled-in:1	1	0	1	/usr/bin/probe-rs
@@ -157,6 +156,7 @@ ruby-grpc-1.82.1-1-any	ruby-grpc	vendored-pem-file:1	1	1	1	/usr/lib/ruby/gems/3.
 ruby-httpclient-2.8.3-13-any	ruby-httpclient	vendored-pem-file:2	0	1	2	/usr/lib/ruby/gems/3.4.0/gems/httpclient-2.8.3/lib/httpclient/cacert.pem /usr/lib/ruby/gems/3.4.0/gems/httpclient-2.8.3/lib/httpclient/cacert1024.pem
 rustypaste-cli-0.10.0-1-x86_64	rustypaste-cli	compiled-in:1	1	0	1	/usr/bin/rpaste
 samply-0.13.1-1-x86_64	samply	compiled-in:1	1	1	1	/usr/bin/samply
+sccache-0.19.0-1-x86_64	sccache	compiled-in:2	1	0	2	/usr/bin/sccache /usr/bin/sccache-dist
 schemacrawler-17.16.0-1-any	schemacrawler	vendored-in-archive:3	1	1	3	/opt/schemacrawler/lib/python-resources-25.4.4.1.1.jar!META-INF/resources/libpython/ensurepip/_bundled/pip-26.1.2-py3-none-any.whl!pip/_vendor/certifi/cacert.pem /opt/schemacrawler/lib/snowflake-jdbc-4.4.0.jar!net/snowflake/client/jdbc/internal/google/api/client/googleapis/google.jks /opt/schemacrawler/lib/snowflake-jdbc-4.4.0.jar!net/snowflake/client/jdbc/internal/google/api/client/googleapis/google.p12
 selene-0.32.0-1-x86_64	selene	compiled-in:1	1	1	1	/usr/bin/selene
 sendme-0.37.0-1-x86_64	sendme	compiled-in:1	1	0	1	/usr/bin/sendme
@@ -165,9 +165,9 @@ signal-desktop-8.32.0-1-x86_64	signal-desktop	compiled-in:1	1	1	1	/usr/lib/signa
 signstar-configure-0.1.1-1-x86_64	signstar-configure	compiled-in:1	1	0	1	/usr/bin/signstar-configure
 signstar-download-key-certificates-0.1.0-1-x86_64	signstar-download-key-certificates	compiled-in:1	1	0	1	/usr/bin/signstar-download-key-certificates
 signstar-sign-0.2.0-1-x86_64	signstar-sign	compiled-in:1	1	0	1	/usr/bin/signstar-sign
-sing-box-1.14.3-4-x86_64	sing-box	compiled-in:1	1	1	1	/usr/bin/sing-box
+sing-box-1.14.4-1-x86_64	sing-box	compiled-in:1	1	1	1	/usr/bin/sing-box
 smartcat-2.2.0-1-x86_64	smartcat	compiled-in:1	1	1	1	/usr/bin/sc
-smolvm-1.31.0-1-x86_64	smolvm	compiled-in:2,vendored-pem-file:1	1	1	3	/usr/lib/smolvm/agent-rootfs/etc/ssl/certs/ca-certificates.crt /usr/lib/smolvm/agent-rootfs/usr/local/bin/smolvm-agent /usr/lib/smolvm/smolvm-bin
+smolvm-1.32.1-1-x86_64	smolvm	compiled-in:2,vendored-pem-file:1	1	1	3	/usr/lib/smolvm/agent-rootfs/etc/ssl/certs/ca-certificates.crt /usr/lib/smolvm/agent-rootfs/usr/local/bin/smolvm-agent /usr/lib/smolvm/smolvm-bin
 sn0int-0.26.1-2-x86_64	sn0int	compiled-in:1	1	1	1	/usr/bin/sn0int
 snapper-fmt-0.11.10-1-x86_64	snapper-fmt	compiled-in:1	1	1	1	/usr/bin/snapper-fmt
 solr-10.0.0-1-any	solr	vendored-in-archive:2	0	1	2	/usr/share/solr/modules/gcs-repository/lib/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.p12 /usr/share/solr/modules/gcs-repository/lib/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.jks
@@ -196,7 +196,7 @@ turbo-2.9.16-2-x86_64	turbo	compiled-in:1	1	0	1	/usr/bin/turbo
 unrealircd-6.2.7-1-x86_64	unrealircd	vendored-pem-file:1	1	0	1	/etc/unrealircd/tls/curl-ca-bundle.crt
 uv-0.13.5-1-x86_64	uv	compiled-in:1	0	0	1	/usr/bin/uv
 vector-0.57.0-1-x86_64	vector	compiled-in:1	1	1	1	/usr/bin/vector
-vivaldi-8.2.4133.91-1-x86_64	vivaldi	compiled-in:1	1	1	1	/opt/vivaldi/vivaldi-bin
+vivaldi-8.2.4133.94-1-x86_64	vivaldi	compiled-in:1	1	1	1	/opt/vivaldi/vivaldi-bin
 vl-convert-1.9.0-2-x86_64	vl-convert	compiled-in:1	1	1	1	/usr/bin/vl-convert
 vortix-0.4.3-1-x86_64	vortix	compiled-in:1	1	0	1	/usr/bin/vortix
 wasm-bindgen-0.2.128-1-x86_64	wasm-bindgen	compiled-in:1	1	0	1	/usr/bin/wasm-bindgen-test-runner
@@ -210,7 +210,7 @@ wp-cli-2.12.0-1-any	wp-cli	vendored-pem-file:1	1	1	1	/usr/bin/wp
 xbuild-0.2.0-2-x86_64	xbuild	compiled-in:1	1	1	1	/usr/bin/x
 xlinks-2.30-2-x86_64	xlinks	compiled-in:1	1	1	1	/usr/bin/xlinks
 zaproxy-2.17.0-4-any	zaproxy	vendored-in-archive:4	1	0	4	/usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/linux/selenium-manager /usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/macos/selenium-manager /usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/windows/selenium-manager.exe
-zed-1.25.2-1-x86_64	zed	compiled-in:1	1	1	1	/usr/lib/zed/zed-editor
+zed-1.25.3-1-x86_64	zed	compiled-in:1	0	1	1	/usr/lib/zed/zed-editor
 zeroclaw-0.8.6-1-x86_64	zeroclaw	compiled-in:1	1	0	1	/usr/bin/zeroclaw
 zeroclaw-acp-bridge-0.8.6-1-x86_64	zeroclaw-acp-bridge	compiled-in:1	1	0	1	/usr/bin/zeroclaw-acp-bridge
 zerocode-0.8.6-1-x86_64	zerocode	compiled-in:1	1	0	1	/usr/bin/zerocode
