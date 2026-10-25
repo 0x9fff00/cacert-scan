@@ -2,7 +2,40 @@
 
 Finds packages that carry their own CA trust store instead of using the system trust store.
 
+On 2026-10-18/19, eMudhra and Sectigo revoked the certificates of eight eMudhra intermediates as compromised (cACompromise in CCADB).
+A package with its own trust store does not get root-store updates from the system trust store.
+
+This fork adds support for scanning Arch Linux packages.
+
 ## Usage
+
+`scripts/run.sh` expects the scanner at `target/release/cacert-scan` (`cargo build --release`).
+
+### Arch Linux
+
+Scan a package file:
+
+```sh
+target/release/cacert-scan --arch-pkg LABEL < PACKAGE.pkg.tar.zst
+```
+
+Download and scan a single package:
+
+```sh
+scripts/scan-one-arch.sh OUTDIR BASE_URL REPOSITORY PACKAGE
+# Example:
+scripts/scan-one-arch.sh out https://geo.mirror.pkgbuild.com/ extra chromium-156.0.8078.47-1-x86_64.pkg.tar.zst
+```
+
+Download and scan all packages in a set of repositories:
+
+```sh
+scripts/run-arch.sh OUTDIR BASE_URL REPOSITORY...
+# Example:
+scripts/run-arch.sh out https://geo.mirror.pkgbuild.com/ core extra multilib
+```
+
+### Nix
 
 Scan the closure of your running system:
 
@@ -23,11 +56,6 @@ osquery-5.23.1   /share/osquery/certs/certs.pem   135 roots   ECC G3,AAA
 
 Add `--json` for the raw scanner output (one JSON object per file). To scan a directory without its closure, use `nix shell github:zimbatm/nix-cacert-scan -c cacert-scan --path DIR`.
 
-On 2026-10-18/19, eMudhra and Sectigo revoked the certificates of eight eMudhra intermediates as compromised (cACompromise in CCADB).
-A package with its own trust store does not get root-store updates from the system trust store.
-
-## Use
-
 ```
 nix build                                   # or: cargo build --release
 ./result/bin/cacert-scan --roots patterns/roots.pem --watch patterns/watch.pem --path /nix/store/...-foo
@@ -35,5 +63,3 @@ nix develop -c scripts/run.sh out nixos-26.05   # whole release; needs about 2 h
 python3 scripts/analyze.py out report
 python3 tools/package-list.py report/findings.tsv
 ```
-
-`scripts/run.sh` expects the scanner at `target/release/cacert-scan` (`cargo build --release`).
