@@ -1,8 +1,8 @@
 use base64::{
+    Engine,
     engine::general_purpose::{
         STANDARD as BASE64_STANDARD, STANDARD_NO_PAD as BASE64_STANDARD_NO_PAD,
     },
-    Engine,
 };
 use memchr::memmem;
 

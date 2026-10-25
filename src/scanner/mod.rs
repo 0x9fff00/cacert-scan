@@ -94,10 +94,10 @@ fn bare_base64(m: &Matcher, data: &[u8], f: &mut Finding) {
         {
             e += 1;
         }
-        if e - s >= MIN_BARE_B64 {
-            if let Some(der) = b64::b64_decode(&data[s..e]) {
-                apply(m, &der, f, "base64");
-            }
+        if e - s >= MIN_BARE_B64
+            && let Some(der) = b64::b64_decode(&data[s..e])
+        {
+            apply(m, &der, f, "base64");
         }
         pos = e.max(s + 3);
     }
