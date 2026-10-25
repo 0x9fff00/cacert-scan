@@ -127,7 +127,12 @@ for f in rows:
 
 
 def base(name):
-    return re.sub(r"-[0-9][^-]*(-[a-z]+)?$", "", name)
+    if re.search(r"-(?:any|x86_64)$", name):
+        # Arch Linux
+        return re.sub(r"-[^-]+-\d+-[^-]+$", "", name)
+    else:
+        # Nix
+        return re.sub(r"-[0-9][^-]*(-[a-z]+)?$", "", name)
 
 
 with open(f"{rep}/packages.tsv", "w", newline="") as fh:
@@ -154,8 +159,8 @@ bases = collections.defaultdict(set)
 for f in rows:
     bases[f["class"]].add(base(pname(f["nar"])))
 with open(f"{rep}/summary.txt", "w") as fh:
-    print(f"nars scanned: {done}  failed: {len(failed)}  findings: {len(rows)}", file=fh)
-    print(f"cacert bundle hashes used to detect injected copies: {len(cacert_hashes)}", file=fh)
+    print(f"packages scanned: {done}  failed: {len(failed)}  findings: {len(rows)}", file=fh)
+    print(f"cacert bundle hashes used to detect injected copies (Nix only): {len(cacert_hashes)}", file=fh)
     for c, n in cls.most_common():
         print(f"{c:32s} files={n:6d} distinct-packages={len(bases.get(c, ())):5d}", file=fh)
     for c, fix in FIX.items():
