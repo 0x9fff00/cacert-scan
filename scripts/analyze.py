@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """usage: analyze.py OUTDIR REPORTDIR — aggregate cacert-scan findings into per-package injection candidates."""
 
 import collections
