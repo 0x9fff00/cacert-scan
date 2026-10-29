@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """usage: package-list.py report/findings.tsv — print the markdown TODO list of packages to patch, one section per fix class."""
 
 import collections
