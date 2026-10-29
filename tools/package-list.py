@@ -36,13 +36,14 @@ def name(storename):
     return n
 
 
-pkgs = collections.defaultdict(lambda: {"files": set(), "ecc": False, "aaa": False})
+pkgs = collections.defaultdict(lambda: {"files": set(), "ecc": False, "aaa": False, "sslcom_2022": False})
 with open(sys.argv[1]) as f:
     for r in csv.DictReader(f, delimiter="\t"):
         p = pkgs[(r["class"], name(r["package"]))]
         p["files"].add(r["path"])
         p["ecc"] |= r["ecc_g3"] == "1"
         p["aaa"] |= r["aaa_anchor"] == "1"
+        p["sslcom_2022"] |= r["sslcom_2022"] == "1"
 
 for c, title, fix in ORDER:
     rows = sorted((n, p) for (cc, n), p in pkgs.items() if cc == c)
@@ -50,7 +51,8 @@ for c, title, fix in ORDER:
     for n, p in rows:
         files = sorted(p["files"], key=lambda f: (len(f), f))
         more = f" (+{len(files) - 1} more)" if len(files) > 1 else ""
-        stale = "" if p["ecc"] else " · stale bundle, no ECC G3"
-        aaa = " · trusts AAA" if p["aaa"] else ""
-        print(f"- [ ] **{n}** — `{files[0]}`{more}{stale}{aaa}")
+        stale = "" if p["sslcom_2022"] else " · stale bundle, no SSL.com 2022"
+        ecc = " · includes ECC G3" if p["ecc"] else ""
+        aaa = " · includes AAA" if p["aaa"] else ""
+        print(f"- [ ] **{n}** — `{files[0]}`{more}{stale}{ecc}{aaa}")
     print()

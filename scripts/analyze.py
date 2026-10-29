@@ -13,6 +13,7 @@ os.makedirs(rep, exist_ok=True)
 
 TRUST_STORE_MIN = 20
 EMSIGN_PATH_ROOT = "emSign ECC Root CA - G3"
+SSLCOM_2022_ROOT = "SSL.com TLS ECC Root CA 2022"
 
 
 def pname(storepath):
@@ -91,6 +92,7 @@ with open(f"{rep}/findings.tsv", "w", newline="") as fh:
             "known_roots",
             "ecc_g3",
             "aaa_anchor",
+            "sslcom_2022",
             "emudhra_roots",
             "compromised_ca",
             "spki_hash",
@@ -109,6 +111,7 @@ with open(f"{rep}/findings.tsv", "w", newline="") as fh:
                 len(f["known_roots"]),
                 int(EMSIGN_PATH_ROOT in f["watch"]),
                 int("AAA Certificate Services" in f["watch"]),
+                int(SSLCOM_2022_ROOT in f["known_roots"]),
                 ",".join(w for w in f["watch"] if w.startswith("emSign")),
                 ",".join(w for w in f["watch"] if w.startswith("EM ")),
                 ",".join(f["spki_hash"]),
@@ -116,7 +119,9 @@ with open(f"{rep}/findings.tsv", "w", newline="") as fh:
             ]
         )
 
-pkgs = collections.defaultdict(lambda: {"classes": collections.Counter(), "files": [], "ecc_g3": False, "aaa": False})
+pkgs = collections.defaultdict(
+    lambda: {"classes": collections.Counter(), "files": [], "ecc_g3": False, "aaa": False, "sslcom_2022": False}
+)
 for f in rows:
     if f["class"] not in FIX:
         continue
@@ -125,6 +130,7 @@ for f in rows:
     p["files"].append(rel(f["file"], f["nar"]))
     p["ecc_g3"] |= EMSIGN_PATH_ROOT in f["watch"]
     p["aaa"] |= "AAA Certificate Services" in f["watch"]
+    p["sslcom_2022"] |= SSLCOM_2022_ROOT in f["known_roots"]
 
 
 def base(name):
@@ -138,7 +144,7 @@ def base(name):
 
 with open(f"{rep}/packages.tsv", "w", newline="") as fh:
     w = csv.writer(fh, delimiter="\t")
-    w.writerow(["package", "base", "classes", "ecc_g3", "aaa_anchor", "n_files", "example_files"])
+    w.writerow(["package", "base", "classes", "ecc_g3", "aaa_anchor", "sslcom_2022", "n_files", "example_files"])
     for name, p in sorted(pkgs.items()):
         w.writerow(
             [
@@ -147,6 +153,7 @@ with open(f"{rep}/packages.tsv", "w", newline="") as fh:
                 ",".join(f"{k}:{v}" for k, v in p["classes"].most_common()),
                 int(p["ecc_g3"]),
                 int(p["aaa"]),
+                int(p["sslcom_2022"]),
                 len(p["files"]),
                 " ".join(p["files"][:3]),
             ]
