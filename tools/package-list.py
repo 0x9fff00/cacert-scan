@@ -31,10 +31,15 @@ ORDER = [
 
 
 def name(storename):
-    n = re.sub(r"-[0-9].*$", "", storename)
-    n = re.sub(r"^python3\.\d+-", "python3Packages.", n)
-    n = re.sub(r"^ruby\d\.\d-", "rubyPackages.", n)
-    return n
+    if re.search(r"-(?:any|x86_64)$", storename):
+        # Arch Linux
+        return re.sub(r"-[^-]+-\d+-[^-]+$", "", storename)
+    else:
+        # Nix
+        n = re.sub(r"-[0-9].*$", "", storename)
+        n = re.sub(r"^python3\.\d+-", "python3Packages.", n)
+        n = re.sub(r"^ruby\d\.\d-", "rubyPackages.", n)
+        return n
 
 
 pkgs = collections.defaultdict(lambda: {"files": set(), "ecc": False, "aaa": False, "sslcom_2022": False})
