@@ -1,0 +1,24 @@
+name: Seed scan cache
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download and extract cache seed
+        run: |
+          curl -fO https://files.augustwikerfors.se/cacert-scan-arch-cache-seed.tar.zst
+          mkdir out
+          tar -C out -xf cacert-scan-arch-cache-seed.tar.zst
+
+      - name: Save cache
+        uses: actions/cache/save@v6
+        with:
+          path: out
+          key: scan-arch-${{ runner.os }}-seed-${{ github.run_id }}

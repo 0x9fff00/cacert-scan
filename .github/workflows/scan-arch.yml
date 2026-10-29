@@ -1,0 +1,52 @@
+name: Scan Arch Linux repositories
+
+on:
+  schedule:
+    - cron: "39 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scan-arch
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/cache@v6
+        with:
+          path: out
+          key: scan-arch-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            scan-arch-${{ runner.os }}-
+
+      - name: Build scanner
+        run: cargo build --locked --release
+
+      - name: Run scanner
+        run: |
+          rm -f out/{packages.txt,failed*}
+          scripts/run-arch.sh out https://fastly.mirror.pkgbuild.com core extra multilib
+          scripts/prune-arch.py out
+
+      - name: Generate results
+        run: |
+          scripts/analyze.py out report-arch
+          tools/package-list.py report-arch/findings.tsv > PACKAGES.md
+
+      - name: Commit results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add PACKAGES.md report-arch
+
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update scan results'
+            git push origin HEAD:archlinux
+          fi
