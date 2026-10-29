@@ -1,0 +1,251 @@
+### Vendored PEM bundle (36)
+
+Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`, or point the program at it.
+
+- [ ] **aws-cli** — `/usr/lib/python3.14/site-packages/awscli/botocore/cacert.pem` · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **aws-cli-v2** — `/usr/lib/python3.14/site-packages/awscli/botocore/cacert.pem` · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **azure-cli** — `/opt/azure-cli/lib/python3.14/site-packages/certifi/cacert.pem` (+1 more) · includes ECC G3 · includes AAA
+- [ ] **ca-certificates-mozilla** — `/usr/share/ca-certificates/trust-source/mozilla.trust.p11-kit` · includes AAA
+- [ ] **code** — `/usr/lib/code/node_modules.asar` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **composer** — `/usr/bin/composer` · includes ECC G3
+- [ ] **dotnet-sdk** — `/usr/share/dotnet/sdk/10.0.113/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **dotnet-sdk-10.0** — `/usr/share/dotnet/sdk/10.0.113/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **dotnet-sdk-8.0** — `/usr/share/dotnet/sdk/8.0.132/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **dotnet-sdk-9.0** — `/usr/share/dotnet/sdk/9.0.122/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **ejabberd** — `/usr/lib/pkix-1.0.10/priv/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **gitlab** — `/usr/share/webapps/gitlab/vendor/bundle/ruby/3.4.0/gems/grpc-1.81.1/etc/roots.pem` (+4 more) · includes ECC G3 · includes AAA
+- [ ] **gnustep-base** — `/usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.31/Resources/GSTLS/ca-certificates.crt` · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **gpac** — `/usr/share/gpac/res/ca-bundle.crt` · includes ECC G3 · includes AAA
+- [ ] **grpc** — `/usr/share/grpc/roots.pem` · includes ECC G3
+- [ ] **gsoap** — `/usr/share/gsoap/plugin/cacerts.c` · includes ECC G3 · includes AAA
+- [ ] **jython** — `/opt/jython/Lib/site-packages/pip/_vendor/certifi/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **libressl** — `/etc/libressl/cert.pem`
+- [ ] **metasploit** — `/opt/metasploit/vendor/bundle/ruby/3.4.0/gems/aws-sdk-core-3.220.1/ca-bundle.crt` (+2 more) · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **netsurf** — `/usr/share/netsurf/ca-bundle.txt` · includes ECC G3 · includes AAA
+- [ ] **nextcloud** — `/usr/share/webapps/nextcloud/resources/config/ca-bundle.crt` · includes ECC G3
+- [ ] **nmap** — `/usr/share/ncat/ca-bundle.crt` · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **nsight-compute** — `/usr/lib/nsight-compute/extras/python/cacert.pem` (+1 more) · includes ECC G3
+- [ ] **nsight-systems** — `/usr/lib/nsight-systems/host-linux-x64/python/lib/python3.12/site-packages/pip/_vendor/certifi/cacert.pem` (+1 more) · includes ECC G3
+- [ ] **osquery** — `/usr/share/osquery/certs/certs.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **python-botocore** — `/usr/lib/python3.14/site-packages/botocore/cacert.pem` · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **python-grpcio** — `/usr/lib/python3.14/site-packages/grpc/_cython/_credentials/roots.pem` · includes ECC G3
+- [ ] **python-pip** — `/usr/lib/python3.14/site-packages/pip/_vendor/certifi/cacert.pem`
+- [ ] **ruby-grpc** — `/usr/lib/ruby/gems/3.4.0/gems/grpc-1.82.1/etc/roots.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **ruby-httpclient** — `/usr/lib/ruby/gems/3.4.0/gems/httpclient-2.8.3/lib/httpclient/cacert.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **smolvm** — `/usr/lib/smolvm/agent-rootfs/etc/ssl/certs/ca-certificates.crt` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **supertuxkart** — `/usr/share/supertuxkart/data/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **testssl.sh** — `/usr/share/testssl.sh/etc/Java.pem` (+4 more) · includes ECC G3 · includes AAA
+- [ ] **unrealircd** — `/etc/unrealircd/tls/curl-ca-bundle.crt` · includes ECC G3
+- [ ] **wordpress** — `/usr/share/webapps/wordpress/wp-includes/certificates/ca-bundle.crt` · includes ECC G3
+- [ ] **wp-cli** — `/usr/bin/wp` · includes ECC G3 · includes AAA
+
+### Bundle inside a wheel, jar or zip (20)
+
+Fix: Patch the bundle inside the archive at build time, or patch the code to use the system store.
+
+- [ ] **ghidra** — `/opt/ghidra/Extensions/Ghidra/ghidra_12.1.2_DEV_20260629_Jython.zip!Jython/data/jython-2.7.4/Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **gitlab** — `/usr/share/webapps/gitlab/vendor/bundle/ruby/3.4.0/cache/excon-1.3.0.gem!data.tar.gz!gunzip` (+8 more) · includes ECC G3 · includes AAA
+- [ ] **gitlab-runner** — `/usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.5.1.tar.xz!unxz` (+3 more)
+- [ ] **gradle** — `/usr/share/java/gradle/lib/plugins/google-api-client-1.34.0.jar!com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **intellij-idea-oss** — `/usr/share/idea/plugins/gradle-plugin/lib/gradle-api-9.6.0.jar!org/gradle/internal/impldep/com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **jadx** — `/usr/share/java/jadx/lib/jadx-1.5.6-all.jar!libj2v8_linux_x86_64.so` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **jython** — `/opt/jython/Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **nsight-compute** — `/usr/lib/nsight-compute/host/target-linux-x64/python/lib/python3.12/ensurepip/_bundled/pip-26.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem` · includes ECC G3
+- [ ] **nsight-systems** — `/usr/lib/nsight-systems/host-linux-x64/python/lib/python3.12/ensurepip/_bundled/pip-26.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem` (+1 more) · includes ECC G3
+- [ ] **opensearch-discovery-gce-plugin** — `/usr/share/opensearch/plugins/discovery-gce/google-api-client-1.35.2.jar!com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **opensearch-ml-commons-plugin** — `/usr/share/opensearch/plugins/opensearch-ml/tokenizers-0.31.1.jar!native/lib/win-x86_64/cpu/tokenizers.dll` (+3 more) · includes ECC G3 · includes AAA
+- [ ] **opensearch-repository-gcs-plugin** — `/usr/share/opensearch/plugins/repository-gcs/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **pycharm-community-edition** — `/usr/share/pycharm/plugins/python-ce/helpers/pip-25.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem` (+2 more) · includes ECC G3 · includes AAA
+- [ ] **pypy** — `/opt/pypy/lib-python/2.7/ensurepip/_bundled/pip-20.0.2-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **pypy3** — `/opt/pypy3/lib/pypy3.12/ensurepip/_bundled/pip-25.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem` · includes ECC G3 · includes AAA
+- [ ] **python** — `/usr/lib/python3.14/ensurepip/_bundled/pip-26.2.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem` · includes ECC G3
+- [ ] **python-virtualenv** — `/usr/lib/python3.14/site-packages/virtualenv/seed/wheels/embed/pip-26.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem` (+1 more) · includes ECC G3
+- [ ] **schemacrawler** — `/opt/schemacrawler/lib/snowflake-jdbc-4.4.0.jar!net/snowflake/client/jdbc/internal/google/api/client/googleapis/google.jks` (+2 more) · includes ECC G3 · includes AAA
+- [ ] **solr** — `/usr/share/solr/modules/gcs-repository/lib/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **zaproxy** — `/usr/share/zaproxy/plugin/webdriverlinux-release-169.zap!webdriver/linux/64/chromedriver` (+3 more) · includes ECC G3
+
+### Java keystore (3)
+
+Fix: Generate the keystore from `${cacert}/etc/ssl/certs/ca-bundle.crt` at build time with `jre-generate-cacerts`, as openjdk does. `cacert` has no Java keystore output.
+
+- [ ] **intellij-idea-oss** — `/usr/share/idea/jbr/lib/security/cacerts` · includes ECC G3 · includes AAA
+- [ ] **openfire** — `/etc/openfire/security/truststore` · includes ECC G3 · includes AAA
+- [ ] **pycharm-community-edition** — `/usr/share/pycharm/jbr/lib/security/cacerts` · includes ECC G3 · includes AAA
+
+### Compiled into a binary (172)
+
+Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`, NSS from cacert), or bump the embedded root crate.
+
+- [ ] **acme-redirect** — `/usr/bin/acme-redirect` · includes ECC G3
+- [ ] **aichat** — `/usr/bin/aichat` · includes ECC G3
+- [ ] **anki** — `/usr/lib/python3.14/site-packages/anki/_rsbridge.so` · includes ECC G3
+- [ ] **apt-swarm** — `/usr/bin/apt-swarm`
+- [ ] **archlinux-userland-fs-cmp** — `/usr/bin/archlinux-userland-fs-cmp` · includes ECC G3 · includes AAA
+- [ ] **artem** — `/usr/bin/artem` · includes ECC G3 · includes AAA
+- [ ] **bigloo** — `/usr/lib/bigloo/4.7a/libbigloossl_s-4.7a.so` (+3 more) · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **biome** — `/usr/bin/biome`
+- [ ] **bun** — `/usr/bin/bun`
+- [ ] **caddy** — `/usr/bin/caddy` · includes ECC G3
+- [ ] **cargo-about** — `/usr/bin/cargo-about` · includes ECC G3
+- [ ] **cargo-edit** — `/usr/bin/cargo-upgrade`
+- [ ] **cargo-make** — `/usr/bin/makers` (+1 more) · includes ECC G3 · includes AAA
+- [ ] **cargo-msrv** — `/usr/bin/cargo-msrv`
+- [ ] **cargo-pgrx** — `/usr/bin/cargo-pgrx` · includes ECC G3
+- [ ] **cargo-release** — `/usr/bin/cargo-release`
+- [ ] **cargo-shuttle** — `/usr/bin/shuttle` (+1 more) · includes ECC G3
+- [ ] **cargo-tauri** — `/usr/bin/cargo-tauri` · includes ECC G3
+- [ ] **cef** — `/usr/lib/cef/libcef.so` · includes ECC G3 · includes AAA
+- [ ] **chromium** — `/usr/bin/chromedriver` (+1 more) · includes ECC G3 · includes AAA
+- [ ] **cilium-cli** — `/usr/bin/cilium-cli` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **cloudflare-speed-cli** — `/usr/bin/cloudflare-speed-cli` · includes ECC G3
+- [ ] **code** — `/usr/lib/code/node_modules.asar.unpacked/@microsoft/mxc-sdk/bin/x64/lxc-exec` (+1 more) · includes ECC G3
+- [ ] **codebook-lsp** — `/usr/bin/codebook-lsp` · includes ECC G3
+- [ ] **deltachat-rpc-server** — `/usr/bin/deltachat-rpc-server` · includes ECC G3 · includes AAA
+- [ ] **deno** — `/usr/bin/deno`
+- [ ] **dioxus-cli** — `/usr/bin/dx` · includes ECC G3
+- [ ] **discord** — `/usr/share/discord/updater_bootstrap`
+- [ ] **dprint** — `/usr/bin/dprint` · includes ECC G3 · includes AAA
+- [ ] **dra** — `/usr/bin/dra` · includes ECC G3
+- [ ] **dsq** — `/usr/bin/dsq` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **ducker** — `/usr/bin/ducker` · includes ECC G3
+- [ ] **dump_syms** — `/usr/bin/dump_syms` · includes ECC G3
+- [ ] **electron39** — `/usr/lib/electron39/electron` · includes ECC G3 · includes AAA
+- [ ] **electron40** — `/usr/lib/electron40/electron` · includes ECC G3 · includes AAA
+- [ ] **electron41** — `/usr/lib/electron41/electron` · includes ECC G3 · includes AAA
+- [ ] **electron42** — `/usr/lib/electron42/electron` · includes ECC G3 · includes AAA
+- [ ] **electron43** — `/usr/lib/electron43/electron` · includes ECC G3 · includes AAA
+- [ ] **electron44** — `/usr/lib/electron44/electron` · includes ECC G3 · includes AAA
+- [ ] **emby-theater** — `/usr/lib/emby-theater/emby-theater` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **esp-generate** — `/usr/bin/esp-generate` · includes ECC G3
+- [ ] **espflash** — `/usr/bin/espflash` (+1 more) · includes ECC G3
+- [ ] **espup** — `/usr/bin/espup` · includes ECC G3
+- [ ] **findomain** — `/usr/bin/findomain` · includes ECC G3
+- [ ] **firefox** — `/usr/lib/firefox/libxul.so` · includes ECC G3 · includes AAA
+- [ ] **firefox-developer-edition** — `/usr/lib/firefox-developer-edition/libxul.so` · includes AAA
+- [ ] **flawz** — `/usr/bin/flawz` · includes ECC G3
+- [ ] **fnm** — `/usr/bin/fnm` · includes ECC G3 · includes AAA
+- [ ] **git-cliff** — `/usr/bin/git-cliff` · includes ECC G3
+- [ ] **gitlab** — `/usr/bin/gitlab-zip-cat` (+6 more) · includes ECC G3 · includes AAA
+- [ ] **grafana-agent** — `/usr/bin/grafana-agent` · includes ECC G3 · includes AAA
+- [ ] **grafana-agentctl** — `/usr/bin/grafana-agentctl` · includes ECC G3 · includes AAA
+- [ ] **grafana-alloy** — `/usr/bin/grafana-alloy` · includes ECC G3 · includes AAA
+- [ ] **gst-plugin-burn** — `/usr/lib/gstreamer-1.0/libgstburn.so` · includes ECC G3
+- [ ] **gst-plugin-deepgram** — `/usr/lib/gstreamer-1.0/libgstdeepgram.so` · includes ECC G3
+- [ ] **gst-plugin-rswebrtc** — `/usr/lib/gstreamer-1.0/libgstrswebrtc.so` · includes ECC G3
+- [ ] **halp** — `/usr/bin/halp` · includes ECC G3 · includes AAA
+- [ ] **hazelnut** — `/usr/bin/hazelnut` · includes ECC G3
+- [ ] **health** — `/usr/bin/dev.Cogitri.Health` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **hieroglyphic** — `/usr/bin/hieroglyphic` · includes ECC G3
+- [ ] **i3status-rust** — `/usr/bin/i3status-rs` · includes ECC G3
+- [ ] **intel-oneapi-toolkit** — `/opt/intel/oneapi/vtune/2026.2/bin64/vtune-gui.bin` (+1 more) · includes ECC G3 · includes AAA
+- [ ] **intelli-shell** — `/usr/bin/intelli-shell` · includes ECC G3
+- [ ] **intellij-idea-oss** — `/usr/share/idea/plugins/jcef-plugin/jcef/libcef.so` (+1 more) · includes ECC G3 · includes AAA
+- [ ] **jolt** — `/usr/bin/jolt` · includes ECC G3
+- [ ] **jumpy** — `/usr/lib/jumpy` · includes ECC G3 · includes AAA
+- [ ] **kwaak** — `/usr/bin/kwaak` · includes ECC G3
+- [ ] **lact** — `/usr/bin/lact` · includes ECC G3
+- [ ] **legba** — `/usr/bin/legba` · includes ECC G3 · includes AAA
+- [ ] **librewolf** — `/usr/lib/librewolf/libxul.so` · includes ECC G3 · includes AAA
+- [ ] **libtg_owt** — `/usr/lib/libtg_owt.a` · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **links** — `/usr/bin/links` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **llmfit** — `/usr/bin/llmfit` · includes ECC G3
+- [ ] **marmite** — `/usr/bin/marmite` · includes ECC G3
+- [ ] **matrix-authentication-service** — `/usr/bin/mas-cli`
+- [ ] **matugen** — `/usr/bin/matugen` · includes ECC G3 · includes AAA
+- [ ] **maturin** — `/usr/bin/maturin` · includes ECC G3
+- [ ] **md-tui** — `/usr/bin/md-tui`
+- [ ] **mdfried** — `/usr/bin/mdfried` · includes ECC G3 · includes AAA
+- [ ] **meilisearch** — `/usr/bin/meilisearch` · includes ECC G3
+- [ ] **mirro-rs** — `/usr/bin/mirro-rs` · includes ECC G3 · includes AAA
+- [ ] **mise** — `/usr/bin/mise`
+- [ ] **modrinth-app** — `/usr/lib/modrinth-app` · includes ECC G3
+- [ ] **mullvad-vpn-daemon** — `/usr/bin/mullvad-daemon` · includes ECC G3
+- [ ] **naev** — `/usr/bin/naev` · includes ECC G3
+- [ ] **nethsm-cli** — `/usr/bin/nethsm` · includes ECC G3
+- [ ] **nethsm-pkcs11** — `/usr/lib/pkcs11/libnethsm_pkcs11.so`
+- [ ] **nextcloud-app-notify_push** — `/usr/share/webapps/nextcloud/apps/notify_push/bin/x86_64/notify_push`
+- [ ] **nim** — `/usr/bin/nimble` · includes ECC G3
+- [ ] **nodejs** — `/usr/bin/node`
+- [ ] **nodejs-lts-jod** — `/usr/bin/node`
+- [ ] **nodejs-lts-krypton** — `/usr/bin/node`
+- [ ] **nsight-compute** — `/usr/lib/nsight-compute/host/linux-desktop-glibc_2_11_3-x64/libQt6WebEngineCore.so.6` · includes ECC G3 · includes AAA
+- [ ] **nsight-systems** — `/usr/lib/nsight-systems/host-linux-x64/libQt6WebEngineCore.so.6` · includes ECC G3 · includes AAA
+- [ ] **numa** — `/usr/bin/numa` · includes ECC G3
+- [ ] **numbat** — `/usr/bin/numbat` · includes ECC G3
+- [ ] **nushell** — `/usr/bin/nu` · includes ECC G3
+- [ ] **oculante** — `/usr/bin/oculante` · includes ECC G3
+- [ ] **openai-codex** — `/usr/lib/openai-codex/bin/codex` (+2 more)
+- [ ] **opencode** — `/usr/bin/opencode`
+- [ ] **opendeck** — `/usr/bin/opendeck` · includes ECC G3
+- [ ] **openobserve** — `/usr/bin/openobserve`
+- [ ] **pixi** — `/usr/bin/pixi`
+- [ ] **pnpm** — `/usr/bin/pnpm`
+- [ ] **pop-launcher** — `/usr/bin/pop-launcher` · includes ECC G3
+- [ ] **prek** — `/usr/bin/prek`
+- [ ] **probe-rs** — `/usr/bin/probe-rs` · includes ECC G3
+- [ ] **proxyboi** — `/usr/bin/proxyboi` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **pycharm-community-edition** — `/usr/share/pycharm/plugins/jcef-plugin/jcef/libcef.so` · includes ECC G3 · includes AAA
+- [ ] **pyflow** — `/usr/bin/pyflow` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **python-proton-vpn-api-core** — `/usr/lib/nm-protun-service` (+1 more) · includes ECC G3
+- [ ] **python-pydantic-monty-client** — `/usr/lib/python3.14/site-packages/pydantic_monty/_monty.cpython-314-x86_64-linux-gnu.so`
+- [ ] **python-vl-convert** — `/usr/lib/python3.14/site-packages/vl_convert/vl_convert.abi3.so` · includes ECC G3 · includes AAA
+- [ ] **qt6-webengine** — `/usr/lib/qt6/webenginedriver` (+1 more) · includes ECC G3 · includes AAA
+- [ ] **rainfrog** — `/usr/bin/rainfrog` · includes ECC G3
+- [ ] **rattler-build** — `/usr/bin/rattler-build` · includes ECC G3
+- [ ] **readest** — `/usr/share/Readest/readest` (+1 more) · includes ECC G3 · includes AAA
+- [ ] **rebels-in-the-sky** — `/usr/bin/rebels-in-the-sky` · includes ECC G3
+- [ ] **retroarch** — `/usr/bin/retroarch` · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **rustypaste-cli** — `/usr/bin/rpaste` · includes ECC G3
+- [ ] **samply** — `/usr/bin/samply` · includes ECC G3 · includes AAA
+- [ ] **sccache** — `/usr/bin/sccache` (+1 more) · includes ECC G3
+- [ ] **selene** — `/usr/bin/selene` · includes ECC G3 · includes AAA
+- [ ] **sendme** — `/usr/bin/sendme`
+- [ ] **shadowsocks-rust** — `/usr/bin/sslocal` (+3 more) · includes ECC G3
+- [ ] **signal-desktop** — `/usr/lib/signal-desktop/signal-desktop` · includes ECC G3 · includes AAA
+- [ ] **signstar-configure** — `/usr/bin/signstar-configure`
+- [ ] **signstar-download-key-certificates** — `/usr/bin/signstar-download-key-certificates`
+- [ ] **signstar-sign** — `/usr/bin/signstar-sign`
+- [ ] **sing-box** — `/usr/bin/sing-box` · includes ECC G3 · includes AAA
+- [ ] **smartcat** — `/usr/bin/sc` · includes ECC G3 · includes AAA
+- [ ] **smolvm** — `/usr/lib/smolvm/smolvm-bin` (+1 more)
+- [ ] **sn0int** — `/usr/bin/sn0int` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **snapper-fmt** — `/usr/bin/snapper-fmt` · includes ECC G3 · includes AAA
+- [ ] **sshx** — `/usr/bin/sshx` (+1 more) · includes ECC G3 · includes AAA
+- [ ] **stalwart** — `/usr/bin/stalwart`
+- [ ] **stalwart-proxy** — `/usr/bin/stalwart-proxy` · includes ECC G3
+- [ ] **symposium** — `/usr/bin/cargo-agents` · includes ECC G3
+- [ ] **syndicationd** — `/usr/bin/synd` · includes ECC G3
+- [ ] **systing** — `/usr/bin/systing` · includes ECC G3
+- [ ] **tabiew** — `/usr/bin/tw`
+- [ ] **taplo-cli** — `/usr/bin/taplo` · includes ECC G3 · includes AAA
+- [ ] **task** — `/usr/bin/task` · includes ECC G3
+- [ ] **tealdeer** — `/usr/bin/tldr`
+- [ ] **teamspeak3** — `/opt/teamspeak3/ts3client_linux_amd64` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **teamtype** — `/usr/bin/teamtype`
+- [ ] **telegram-desktop** — `/usr/bin/Telegram` · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **television** — `/usr/bin/tv` · includes ECC G3
+- [ ] **tensorboard** — `/usr/lib/python3.14/site-packages/tensorboard_data_server/bin/server` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **thunderbird** — `/usr/lib/thunderbird/libxul.so` · includes ECC G3 · includes AAA
+- [ ] **tinymist** — `/usr/bin/tinymist` · includes ECC G3
+- [ ] **treemd** — `/usr/bin/treemd` · includes ECC G3
+- [ ] **tuicr** — `/usr/bin/tuicr`
+- [ ] **turbo** — `/usr/bin/turbo` · includes ECC G3
+- [ ] **uv** — `/usr/bin/uv`
+- [ ] **vector** — `/usr/bin/vector` · includes ECC G3 · includes AAA
+- [ ] **vivaldi** — `/opt/vivaldi/vivaldi-bin` · includes ECC G3 · includes AAA
+- [ ] **vl-convert** — `/usr/bin/vl-convert` · includes ECC G3 · includes AAA
+- [ ] **vortix** — `/usr/bin/vortix` · includes ECC G3
+- [ ] **wasm-bindgen** — `/usr/bin/wasm-bindgen-test-runner` · includes ECC G3
+- [ ] **wasm-pack** — `/usr/bin/wasm-pack` · includes ECC G3
+- [ ] **wasmtime** — `/usr/bin/wasmtime` · includes ECC G3
+- [ ] **wine-gecko** — `/usr/share/wine/gecko/wine-gecko-2.47.4-x86/nssckbi.dll` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **wireman** — `/usr/bin/wireman` · includes ECC G3
+- [ ] **worker-build** — `/usr/bin/worker-build` · includes ECC G3
+- [ ] **xbuild** — `/usr/bin/x` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **xlinks** — `/usr/bin/xlinks` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **zed** — `/usr/lib/zed/zed-editor` · includes AAA
+- [ ] **zeroclaw** — `/usr/bin/zeroclaw` · includes ECC G3
+- [ ] **zeroclaw-acp-bridge** — `/usr/bin/zeroclaw-acp-bridge` · includes ECC G3
+- [ ] **zerocode** — `/usr/bin/zerocode` · includes ECC G3
+- [ ] **zigbee2mqtt** — `/usr/share/webapps/zigbee2mqtt/node_modules/.pnpm/@biomejs+cli-linux-x64@2.5.11/node_modules/@biomejs/cli-linux-x64/biome` · includes ECC G3
+
