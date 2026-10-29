@@ -101,7 +101,7 @@ mdfried-0.22.8-1-x86_64	mdfried	compiled-in:1	1	1	1	1	/usr/bin/mdfried
 meilisearch-1:1.56.0-1-x86_64	meilisearch	compiled-in:1	1	0	1	1	/usr/bin/meilisearch
 metasploit-6.5.6-1-x86_64	metasploit	vendored-pem-file:3	0	1	0	3	/opt/metasploit/vendor/bundle/ruby/3.4.0/gems/aws-sdk-core-3.220.1/ca-bundle.crt /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.9.0/lib/httpclient/cacert.pem /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.9.0/lib/httpclient/cacert1024.pem
 mirro-rs-0.2.3-2-x86_64	mirro-rs	compiled-in:1	1	1	1	1	/usr/bin/mirro-rs
-mise-2026.10.21-1-x86_64	mise	compiled-in:1	0	0	1	1	/usr/bin/mise
+mise-2026.10.22-1-x86_64	mise	compiled-in:1	0	0	1	1	/usr/bin/mise
 modrinth-app-0.21.10-1-x86_64	modrinth-app	compiled-in:1	1	0	1	1	/usr/lib/modrinth-app
 mullvad-vpn-daemon-2026.5-1-x86_64	mullvad-vpn-daemon	compiled-in:1	1	0	1	1	/usr/bin/mullvad-daemon
 naev-0.13.5-2-x86_64	naev	compiled-in:1	1	0	1	1	/usr/bin/naev
@@ -122,7 +122,7 @@ numbat-1.24.0-1-x86_64	numbat	compiled-in:1	1	0	1	1	/usr/bin/numbat
 nushell-0.116.1-1-x86_64	nushell	compiled-in:1	1	0	1	1	/usr/bin/nu
 oculante-0.9.6-1-x86_64	oculante	compiled-in:1	1	0	1	1	/usr/bin/oculante
 openai-codex-0.165.0-1-x86_64	openai-codex	compiled-in:3	0	0	1	3	/usr/lib/openai-codex/bin/codex /usr/lib/openai-codex/bin/codex-code-mode-host /usr/lib/openai-codex/bin/codex-responses-api-proxy
-opencode-2.2.0-1-x86_64	opencode	compiled-in:1	0	0	1	1	/usr/bin/opencode
+opencode-2.2.1-1-x86_64	opencode	compiled-in:1	0	0	1	1	/usr/bin/opencode
 opendeck-2.14.2-1-x86_64	opendeck	compiled-in:1	1	0	1	1	/usr/bin/opendeck
 openfire-5.1.2-1-any	openfire	vendored-keystore:1	1	1	1	1	/etc/openfire/security/truststore
 openobserve-1.1.2-1-x86_64	openobserve	compiled-in:1	0	0	1	1	/usr/bin/openobserve
@@ -163,7 +163,7 @@ schemacrawler-17.16.0-1-any	schemacrawler	vendored-in-archive:3	1	1	1	3	/opt/sch
 selene-0.32.0-1-x86_64	selene	compiled-in:1	1	1	1	1	/usr/bin/selene
 sendme-0.37.1-1-x86_64	sendme	compiled-in:1	0	0	1	1	/usr/bin/sendme
 shadowsocks-rust-1.25.0-1-x86_64	shadowsocks-rust	compiled-in:4	1	0	1	4	/usr/bin/sslocal /usr/bin/ssmanager /usr/bin/ssserver
-signal-desktop-8.32.0-1-x86_64	signal-desktop	compiled-in:1	1	1	1	1	/usr/lib/signal-desktop/signal-desktop
+signal-desktop-8.33.0-1-x86_64	signal-desktop	compiled-in:1	1	1	1	1	/usr/lib/signal-desktop/signal-desktop
 signstar-configure-0.1.2-1-x86_64	signstar-configure	compiled-in:1	0	0	1	1	/usr/bin/signstar-configure
 signstar-download-key-certificates-0.2.0-1-x86_64	signstar-download-key-certificates	compiled-in:1	0	0	1	1	/usr/bin/signstar-download-key-certificates
 signstar-sign-0.3.0-1-x86_64	signstar-sign	compiled-in:1	0	0	1	1	/usr/bin/signstar-sign
