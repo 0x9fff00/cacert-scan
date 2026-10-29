@@ -131,7 +131,7 @@ opensearch-ml-commons-plugin-3.9.0.0-1-x86_64	opensearch-ml-commons-plugin	vendo
 opensearch-repository-gcs-plugin-3.9.0-1-x86_64	opensearch-repository-gcs-plugin	vendored-in-archive:2	0	1	0	2	/usr/share/opensearch/plugins/repository-gcs/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.p12 /usr/share/opensearch/plugins/repository-gcs/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.jks
 osquery-5.23.1-1-x86_64	osquery	vendored-pem-file:1	1	1	0	1	/usr/share/osquery/certs/certs.pem
 pixi-0.83.0-1-x86_64	pixi	compiled-in:1	0	0	1	1	/usr/bin/pixi
-pnpm-12.15.0-1-x86_64	pnpm	compiled-in:1	0	0	1	1	/usr/bin/pnpm
+pnpm-12.16.1-1-x86_64	pnpm	compiled-in:1	0	0	1	1	/usr/bin/pnpm
 pop-launcher-1.2.7-2-x86_64	pop-launcher	compiled-in:1	1	0	1	1	/usr/bin/pop-launcher
 prek-0.5.7-4-x86_64	prek	compiled-in:1	0	0	1	1	/usr/bin/prek
 probe-rs-0.32.0-1-x86_64	probe-rs	compiled-in:1	1	0	1	1	/usr/bin/probe-rs
@@ -212,7 +212,7 @@ wp-cli-2.12.0-1-any	wp-cli	vendored-pem-file:1	1	1	1	1	/usr/bin/wp
 xbuild-0.2.0-2-x86_64	xbuild	compiled-in:1	1	1	0	1	/usr/bin/x
 xlinks-2.30-2-x86_64	xlinks	compiled-in:1	1	1	0	1	/usr/bin/xlinks
 zaproxy-2.17.0-4-any	zaproxy	vendored-in-archive:4	1	0	1	4	/usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/linux/selenium-manager /usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/macos/selenium-manager /usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/windows/selenium-manager.exe
-zed-1.25.3-1-x86_64	zed	compiled-in:1	0	1	1	1	/usr/lib/zed/zed-editor
+zed-1.26.2-1-x86_64	zed	compiled-in:1	0	1	1	1	/usr/lib/zed/zed-editor
 zeroclaw-0.8.6-1-x86_64	zeroclaw	compiled-in:1	1	0	1	1	/usr/bin/zeroclaw
 zeroclaw-acp-bridge-0.8.6-1-x86_64	zeroclaw-acp-bridge	compiled-in:1	1	0	1	1	/usr/bin/zeroclaw-acp-bridge
 zerocode-0.8.6-1-x86_64	zerocode	compiled-in:1	1	0	1	1	/usr/bin/zerocode
