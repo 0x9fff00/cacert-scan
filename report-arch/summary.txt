@@ -1,14 +1,14 @@
-packages scanned: 15641  failed: 1  findings: 1543
+packages scanned: 15651  failed: 1  findings: 1552
 cacert bundle hashes used to detect injected copies (Nix only): 0
-fixture-or-other                 files=   757 distinct-packages=  198
+fixture-or-other                 files=   759 distinct-packages=  200
 keystore-no-known-roots          files=   283 distinct-packages=  230
-compiled-in                      files=   201 distinct-packages=  172
-has-emudhra-spki-blocklist       files=   133 distinct-packages=   85
+compiled-in                      files=   203 distinct-packages=  174
+has-emudhra-spki-blocklist       files=   140 distinct-packages=   92
 partial-root-set                 files=    59 distinct-packages=   21
 vendored-pem-file                files=    54 distinct-packages=   36
 vendored-in-archive              files=    50 distinct-packages=   20
 vendored-keystore                files=     3 distinct-packages=    3
-keystore-locked                  files=     3 distinct-packages=    2
+keystore-locked                  files=     1 distinct-packages=    1
 
 == vendored-pem-file: inject: replace the file with a symlink to ${cacert}/etc/ssl/certs/ca-bundle.crt (or point the program at it)
    aws-cli aws-cli-v2 azure-cli ca-certificates-mozilla code composer dotnet-sdk dotnet-sdk-10.0 dotnet-sdk-8.0 dotnet-sdk-9.0 ejabberd gitlab gnustep-base gpac grpc gsoap jython libressl metasploit netsurf nextcloud nmap nsight-compute nsight-systems osquery python-botocore python-grpcio python-pip ruby-grpc ruby-httpclient smolvm supertuxkart testssl.sh unrealircd wordpress wp-cli
@@ -20,7 +20,7 @@ keystore-locked                  files=     3 distinct-packages=    2
    intellij-idea-oss openfire pycharm-community-edition
 
 == compiled-in: cannot inject a file: rebuild with a system-store option (rustls-native-certs / --use-system-ca / NSS from cacert) or bump the embedded root crate
-   acme-redirect aichat anki apt-swarm archlinux-userland-fs-cmp artem bigloo biome bun caddy cargo-about cargo-edit cargo-make cargo-msrv cargo-pgrx cargo-release cargo-shuttle cargo-tauri cef chromium cilium-cli cloudflare-speed-cli code codebook-lsp deltachat-rpc-server deno dioxus-cli discord dprint dra dsq ducker dump_syms electron39 electron40 electron41 electron42 electron43 electron44 emby-theater esp-generate espflash espup findomain firefox firefox-developer-edition flawz fnm git-cliff gitlab grafana-agent grafana-agentctl grafana-alloy gst-plugin-burn gst-plugin-deepgram gst-plugin-rswebrtc halp hazelnut health hieroglyphic i3status-rust intel-oneapi-toolkit intelli-shell intellij-idea-oss jolt jumpy kwaak lact legba librewolf libtg_owt links llmfit marmite matrix-authentication-service matugen maturin md-tui mdfried meilisearch mirro-rs mise modrinth-app mullvad-vpn-daemon naev nethsm-cli nethsm-pkcs11 nextcloud-app-notify_push nim nodejs nodejs-lts-jod nodejs-lts-krypton nsight-compute nsight-systems numa numbat nushell oculante openai-codex opencode opendeck openobserve pixi pnpm pop-launcher prek probe-rs proxyboi pycharm-community-edition pyflow python-proton-vpn-api-core python-pydantic-monty-client python-vl-convert qt6-webengine rainfrog rattler-build readest rebels-in-the-sky retroarch rustypaste-cli samply sccache selene sendme shadowsocks-rust signal-desktop signstar-configure signstar-download-key-certificates signstar-sign sing-box smartcat smolvm sn0int snapper-fmt sshx stalwart stalwart-proxy symposium syndicationd systing tabiew taplo-cli task tealdeer teamspeak3 teamtype telegram-desktop television tensorboard thunderbird tinymist treemd tuicr turbo uv vector vivaldi vl-convert vortix wasm-bindgen wasm-pack wasmtime wine-gecko wireman worker-build xbuild xlinks zed zeroclaw zeroclaw-acp-bridge zerocode zigbee2mqtt
+   acme-redirect aichat anki apt-swarm archlinux-userland-fs-cmp artem bigloo biome bun caddy cargo-about cargo-edit cargo-make cargo-msrv cargo-pgrx cargo-release cargo-shuttle cargo-tauri cef chromium cilium-cli cloudflare-speed-cli code codebook-lsp deltachat-rpc-server deno dioxus-cli discord dprint dra dsq ducker dump_syms electron39 electron40 electron41 electron42 electron43 electron44 emby-theater esp-generate espflash espup findomain firefox firefox-developer-edition flawz fnm git-cliff gitlab grafana-agent grafana-agentctl grafana-alloy gst-plugin-burn gst-plugin-deepgram gst-plugin-rswebrtc halp hazelnut health hieroglyphic i3status-rust intel-oneapi-toolkit intelli-shell intellij-idea-oss jolt jumpy kwaak lact legba librewolf libtg_owt links llmfit marmite matrix-authentication-service matugen maturin md-tui mdfried meilisearch mirro-rs mise modrinth-app mullvad-vpn-daemon naev nethsm-cli nethsm-pkcs11 nextcloud-app-notify_push nim nodejs nodejs-lts-jod nodejs-lts-krypton nsight-compute nsight-systems numa numbat nushell oculante openai-codex opencode opendeck openobserve pixi pnpm pop-launcher prek probe-rs proxyboi pycharm-community-edition pyflow python-primp python-proton-vpn-api-core python-pydantic-monty-client python-vl-convert qt6-webengine rainfrog rattler-build readest rebels-in-the-sky retroarch rustypaste-cli samply sccache selene sendme servo shadowsocks-rust signal-desktop signstar-configure signstar-download-key-certificates signstar-sign sing-box smartcat smolvm sn0int snapper-fmt sshx stalwart stalwart-proxy symposium syndicationd systing tabiew taplo-cli task tealdeer teamspeak3 teamtype telegram-desktop television tensorboard thunderbird tinymist treemd tuicr turbo uv vector vivaldi vl-convert vortix wasm-bindgen wasm-pack wasmtime wine-gecko wireman worker-build xbuild xlinks zed zeroclaw zeroclaw-acp-bridge zerocode zigbee2mqtt
 
 == vendored-other: inspect
    

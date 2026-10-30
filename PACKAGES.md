@@ -7,7 +7,7 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 - [ ] **azure-cli** — `/opt/azure-cli/lib/python3.14/site-packages/certifi/cacert.pem` (+1 more) · includes ECC G3 · includes AAA
 - [ ] **ca-certificates-mozilla** — `/usr/share/ca-certificates/trust-source/mozilla.trust.p11-kit` · includes AAA
 - [ ] **code** — `/usr/lib/code/node_modules.asar` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
-- [ ] **composer** — `/usr/bin/composer` · includes ECC G3
+- [ ] **composer** — `/usr/bin/composer`
 - [ ] **dotnet-sdk** — `/usr/share/dotnet/sdk/10.0.113/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **dotnet-sdk-10.0** — `/usr/share/dotnet/sdk/10.0.113/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **dotnet-sdk-8.0** — `/usr/share/dotnet/sdk/8.0.132/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
@@ -36,7 +36,7 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 - [ ] **supertuxkart** — `/usr/share/supertuxkart/data/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **testssl.sh** — `/usr/share/testssl.sh/etc/Java.pem` (+4 more) · includes ECC G3 · includes AAA
 - [ ] **unrealircd** — `/etc/unrealircd/tls/curl-ca-bundle.crt` · includes ECC G3
-- [ ] **wordpress** — `/usr/share/webapps/wordpress/wp-includes/certificates/ca-bundle.crt` · includes ECC G3
+- [ ] **wordpress** — `/usr/share/webapps/wordpress/wp-includes/certificates/ca-bundle.crt`
 - [ ] **wp-cli** — `/usr/bin/wp` · includes ECC G3 · includes AAA
 
 ### Bundle inside a wheel, jar or zip (20)
@@ -45,7 +45,7 @@ Fix: Patch the bundle inside the archive at build time, or patch the code to use
 
 - [ ] **ghidra** — `/opt/ghidra/Extensions/Ghidra/ghidra_12.1.2_DEV_20260629_Jython.zip!Jython/data/jython-2.7.4/Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **gitlab** — `/usr/share/webapps/gitlab/vendor/bundle/ruby/3.4.0/cache/excon-1.3.0.gem!data.tar.gz!gunzip` (+8 more) · includes ECC G3 · includes AAA
-- [ ] **gitlab-runner** — `/usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.5.1.tar.xz!unxz` (+3 more)
+- [ ] **gitlab-runner** — `/usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.5.2.tar.xz!unxz` (+3 more)
 - [ ] **gradle** — `/usr/share/java/gradle/lib/plugins/google-api-client-1.34.0.jar!com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **intellij-idea-oss** — `/usr/share/idea/plugins/gradle-plugin/lib/gradle-api-9.6.0.jar!org/gradle/internal/impldep/com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **jadx** — `/usr/share/java/jadx/lib/jadx-1.5.6-all.jar!libj2v8_linux_x86_64.so` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
@@ -72,7 +72,7 @@ Fix: Generate the keystore from `${cacert}/etc/ssl/certs/ca-bundle.crt` at build
 - [ ] **openfire** — `/etc/openfire/security/truststore` · includes ECC G3 · includes AAA
 - [ ] **pycharm-community-edition** — `/usr/share/pycharm/jbr/lib/security/cacerts` · includes ECC G3 · includes AAA
 
-### Compiled into a binary (172)
+### Compiled into a binary (174)
 
 Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`, NSS from cacert), or bump the embedded root crate.
 
@@ -100,11 +100,11 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **cloudflare-speed-cli** — `/usr/bin/cloudflare-speed-cli` · includes ECC G3
 - [ ] **code** — `/usr/lib/code/node_modules.asar.unpacked/@microsoft/mxc-sdk/bin/x64/lxc-exec` (+1 more) · includes ECC G3
 - [ ] **codebook-lsp** — `/usr/bin/codebook-lsp` · includes ECC G3
-- [ ] **deltachat-rpc-server** — `/usr/bin/deltachat-rpc-server` · includes ECC G3 · includes AAA
+- [ ] **deltachat-rpc-server** — `/usr/bin/deltachat-rpc-server`
 - [ ] **deno** — `/usr/bin/deno`
 - [ ] **dioxus-cli** — `/usr/bin/dx` · includes ECC G3
 - [ ] **discord** — `/usr/share/discord/updater_bootstrap`
-- [ ] **dprint** — `/usr/bin/dprint` · includes ECC G3 · includes AAA
+- [ ] **dprint** — `/usr/bin/dprint`
 - [ ] **dra** — `/usr/bin/dra` · includes ECC G3
 - [ ] **dsq** — `/usr/bin/dsq` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **ducker** — `/usr/bin/ducker` · includes ECC G3
@@ -186,6 +186,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **proxyboi** — `/usr/bin/proxyboi` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **pycharm-community-edition** — `/usr/share/pycharm/plugins/jcef-plugin/jcef/libcef.so` · includes ECC G3 · includes AAA
 - [ ] **pyflow** — `/usr/bin/pyflow` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **python-primp** — `/usr/lib/python3.14/site-packages/primp/primp.abi3.so` · includes ECC G3
 - [ ] **python-proton-vpn-api-core** — `/usr/lib/nm-protun-service` (+1 more) · includes ECC G3
 - [ ] **python-pydantic-monty-client** — `/usr/lib/python3.14/site-packages/pydantic_monty/_monty.cpython-314-x86_64-linux-gnu.so`
 - [ ] **python-vl-convert** — `/usr/lib/python3.14/site-packages/vl_convert/vl_convert.abi3.so` · includes ECC G3 · includes AAA
@@ -200,6 +201,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **sccache** — `/usr/bin/sccache` (+1 more) · includes ECC G3
 - [ ] **selene** — `/usr/bin/selene` · includes ECC G3 · includes AAA
 - [ ] **sendme** — `/usr/bin/sendme`
+- [ ] **servo** — `/opt/servo/servoshell` · includes ECC G3
 - [ ] **shadowsocks-rust** — `/usr/bin/sslocal` (+3 more) · includes ECC G3
 - [ ] **signal-desktop** — `/usr/lib/signal-desktop/signal-desktop` · includes ECC G3 · includes AAA
 - [ ] **signstar-configure** — `/usr/bin/signstar-configure`
