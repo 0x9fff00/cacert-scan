@@ -11,6 +11,8 @@ name=${p%.pkg.tar.zst}
 
 [ -e "$out/done/$name" ] && exit 0
 
+echo "scanning $repo $p" >&2
+
 if curl -sfL --retry 5 "$base/$repo/os/x86_64/$p" |
   $SCAN --arch-pkg "$name" > "$out/res/$name.jsonl" 2> "$out/err/$name"
 then
