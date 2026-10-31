@@ -23,7 +23,7 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 - [ ] **metasploit** — `/opt/metasploit/vendor/bundle/ruby/3.4.0/gems/aws-sdk-core-3.220.1/ca-bundle.crt` (+2 more) · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **netsurf** — `/usr/share/netsurf/ca-bundle.txt` · includes ECC G3 · includes AAA
 - [ ] **nextcloud** — `/usr/share/webapps/nextcloud/resources/config/ca-bundle.crt` · includes ECC G3
-- [ ] **nmap** — `/usr/share/ncat/ca-bundle.crt` · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **nmap** — `/usr/share/ncat/ca-bundle.crt` · includes ECC G3
 - [ ] **nsight-compute** — `/usr/lib/nsight-compute/extras/python/cacert.pem` (+1 more) · includes ECC G3
 - [ ] **nsight-systems** — `/usr/lib/nsight-systems/host-linux-x64/python/lib/python3.12/site-packages/pip/_vendor/certifi/cacert.pem` (+1 more) · includes ECC G3
 - [ ] **osquery** — `/usr/share/osquery/certs/certs.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
