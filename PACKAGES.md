@@ -8,10 +8,10 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 - [ ] **ca-certificates-mozilla** — `/usr/share/ca-certificates/trust-source/mozilla.trust.p11-kit` · includes AAA
 - [ ] **code** — `/usr/lib/code/node_modules.asar` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **composer** — `/usr/bin/composer`
-- [ ] **dotnet-sdk** — `/usr/share/dotnet/sdk/10.0.113/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
-- [ ] **dotnet-sdk-10.0** — `/usr/share/dotnet/sdk/10.0.113/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
-- [ ] **dotnet-sdk-8.0** — `/usr/share/dotnet/sdk/8.0.132/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
-- [ ] **dotnet-sdk-9.0** — `/usr/share/dotnet/sdk/9.0.122/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **dotnet-sdk** — `/usr/share/dotnet/sdk/10.0.114/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **dotnet-sdk-10.0** — `/usr/share/dotnet/sdk/10.0.114/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **dotnet-sdk-8.0** — `/usr/share/dotnet/sdk/8.0.133/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **dotnet-sdk-9.0** — `/usr/share/dotnet/sdk/9.0.123/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **ejabberd** — `/usr/lib/pkix-1.0.10/priv/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **gitlab** — `/usr/share/webapps/gitlab/vendor/bundle/ruby/3.4.0/gems/grpc-1.81.1/etc/roots.pem` (+4 more) · includes ECC G3 · includes AAA
 - [ ] **gnustep-base** — `/usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.31/Resources/GSTLS/ca-certificates.crt` · stale bundle, no SSL.com 2022 · includes AAA
@@ -58,7 +58,7 @@ Fix: Patch the bundle inside the archive at build time, or patch the code to use
 - [ ] **pycharm-community-edition** — `/usr/share/pycharm/plugins/python-ce/helpers/pip-25.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem` (+2 more) · includes ECC G3 · includes AAA
 - [ ] **pypy** — `/opt/pypy/lib-python/2.7/ensurepip/_bundled/pip-20.0.2-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **pypy3** — `/opt/pypy3/lib/pypy3.12/ensurepip/_bundled/pip-25.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem` · includes ECC G3 · includes AAA
-- [ ] **python** — `/usr/lib/python3.14/ensurepip/_bundled/pip-26.2.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem` · includes ECC G3
+- [ ] **python** — `/usr/lib/python3.14/ensurepip/_bundled/pip-26.2.2-py3-none-any.whl!pip/_vendor/certifi/cacert.pem`
 - [ ] **python-virtualenv** — `/usr/lib/python3.14/site-packages/virtualenv/seed/wheels/embed/pip-26.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem` (+1 more) · includes ECC G3
 - [ ] **schemacrawler** — `/opt/schemacrawler/lib/snowflake-jdbc-4.4.0.jar!net/snowflake/client/jdbc/internal/google/api/client/googleapis/google.jks` (+2 more) · includes ECC G3 · includes AAA
 - [ ] **solr** — `/usr/share/solr/modules/gcs-repository/lib/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
@@ -246,8 +246,8 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **xbuild** — `/usr/bin/x` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **xlinks** — `/usr/bin/xlinks` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **zed** — `/usr/lib/zed/zed-editor` · includes AAA
-- [ ] **zeroclaw** — `/usr/bin/zeroclaw` · includes ECC G3
-- [ ] **zeroclaw-acp-bridge** — `/usr/bin/zeroclaw-acp-bridge` · includes ECC G3
-- [ ] **zerocode** — `/usr/bin/zerocode` · includes ECC G3
+- [ ] **zeroclaw** — `/usr/bin/zeroclaw`
+- [ ] **zeroclaw-acp-bridge** — `/usr/bin/zeroclaw-acp-bridge`
+- [ ] **zerocode** — `/usr/bin/zerocode`
 - [ ] **zigbee2mqtt** — `/usr/share/webapps/zigbee2mqtt/node_modules/.pnpm/@biomejs+cli-linux-x64@2.5.11/node_modules/@biomejs/cli-linux-x64/biome` · includes ECC G3
 
