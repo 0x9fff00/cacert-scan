@@ -2,7 +2,7 @@ name: Scan Arch Linux repositories
 
 on:
   schedule:
-    - cron: "39 4 * * *"
+    - cron: "57 2 * * *"
   workflow_dispatch:
 
 permissions:
