@@ -24,6 +24,7 @@ cargo-tauri-2.11.5-1-x86_64	cargo-tauri	compiled-in:1	1	0	1	1	/usr/bin/cargo-tau
 cef-154.0.34-2-x86_64	cef	compiled-in:1	1	1	1	1	/usr/lib/cef/libcef.so
 chromium-156.0.8078.79-1-x86_64	chromium	compiled-in:2	1	1	1	2	/usr/bin/chromedriver /usr/lib/chromium/chromium
 cilium-cli-0.19.5-1-x86_64	cilium-cli	compiled-in:1	1	1	0	1	/usr/bin/cilium-cli
+clamui-0.5.1-1-x86_64	clamui	compiled-in:3	0	0	1	3	/usr/bin/clamui /usr/bin/clamui-cli /usr/bin/clamui-scheduled-scan
 cloudflare-speed-cli-1.0.11-1-x86_64	cloudflare-speed-cli	compiled-in:1	1	0	1	1	/usr/bin/cloudflare-speed-cli
 code-1.138.0-1-x86_64	code	compiled-in:2,vendored-pem-file:1	1	1	1	3	/usr/lib/code/node_modules.asar /usr/lib/code/node_modules.asar.unpacked/@microsoft/mxc-sdk/bin/x64/lxc-exec /usr/lib/code/node_modules.asar.unpacked/@microsoft/mxc-sdk/bin/x64/wxc-exec.exe
 codebook-lsp-0.3.42-1-x86_64	codebook-lsp	compiled-in:1	1	0	1	1	/usr/bin/codebook-lsp
@@ -54,7 +55,7 @@ espflash-4.6.0-1-x86_64	espflash	compiled-in:2	1	0	1	2	/usr/bin/cargo-espflash /
 espup-0.18.0-1-x86_64	espup	compiled-in:1	1	0	1	1	/usr/bin/espup
 findomain-10.0.1-2-x86_64	findomain	compiled-in:1	1	0	1	1	/usr/bin/findomain
 firefox-159.0-1-x86_64	firefox	compiled-in:1	1	1	1	1	/usr/lib/firefox/libxul.so
-firefox-developer-edition-160.0b3-1-x86_64	firefox-developer-edition	compiled-in:1	0	1	1	1	/usr/lib/firefox-developer-edition/libxul.so
+firefox-developer-edition-160.0b4-1-x86_64	firefox-developer-edition	compiled-in:1	0	1	1	1	/usr/lib/firefox-developer-edition/libxul.so
 flawz-0.4.1-1-x86_64	flawz	compiled-in:1	1	0	1	1	/usr/bin/flawz
 fnm-1.39.0-1-x86_64	fnm	compiled-in:1	1	1	1	1	/usr/bin/fnm
 ghidra-12.1.2-2-x86_64	ghidra	vendored-in-archive:2	1	1	0	2	/opt/ghidra/Extensions/Ghidra/ghidra_12.1.2_DEV_20260629_Jython.zip!Jython/data/jython-2.7.4/Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem /opt/ghidra/Extensions/Ghidra/ghidra_12.1.2_DEV_20260629_Jython.zip!Jython/lib/jython-standalone-2.7.4.jar!Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem
@@ -193,12 +194,12 @@ television-0.15.9-1-x86_64	television	compiled-in:1	1	0	1	1	/usr/bin/tv
 tensorboard-2.21.0-1-x86_64	tensorboard	compiled-in:1	1	1	0	1	/usr/lib/python3.14/site-packages/tensorboard_data_server/bin/server
 testssl.sh-3.2.4-1-any	testssl.sh	vendored-pem-file:5	1	1	1	5	/usr/share/testssl.sh/etc/Apple.pem /usr/share/testssl.sh/etc/Java.pem /usr/share/testssl.sh/etc/Linux.pem
 thunderbird-158.0.1-1-x86_64	thunderbird	compiled-in:1	1	1	1	1	/usr/lib/thunderbird/libxul.so
-tinymist-1:0.15.10-1-x86_64	tinymist	compiled-in:1	1	0	1	1	/usr/bin/tinymist
+tinymist-1:0.15.12-1-x86_64	tinymist	compiled-in:1	1	0	1	1	/usr/bin/tinymist
 treemd-0.10.0-1-x86_64	treemd	compiled-in:1	1	0	1	1	/usr/bin/treemd
 tuicr-0.28.0-1-x86_64	tuicr	compiled-in:1	0	0	1	1	/usr/bin/tuicr
 turbo-2.9.16-2-x86_64	turbo	compiled-in:1	1	0	1	1	/usr/bin/turbo
 unrealircd-6.2.7-1-x86_64	unrealircd	vendored-pem-file:1	1	0	1	1	/etc/unrealircd/tls/curl-ca-bundle.crt
-uv-0.13.6-1-x86_64	uv	compiled-in:1	0	0	1	1	/usr/bin/uv
+uv-0.13.7-1-x86_64	uv	compiled-in:1	0	0	1	1	/usr/bin/uv
 vector-0.57.0-1-x86_64	vector	compiled-in:1	1	1	1	1	/usr/bin/vector
 vivaldi-8.2.4133.96-1-x86_64	vivaldi	compiled-in:1	1	1	1	1	/opt/vivaldi/vivaldi-bin
 vl-convert-1.9.0-2-x86_64	vl-convert	compiled-in:1	1	1	1	1	/usr/bin/vl-convert

@@ -72,7 +72,7 @@ Fix: Generate the keystore from `${cacert}/etc/ssl/certs/ca-bundle.crt` at build
 - [ ] **openfire** — `/etc/openfire/security/truststore` · includes ECC G3 · includes AAA
 - [ ] **pycharm-community-edition** — `/usr/share/pycharm/jbr/lib/security/cacerts` · includes ECC G3 · includes AAA
 
-### Compiled into a binary (174)
+### Compiled into a binary (175)
 
 Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`, NSS from cacert), or bump the embedded root crate.
 
@@ -97,6 +97,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **cef** — `/usr/lib/cef/libcef.so` · includes ECC G3 · includes AAA
 - [ ] **chromium** — `/usr/bin/chromedriver` (+1 more) · includes ECC G3 · includes AAA
 - [ ] **cilium-cli** — `/usr/bin/cilium-cli` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **clamui** — `/usr/bin/clamui` (+2 more)
 - [ ] **cloudflare-speed-cli** — `/usr/bin/cloudflare-speed-cli` · includes ECC G3
 - [ ] **code** — `/usr/lib/code/node_modules.asar.unpacked/@microsoft/mxc-sdk/bin/x64/lxc-exec` (+1 more) · includes ECC G3
 - [ ] **codebook-lsp** — `/usr/bin/codebook-lsp` · includes ECC G3
