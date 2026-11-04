@@ -149,7 +149,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **librewolf** — `/usr/lib/librewolf/libxul.so` · includes ECC G3 · includes AAA
 - [ ] **libtg_owt** — `/usr/lib/libtg_owt.a` · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **links** — `/usr/bin/links` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
-- [ ] **llmfit** — `/usr/bin/llmfit` · includes ECC G3
+- [ ] **llmfit** — `/usr/bin/llmfit`
 - [ ] **marmite** — `/usr/bin/marmite` · includes ECC G3
 - [ ] **matrix-authentication-service** — `/usr/bin/mas-cli`
 - [ ] **matugen** — `/usr/bin/matugen` · includes ECC G3 · includes AAA

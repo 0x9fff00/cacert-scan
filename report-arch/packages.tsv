@@ -89,17 +89,17 @@ kwaak-0.19.0-1-x86_64	kwaak	compiled-in:1	1	0	1	1	/usr/bin/kwaak
 lact-0.10.1-1-x86_64	lact	compiled-in:1	1	0	1	1	/usr/bin/lact
 legba-1.3.0-1-x86_64	legba	compiled-in:1	1	1	1	1	/usr/bin/legba
 libressl-4.4.0-1-x86_64	libressl	vendored-pem-file:1	0	0	1	1	/etc/libressl/cert.pem
-librewolf-159.0.0_1-1-x86_64	librewolf	compiled-in:1	1	1	1	1	/usr/lib/librewolf/libxul.so
+librewolf-159.0.1_1-1-x86_64	librewolf	compiled-in:1	1	1	1	1	/usr/lib/librewolf/libxul.so
 libtg_owt-1:r500.d1cf250-1-x86_64	libtg_owt	compiled-in:1	0	1	0	1	/usr/lib/libtg_owt.a
 links-2.30-2-x86_64	links	compiled-in:1	1	1	0	1	/usr/bin/links
-llmfit-1.1.18-1-x86_64	llmfit	compiled-in:1	1	0	1	1	/usr/bin/llmfit
+llmfit-1.1.20-1-x86_64	llmfit	compiled-in:1	0	0	1	1	/usr/bin/llmfit
 marmite-0.4.2-2-x86_64	marmite	compiled-in:1	1	0	1	1	/usr/bin/marmite
 matrix-authentication-service-1.28.0-1-x86_64	matrix-authentication-service	compiled-in:1	0	0	1	1	/usr/bin/mas-cli
 matugen-4.2.0-1-x86_64	matugen	compiled-in:1	1	1	1	1	/usr/bin/matugen
 maturin-1.15.0-1-x86_64	maturin	compiled-in:1	1	0	1	1	/usr/bin/maturin
 md-tui-0.11.2-1-x86_64	md-tui	compiled-in:1	0	0	1	1	/usr/bin/md-tui
 mdfried-0.22.8-1-x86_64	mdfried	compiled-in:1	1	1	1	1	/usr/bin/mdfried
-meilisearch-1:1.56.0-1-x86_64	meilisearch	compiled-in:1	1	0	1	1	/usr/bin/meilisearch
+meilisearch-1:1.56.1-1-x86_64	meilisearch	compiled-in:1	1	0	1	1	/usr/bin/meilisearch
 metasploit-6.5.6-1-x86_64	metasploit	vendored-pem-file:3	0	1	0	3	/opt/metasploit/vendor/bundle/ruby/3.4.0/gems/aws-sdk-core-3.220.1/ca-bundle.crt /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.9.0/lib/httpclient/cacert.pem /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.9.0/lib/httpclient/cacert1024.pem
 mirro-rs-0.2.3-2-x86_64	mirro-rs	compiled-in:1	1	1	1	1	/usr/bin/mirro-rs
 mise-2026.10.25-1-x86_64	mise	compiled-in:1	0	0	1	1	/usr/bin/mise
@@ -131,10 +131,10 @@ opensearch-discovery-gce-plugin-3.9.0-1-x86_64	opensearch-discovery-gce-plugin	v
 opensearch-ml-commons-plugin-3.9.0.0-1-x86_64	opensearch-ml-commons-plugin	vendored-in-archive:4	1	1	1	4	/usr/share/opensearch/plugins/opensearch-ml/tokenizers-0.31.1.jar!native/lib/win-x86_64/cpu/tokenizers.dll /usr/share/opensearch/plugins/opensearch-ml/tokenizers-0.31.1.jar!native/lib/linux-x86_64/cpu/libtokenizers.so /usr/share/opensearch/plugins/opensearch-ml/tokenizers-0.31.1.jar!native/lib/osx-aarch64/cpu/libtokenizers.dylib
 opensearch-repository-gcs-plugin-3.9.0-1-x86_64	opensearch-repository-gcs-plugin	vendored-in-archive:2	0	1	0	2	/usr/share/opensearch/plugins/repository-gcs/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.p12 /usr/share/opensearch/plugins/repository-gcs/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.jks
 osquery-5.23.1-1-x86_64	osquery	vendored-pem-file:1	1	1	0	1	/usr/share/osquery/certs/certs.pem
-pixi-0.83.0-1-x86_64	pixi	compiled-in:1	0	0	1	1	/usr/bin/pixi
-pnpm-12.16.1-1-x86_64	pnpm	compiled-in:1	0	0	1	1	/usr/bin/pnpm
+pixi-0.84.0-1-x86_64	pixi	compiled-in:1	0	0	1	1	/usr/bin/pixi
+pnpm-12.17.0-1-x86_64	pnpm	compiled-in:1	0	0	1	1	/usr/bin/pnpm
 pop-launcher-1.11.0-1-x86_64	pop-launcher	compiled-in:1	1	0	1	1	/usr/bin/pop-launcher
-prek-0.5.9-1-x86_64	prek	compiled-in:1	0	0	1	1	/usr/bin/prek
+prek-0.5.10-1-x86_64	prek	compiled-in:1	0	0	1	1	/usr/bin/prek
 probe-rs-0.32.0-1-x86_64	probe-rs	compiled-in:1	1	0	1	1	/usr/bin/probe-rs
 proxyboi-0.5.0-3-x86_64	proxyboi	compiled-in:1	1	1	0	1	/usr/bin/proxyboi
 pycharm-community-edition-2026.2.3-1-x86_64	pycharm-community-edition	vendored-in-archive:3,vendored-keystore:1,compiled-in:1	1	1	1	5	/usr/share/pycharm/jbr/lib/security/cacerts /usr/share/pycharm/plugins/jcef-plugin/jcef/libcef.so /usr/share/pycharm/plugins/python-ce/helpers/pip-25.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem
@@ -182,7 +182,7 @@ stalwart-proxy-1.0.5-1-x86_64	stalwart-proxy	compiled-in:1	1	0	1	1	/usr/bin/stal
 supertuxkart-1.5-1-x86_64	supertuxkart	vendored-pem-file:1	1	1	0	1	/usr/share/supertuxkart/data/cacert.pem
 symposium-0.5.1-1-x86_64	symposium	compiled-in:1	1	0	1	1	/usr/bin/cargo-agents
 syndicationd-0.4.0-1-x86_64	syndicationd	compiled-in:1	1	0	1	1	/usr/bin/synd
-systing-1.29.3-1-x86_64	systing	compiled-in:1	1	0	1	1	/usr/bin/systing
+systing-1.30.2-1-x86_64	systing	compiled-in:1	1	0	1	1	/usr/bin/systing
 tabiew-0.16.0-1-x86_64	tabiew	compiled-in:1	0	0	1	1	/usr/bin/tw
 taplo-cli-0.10.0-1-x86_64	taplo-cli	compiled-in:1	1	1	1	1	/usr/bin/taplo
 task-3.5.0-2-x86_64	task	compiled-in:1	1	0	1	1	/usr/bin/task
@@ -219,4 +219,4 @@ zed-1.26.2-1-x86_64	zed	compiled-in:1	0	1	1	1	/usr/lib/zed/zed-editor
 zeroclaw-0.8.7-1-x86_64	zeroclaw	compiled-in:1	0	0	1	1	/usr/bin/zeroclaw
 zeroclaw-acp-bridge-0.8.7-1-x86_64	zeroclaw-acp-bridge	compiled-in:1	0	0	1	1	/usr/bin/zeroclaw-acp-bridge
 zerocode-0.8.7-1-x86_64	zerocode	compiled-in:1	0	0	1	1	/usr/bin/zerocode
-zigbee2mqtt-2.14.2-1-x86_64	zigbee2mqtt	compiled-in:1	1	0	1	1	/usr/share/webapps/zigbee2mqtt/node_modules/.pnpm/@biomejs+cli-linux-x64@2.5.11/node_modules/@biomejs/cli-linux-x64/biome
+zigbee2mqtt-2.14.3-1-x86_64	zigbee2mqtt	compiled-in:1	1	0	1	1	/usr/share/webapps/zigbee2mqtt/node_modules/.pnpm/@biomejs+cli-linux-x64@2.5.11/node_modules/@biomejs/cli-linux-x64/biome
