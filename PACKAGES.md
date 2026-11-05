@@ -78,7 +78,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 
 - [ ] **acme-redirect** — `/usr/bin/acme-redirect` · includes ECC G3
 - [ ] **aichat** — `/usr/bin/aichat` · includes ECC G3
-- [ ] **anki** — `/usr/lib/python3.14/site-packages/anki/_rsbridge.so` · includes ECC G3
+- [ ] **anki** — `/usr/lib/python3.14/site-packages/anki/_rsbridge.so`
 - [ ] **apt-swarm** — `/usr/bin/apt-swarm`
 - [ ] **archlinux-userland-fs-cmp** — `/usr/bin/archlinux-userland-fs-cmp` · includes ECC G3 · includes AAA
 - [ ] **artem** — `/usr/bin/artem` · includes ECC G3 · includes AAA

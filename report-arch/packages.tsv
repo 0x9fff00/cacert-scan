@@ -1,7 +1,7 @@
 package	base	classes	ecc_g3	aaa_anchor	sslcom_2022	n_files	example_files
 acme-redirect-0.8.1-1-x86_64	acme-redirect	compiled-in:1	1	0	1	1	/usr/bin/acme-redirect
 aichat-0.30.0-4-x86_64	aichat	compiled-in:1	1	0	1	1	/usr/bin/aichat
-anki-26.09.3-1-x86_64	anki	compiled-in:1	1	0	1	1	/usr/lib/python3.14/site-packages/anki/_rsbridge.so
+anki-26.09.4-1-x86_64	anki	compiled-in:1	0	0	1	1	/usr/lib/python3.14/site-packages/anki/_rsbridge.so
 apt-swarm-0.6.1-1-x86_64	apt-swarm	compiled-in:1	0	0	1	1	/usr/bin/apt-swarm
 archlinux-userland-fs-cmp-0.1.0-3-x86_64	archlinux-userland-fs-cmp	compiled-in:1	1	1	1	1	/usr/bin/archlinux-userland-fs-cmp
 artem-3.0.0-4-x86_64	artem	compiled-in:1	1	1	1	1	/usr/bin/artem
@@ -9,9 +9,9 @@ aws-cli-1.46.1-1-any	aws-cli	vendored-pem-file:1	0	1	0	1	/usr/lib/python3.14/sit
 aws-cli-v2-2.37.9-1-any	aws-cli-v2	vendored-pem-file:1	0	1	0	1	/usr/lib/python3.14/site-packages/awscli/botocore/cacert.pem
 azure-cli-2.90.0-1-any	azure-cli	vendored-pem-file:2	1	1	1	2	/opt/azure-cli/lib/python3.14/site-packages/certifi/cacert.pem /opt/azure-cli/lib/python3.14/site-packages/pip/_vendor/certifi/cacert.pem
 bigloo-4.7a-1-x86_64	bigloo	compiled-in:4	0	1	0	4	/usr/lib/bigloo/4.7a/libbigloossl_s-4.7a.so /usr/lib/bigloo/4.7a/libbigloossl_s_mt-4.7a.so /usr/lib/bigloo/4.7a/libbigloossl_u-4.7a.so
-biome-2.6.4-1-x86_64	biome	compiled-in:1	0	0	1	1	/usr/bin/biome
+biome-2.6.5-1-x86_64	biome	compiled-in:1	0	0	1	1	/usr/bin/biome
 bun-1.4.4-1-x86_64	bun	compiled-in:1	0	0	1	1	/usr/bin/bun
-ca-certificates-mozilla-3.132-1-x86_64	ca-certificates-mozilla	vendored-pem-file:1	0	1	1	1	/usr/share/ca-certificates/trust-source/mozilla.trust.p11-kit
+ca-certificates-mozilla-3.133-1-x86_64	ca-certificates-mozilla	vendored-pem-file:1	0	1	1	1	/usr/share/ca-certificates/trust-source/mozilla.trust.p11-kit
 caddy-2.11.7-1-x86_64	caddy	compiled-in:1	1	0	1	1	/usr/bin/caddy
 cargo-about-0.8.4-2-x86_64	cargo-about	compiled-in:1	1	0	1	1	/usr/bin/cargo-about
 cargo-edit-0.13.14-1-x86_64	cargo-edit	compiled-in:1	0	0	1	1	/usr/bin/cargo-upgrade
@@ -47,15 +47,15 @@ electron39-39.8.10-3-x86_64	electron39	compiled-in:1	1	1	1	1	/usr/lib/electron39
 electron40-40.10.6-2-x86_64	electron40	compiled-in:1	1	1	1	1	/usr/lib/electron40/electron
 electron41-41.10.7-2-x86_64	electron41	compiled-in:1	1	1	1	1	/usr/lib/electron41/electron
 electron42-42.11.18-1-x86_64	electron42	compiled-in:1	1	1	1	1	/usr/lib/electron42/electron
-electron43-43.8.6-1-x86_64	electron43	compiled-in:1	1	1	1	1	/usr/lib/electron43/electron
-electron44-44.10.1-1-x86_64	electron44	compiled-in:1	1	1	1	1	/usr/lib/electron44/electron
+electron43-43.8.7-1-x86_64	electron43	compiled-in:1	1	1	1	1	/usr/lib/electron43/electron
+electron44-44.10.2-1-x86_64	electron44	compiled-in:1	1	1	1	1	/usr/lib/electron44/electron
 emby-theater-3.0.21-3-x86_64	emby-theater	compiled-in:1	1	1	0	1	/usr/lib/emby-theater/emby-theater
 esp-generate-2.0.0-1-x86_64	esp-generate	compiled-in:1	1	0	1	1	/usr/bin/esp-generate
 espflash-4.6.0-1-x86_64	espflash	compiled-in:2	1	0	1	2	/usr/bin/cargo-espflash /usr/bin/espflash
 espup-0.18.0-1-x86_64	espup	compiled-in:1	1	0	1	1	/usr/bin/espup
 findomain-10.0.1-2-x86_64	findomain	compiled-in:1	1	0	1	1	/usr/bin/findomain
-firefox-159.0-1-x86_64	firefox	compiled-in:1	1	1	1	1	/usr/lib/firefox/libxul.so
-firefox-developer-edition-160.0b4-1-x86_64	firefox-developer-edition	compiled-in:1	0	1	1	1	/usr/lib/firefox-developer-edition/libxul.so
+firefox-159.0.1-1-x86_64	firefox	compiled-in:1	1	1	1	1	/usr/lib/firefox/libxul.so
+firefox-developer-edition-160.0b5-1-x86_64	firefox-developer-edition	compiled-in:1	0	1	1	1	/usr/lib/firefox-developer-edition/libxul.so
 flawz-0.4.1-1-x86_64	flawz	compiled-in:1	1	0	1	1	/usr/bin/flawz
 fnm-1.39.0-1-x86_64	fnm	compiled-in:1	1	1	1	1	/usr/bin/fnm
 ghidra-12.1.2-2-x86_64	ghidra	vendored-in-archive:2	1	1	0	2	/opt/ghidra/Extensions/Ghidra/ghidra_12.1.2_DEV_20260629_Jython.zip!Jython/data/jython-2.7.4/Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem /opt/ghidra/Extensions/Ghidra/ghidra_12.1.2_DEV_20260629_Jython.zip!Jython/lib/jython-standalone-2.7.4.jar!Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem
@@ -102,7 +102,7 @@ mdfried-0.22.8-1-x86_64	mdfried	compiled-in:1	1	1	1	1	/usr/bin/mdfried
 meilisearch-1:1.56.1-1-x86_64	meilisearch	compiled-in:1	1	0	1	1	/usr/bin/meilisearch
 metasploit-6.5.6-1-x86_64	metasploit	vendored-pem-file:3	0	1	0	3	/opt/metasploit/vendor/bundle/ruby/3.4.0/gems/aws-sdk-core-3.220.1/ca-bundle.crt /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.9.0/lib/httpclient/cacert.pem /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.9.0/lib/httpclient/cacert1024.pem
 mirro-rs-0.2.3-2-x86_64	mirro-rs	compiled-in:1	1	1	1	1	/usr/bin/mirro-rs
-mise-2026.10.25-1-x86_64	mise	compiled-in:1	0	0	1	1	/usr/bin/mise
+mise-2026.11.1-1-x86_64	mise	compiled-in:1	0	0	1	1	/usr/bin/mise
 modrinth-app-0.22.0-1-x86_64	modrinth-app	compiled-in:1	1	0	1	1	/usr/lib/modrinth-app
 mullvad-vpn-daemon-2026.5-1-x86_64	mullvad-vpn-daemon	compiled-in:1	1	0	1	1	/usr/bin/mullvad-daemon
 naev-0.13.5-2-x86_64	naev	compiled-in:1	1	0	1	1	/usr/bin/naev
@@ -131,7 +131,7 @@ opensearch-discovery-gce-plugin-3.9.0-1-x86_64	opensearch-discovery-gce-plugin	v
 opensearch-ml-commons-plugin-3.9.0.0-1-x86_64	opensearch-ml-commons-plugin	vendored-in-archive:4	1	1	1	4	/usr/share/opensearch/plugins/opensearch-ml/tokenizers-0.31.1.jar!native/lib/win-x86_64/cpu/tokenizers.dll /usr/share/opensearch/plugins/opensearch-ml/tokenizers-0.31.1.jar!native/lib/linux-x86_64/cpu/libtokenizers.so /usr/share/opensearch/plugins/opensearch-ml/tokenizers-0.31.1.jar!native/lib/osx-aarch64/cpu/libtokenizers.dylib
 opensearch-repository-gcs-plugin-3.9.0-1-x86_64	opensearch-repository-gcs-plugin	vendored-in-archive:2	0	1	0	2	/usr/share/opensearch/plugins/repository-gcs/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.p12 /usr/share/opensearch/plugins/repository-gcs/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.jks
 osquery-5.23.1-1-x86_64	osquery	vendored-pem-file:1	1	1	0	1	/usr/share/osquery/certs/certs.pem
-pixi-0.84.0-1-x86_64	pixi	compiled-in:1	0	0	1	1	/usr/bin/pixi
+pixi-0.84.1-1-x86_64	pixi	compiled-in:1	0	0	1	1	/usr/bin/pixi
 pnpm-12.17.0-1-x86_64	pnpm	compiled-in:1	0	0	1	1	/usr/bin/pnpm
 pop-launcher-1.11.0-1-x86_64	pop-launcher	compiled-in:1	1	0	1	1	/usr/bin/pop-launcher
 prek-0.5.10-1-x86_64	prek	compiled-in:1	0	0	1	1	/usr/bin/prek
@@ -189,7 +189,7 @@ task-3.5.0-2-x86_64	task	compiled-in:1	1	0	1	1	/usr/bin/task
 tealdeer-1.9.1-1-x86_64	tealdeer	compiled-in:1	0	0	1	1	/usr/bin/tldr
 teamspeak3-3.6.2-6-x86_64	teamspeak3	compiled-in:2	1	1	0	2	/opt/teamspeak3/libQt5WebEngineCore.so.5 /opt/teamspeak3/ts3client_linux_amd64
 teamtype-0.9.3-1-x86_64	teamtype	compiled-in:1	0	0	1	1	/usr/bin/teamtype
-telegram-desktop-7.3.3-1-x86_64	telegram-desktop	compiled-in:1	0	1	0	1	/usr/bin/Telegram
+telegram-desktop-7.3.5-1-x86_64	telegram-desktop	compiled-in:1	0	1	0	1	/usr/bin/Telegram
 television-0.15.9-1-x86_64	television	compiled-in:1	1	0	1	1	/usr/bin/tv
 tensorboard-2.21.0-1-x86_64	tensorboard	compiled-in:1	1	1	0	1	/usr/lib/python3.14/site-packages/tensorboard_data_server/bin/server
 testssl.sh-3.2.4-1-any	testssl.sh	vendored-pem-file:5	1	1	1	5	/usr/share/testssl.sh/etc/Apple.pem /usr/share/testssl.sh/etc/Java.pem /usr/share/testssl.sh/etc/Linux.pem
@@ -201,7 +201,7 @@ turbo-2.9.16-2-x86_64	turbo	compiled-in:1	1	0	1	1	/usr/bin/turbo
 unrealircd-6.2.7-1-x86_64	unrealircd	vendored-pem-file:1	1	0	1	1	/etc/unrealircd/tls/curl-ca-bundle.crt
 uv-0.13.7-1-x86_64	uv	compiled-in:1	0	0	1	1	/usr/bin/uv
 vector-0.57.0-1-x86_64	vector	compiled-in:1	1	1	1	1	/usr/bin/vector
-vivaldi-8.2.4133.96-1-x86_64	vivaldi	compiled-in:1	1	1	1	1	/opt/vivaldi/vivaldi-bin
+vivaldi-8.3.4191.26-1-x86_64	vivaldi	compiled-in:1	1	1	1	1	/opt/vivaldi/vivaldi-bin
 vl-convert-1.9.0-2-x86_64	vl-convert	compiled-in:1	1	1	1	1	/usr/bin/vl-convert
 vortix-0.4.3-1-x86_64	vortix	compiled-in:1	1	0	1	1	/usr/bin/vortix
 wasm-bindgen-0.2.128-1-x86_64	wasm-bindgen	compiled-in:1	1	0	1	1	/usr/bin/wasm-bindgen-test-runner
@@ -215,7 +215,7 @@ wp-cli-2.12.0-1-any	wp-cli	vendored-pem-file:1	1	1	1	1	/usr/bin/wp
 xbuild-0.2.0-2-x86_64	xbuild	compiled-in:1	1	1	0	1	/usr/bin/x
 xlinks-2.30-2-x86_64	xlinks	compiled-in:1	1	1	0	1	/usr/bin/xlinks
 zaproxy-2.17.0-4-any	zaproxy	vendored-in-archive:4	1	0	1	4	/usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/linux/selenium-manager /usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/macos/selenium-manager /usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/windows/selenium-manager.exe
-zed-1.26.2-1-x86_64	zed	compiled-in:1	0	1	1	1	/usr/lib/zed/zed-editor
+zed-1.27.0-1-x86_64	zed	compiled-in:1	0	1	1	1	/usr/lib/zed/zed-editor
 zeroclaw-0.8.7-1-x86_64	zeroclaw	compiled-in:1	0	0	1	1	/usr/bin/zeroclaw
 zeroclaw-acp-bridge-0.8.7-1-x86_64	zeroclaw-acp-bridge	compiled-in:1	0	0	1	1	/usr/bin/zeroclaw-acp-bridge
 zerocode-0.8.7-1-x86_64	zerocode	compiled-in:1	0	0	1	1	/usr/bin/zerocode
