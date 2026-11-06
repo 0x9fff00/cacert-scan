@@ -1,17 +1,17 @@
-packages scanned: 15689  failed: 1  findings: 1595
+packages scanned: 15703  failed: 1  findings: 1599
 cacert bundle hashes used to detect injected copies (Nix only): 0
 fixture-or-other                 files=   758 distinct-packages=  199
 keystore-no-known-roots          files=   283 distinct-packages=  230
 compiled-in                      files=   206 distinct-packages=  175
-has-emudhra-spki-blocklist       files=   181 distinct-packages=  118
+has-emudhra-spki-blocklist       files=   182 distinct-packages=  119
 partial-root-set                 files=    59 distinct-packages=   21
-vendored-pem-file                files=    54 distinct-packages=   36
+vendored-pem-file                files=    57 distinct-packages=   37
 vendored-in-archive              files=    50 distinct-packages=   20
 vendored-keystore                files=     3 distinct-packages=    3
 keystore-locked                  files=     1 distinct-packages=    1
 
 == vendored-pem-file: inject: replace the file with a symlink to ${cacert}/etc/ssl/certs/ca-bundle.crt (or point the program at it)
-   aws-cli aws-cli-v2 azure-cli ca-certificates-mozilla code composer dotnet-sdk dotnet-sdk-10.0 dotnet-sdk-8.0 dotnet-sdk-9.0 ejabberd gitlab gnustep-base gpac grpc gsoap jython libressl metasploit netsurf nextcloud nmap nsight-compute nsight-systems osquery python-botocore python-grpcio python-pip ruby-grpc ruby-httpclient smolvm supertuxkart testssl.sh unrealircd wordpress wp-cli
+   aws-cli aws-cli-v2 azure-cli ca-certificates-mozilla code composer dotnet-sdk dotnet-sdk-10.0 dotnet-sdk-8.0 dotnet-sdk-9.0 ejabberd gitlab gnustep-base gpac grpc gsoap jython libressl metasploit netsurf nextcloud nmap nsight-compute nsight-systems osquery python-botocore python-grpcio python-pip python-wassima ruby-grpc ruby-httpclient smolvm supertuxkart testssl.sh unrealircd wordpress wp-cli
 
 == vendored-in-archive: inject: patch the bundle inside the wheel/jar at build time, or patch the code to use the system store
    ghidra gitlab gitlab-runner gradle intellij-idea-oss jadx jython nsight-compute nsight-systems opensearch-discovery-gce-plugin opensearch-ml-commons-plugin opensearch-repository-gcs-plugin pycharm-community-edition pypy pypy3 python python-virtualenv schemacrawler solr zaproxy

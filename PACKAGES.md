@@ -1,4 +1,4 @@
-### Vendored PEM bundle (36)
+### Vendored PEM bundle (37)
 
 Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`, or point the program at it.
 
@@ -30,6 +30,7 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 - [ ] **python-botocore** — `/usr/lib/python3.14/site-packages/botocore/cacert.pem` · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **python-grpcio** — `/usr/lib/python3.14/site-packages/grpc/_cython/_credentials/roots.pem` · includes ECC G3
 - [ ] **python-pip** — `/usr/lib/python3.14/site-packages/pip/_vendor/certifi/cacert.pem`
+- [ ] **python-wassima** — `/usr/lib/python3.14/site-packages/wassima/_os/_embed.py` (+2 more)
 - [ ] **ruby-grpc** — `/usr/lib/ruby/gems/3.4.0/gems/grpc-1.82.1/etc/roots.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **ruby-httpclient** — `/usr/lib/ruby/gems/3.4.0/gems/httpclient-2.8.3/lib/httpclient/cacert.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **smolvm** — `/usr/lib/smolvm/agent-rootfs/etc/ssl/certs/ca-certificates.crt` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
