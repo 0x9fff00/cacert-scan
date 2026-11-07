@@ -25,7 +25,7 @@ cef-154.0.34-2-x86_64	cef	compiled-in:1	1	1	1	1	/usr/lib/cef/libcef.so
 chromium-156.0.8078.79-1-x86_64	chromium	compiled-in:2	1	1	1	2	/usr/bin/chromedriver /usr/lib/chromium/chromium
 cilium-cli-0.19.5-1-x86_64	cilium-cli	compiled-in:1	1	1	0	1	/usr/bin/cilium-cli
 clamui-0.5.1-1-x86_64	clamui	compiled-in:3	0	0	1	3	/usr/bin/clamui /usr/bin/clamui-cli /usr/bin/clamui-scheduled-scan
-cloudflare-speed-cli-1.0.11-1-x86_64	cloudflare-speed-cli	compiled-in:1	1	0	1	1	/usr/bin/cloudflare-speed-cli
+cloudflare-speed-cli-1.0.12-1-x86_64	cloudflare-speed-cli	compiled-in:1	1	0	1	1	/usr/bin/cloudflare-speed-cli
 code-1.138.0-1-x86_64	code	compiled-in:2,vendored-pem-file:1	1	1	1	3	/usr/lib/code/node_modules.asar /usr/lib/code/node_modules.asar.unpacked/@microsoft/mxc-sdk/bin/x64/lxc-exec /usr/lib/code/node_modules.asar.unpacked/@microsoft/mxc-sdk/bin/x64/wxc-exec.exe
 codebook-lsp-0.3.42-1-x86_64	codebook-lsp	compiled-in:1	1	0	1	1	/usr/bin/codebook-lsp
 composer-2.11.1-1-any	composer	vendored-pem-file:1	0	0	1	1	/usr/bin/composer
@@ -102,7 +102,7 @@ mdfried-0.22.8-1-x86_64	mdfried	compiled-in:1	1	1	1	1	/usr/bin/mdfried
 meilisearch-1:1.56.1-1-x86_64	meilisearch	compiled-in:1	1	0	1	1	/usr/bin/meilisearch
 metasploit-6.5.6-1-x86_64	metasploit	vendored-pem-file:3	0	1	0	3	/opt/metasploit/vendor/bundle/ruby/3.4.0/gems/aws-sdk-core-3.220.1/ca-bundle.crt /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.9.0/lib/httpclient/cacert.pem /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.9.0/lib/httpclient/cacert1024.pem
 mirro-rs-0.2.3-2-x86_64	mirro-rs	compiled-in:1	1	1	1	1	/usr/bin/mirro-rs
-mise-2026.11.2-1-x86_64	mise	compiled-in:1	0	0	1	1	/usr/bin/mise
+mise-2026.11.3-1-x86_64	mise	compiled-in:1	0	0	1	1	/usr/bin/mise
 modrinth-app-0.22.0-1-x86_64	modrinth-app	compiled-in:1	1	0	1	1	/usr/lib/modrinth-app
 mullvad-vpn-daemon-2026.5-1-x86_64	mullvad-vpn-daemon	compiled-in:1	1	0	1	1	/usr/bin/mullvad-daemon
 naev-0.13.5-2-x86_64	naev	compiled-in:1	1	0	1	1	/usr/bin/naev
@@ -147,7 +147,6 @@ python-grpcio-1.84.0-1-x86_64	python-grpcio	vendored-pem-file:1	1	0	1	1	/usr/lib
 python-pip-26.2.2-1-any	python-pip	vendored-pem-file:1	0	0	1	1	/usr/lib/python3.14/site-packages/pip/_vendor/certifi/cacert.pem
 python-primp-2.0.1-1-x86_64	python-primp	compiled-in:1	1	0	1	1	/usr/lib/python3.14/site-packages/primp/primp.abi3.so
 python-proton-vpn-api-core-5.8.11-1-x86_64	python-proton-vpn-api-core	compiled-in:2	1	0	1	2	/usr/lib/nm-protun-service /usr/lib/python3.14/site-packages/proton/vpn/platform.abi3.so
-python-pydantic-monty-client-1.4.0-1-x86_64	python-pydantic-monty-client	compiled-in:1	0	0	1	1	/usr/lib/python3.14/site-packages/pydantic_monty/_monty.cpython-314-x86_64-linux-gnu.so
 python-virtualenv-21.14.7-1-any	python-virtualenv	vendored-in-archive:2	1	0	1	2	/usr/lib/python3.14/site-packages/virtualenv/seed/wheels/embed/pip-26.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem /usr/lib/python3.14/site-packages/virtualenv/seed/wheels/embed/pip-26.2.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem
 python-vl-convert-1.9.0-2-x86_64	python-vl-convert	compiled-in:1	1	1	1	1	/usr/lib/python3.14/site-packages/vl_convert/vl_convert.abi3.so
 python-wassima-2.1.5-1-any	python-wassima	vendored-pem-file:3	0	0	1	3	/usr/lib/python3.14/site-packages/wassima/_os/__pycache__/_embed.cpython-314.opt-1.pyc /usr/lib/python3.14/site-packages/wassima/_os/__pycache__/_embed.cpython-314.pyc /usr/lib/python3.14/site-packages/wassima/_os/_embed.py
@@ -175,7 +174,7 @@ sing-box-1.14.4-1-x86_64	sing-box	compiled-in:1	1	1	1	1	/usr/bin/sing-box
 smartcat-2.2.0-1-x86_64	smartcat	compiled-in:1	1	1	1	1	/usr/bin/sc
 smolvm-1.32.4-1-x86_64	smolvm	compiled-in:2,vendored-pem-file:1	1	1	1	3	/usr/lib/smolvm/agent-rootfs/etc/ssl/certs/ca-certificates.crt /usr/lib/smolvm/agent-rootfs/usr/local/bin/smolvm-agent /usr/lib/smolvm/smolvm-bin
 sn0int-0.26.1-2-x86_64	sn0int	compiled-in:1	1	1	0	1	/usr/bin/sn0int
-snapper-fmt-0.11.10-1-x86_64	snapper-fmt	compiled-in:1	1	1	1	1	/usr/bin/snapper-fmt
+snapper-fmt-0.11.11-1-x86_64	snapper-fmt	compiled-in:1	1	1	1	1	/usr/bin/snapper-fmt
 solr-10.0.0-1-any	solr	vendored-in-archive:2	0	1	0	2	/usr/share/solr/modules/gcs-repository/lib/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.p12 /usr/share/solr/modules/gcs-repository/lib/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.jks
 sshx-0.4.1-2-x86_64	sshx	compiled-in:2	1	1	1	2	/usr/bin/sshx /usr/bin/sshx-server
 stalwart-1.0.0-1-x86_64	stalwart	compiled-in:1	0	0	1	1	/usr/bin/stalwart
@@ -190,7 +189,7 @@ task-3.5.0-2-x86_64	task	compiled-in:1	1	0	1	1	/usr/bin/task
 tealdeer-1.9.1-1-x86_64	tealdeer	compiled-in:1	0	0	1	1	/usr/bin/tldr
 teamspeak3-3.6.2-6-x86_64	teamspeak3	compiled-in:2	1	1	0	2	/opt/teamspeak3/libQt5WebEngineCore.so.5 /opt/teamspeak3/ts3client_linux_amd64
 teamtype-0.9.3-1-x86_64	teamtype	compiled-in:1	0	0	1	1	/usr/bin/teamtype
-telegram-desktop-7.3.5-1-x86_64	telegram-desktop	compiled-in:1	0	1	0	1	/usr/bin/Telegram
+telegram-desktop-7.4.1-1-x86_64	telegram-desktop	compiled-in:1	0	1	0	1	/usr/bin/Telegram
 television-0.15.9-1-x86_64	television	compiled-in:1	1	0	1	1	/usr/bin/tv
 tensorboard-2.21.0-1-x86_64	tensorboard	compiled-in:1	1	1	0	1	/usr/lib/python3.14/site-packages/tensorboard_data_server/bin/server
 testssl.sh-3.2.4-1-any	testssl.sh	vendored-pem-file:5	1	1	1	5	/usr/share/testssl.sh/etc/Apple.pem /usr/share/testssl.sh/etc/Java.pem /usr/share/testssl.sh/etc/Linux.pem

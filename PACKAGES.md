@@ -73,7 +73,7 @@ Fix: Generate the keystore from `${cacert}/etc/ssl/certs/ca-bundle.crt` at build
 - [ ] **openfire** — `/etc/openfire/security/truststore` · includes ECC G3 · includes AAA
 - [ ] **pycharm-community-edition** — `/usr/share/pycharm/jbr/lib/security/cacerts` · includes ECC G3 · includes AAA
 
-### Compiled into a binary (175)
+### Compiled into a binary (174)
 
 Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`, NSS from cacert), or bump the embedded root crate.
 
@@ -190,7 +190,6 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **pyflow** — `/usr/bin/pyflow` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **python-primp** — `/usr/lib/python3.14/site-packages/primp/primp.abi3.so` · includes ECC G3
 - [ ] **python-proton-vpn-api-core** — `/usr/lib/nm-protun-service` (+1 more) · includes ECC G3
-- [ ] **python-pydantic-monty-client** — `/usr/lib/python3.14/site-packages/pydantic_monty/_monty.cpython-314-x86_64-linux-gnu.so`
 - [ ] **python-vl-convert** — `/usr/lib/python3.14/site-packages/vl_convert/vl_convert.abi3.so` · includes ECC G3 · includes AAA
 - [ ] **qt6-webengine** — `/usr/lib/qt6/webenginedriver` (+1 more) · includes ECC G3 · includes AAA
 - [ ] **rainfrog** — `/usr/bin/rainfrog` · includes ECC G3
