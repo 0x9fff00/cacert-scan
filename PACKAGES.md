@@ -31,7 +31,7 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 - [ ] **python-grpcio** — `/usr/lib/python3.14/site-packages/grpc/_cython/_credentials/roots.pem` · includes ECC G3
 - [ ] **python-pip** — `/usr/lib/python3.14/site-packages/pip/_vendor/certifi/cacert.pem`
 - [ ] **python-wassima** — `/usr/lib/python3.14/site-packages/wassima/_os/_embed.py` (+2 more)
-- [ ] **ruby-grpc** — `/usr/lib/ruby/gems/3.4.0/gems/grpc-1.82.1/etc/roots.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **ruby-grpc** — `/usr/lib/ruby/gems/3.4.0/gems/grpc-1.85.1/etc/roots.pem`
 - [ ] **ruby-httpclient** — `/usr/lib/ruby/gems/3.4.0/gems/httpclient-2.8.3/lib/httpclient/cacert.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **smolvm** — `/usr/lib/smolvm/agent-rootfs/etc/ssl/certs/ca-certificates.crt` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **supertuxkart** — `/usr/share/supertuxkart/data/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
@@ -46,7 +46,7 @@ Fix: Patch the bundle inside the archive at build time, or patch the code to use
 
 - [ ] **ghidra** — `/opt/ghidra/Extensions/Ghidra/ghidra_12.1.2_DEV_20260629_Jython.zip!Jython/data/jython-2.7.4/Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **gitlab** — `/usr/share/webapps/gitlab/vendor/bundle/ruby/3.4.0/cache/excon-1.3.0.gem!data.tar.gz!gunzip` (+8 more) · includes ECC G3 · includes AAA
-- [ ] **gitlab-runner** — `/usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.5.2.tar.xz!unxz` (+3 more)
+- [ ] **gitlab-runner** — `/usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.5.3.tar.xz!unxz` (+3 more)
 - [ ] **gradle** — `/usr/share/java/gradle/lib/plugins/google-api-client-1.34.0.jar!com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **intellij-idea-oss** — `/usr/share/idea/plugins/gradle-plugin/lib/gradle-api-9.6.0.jar!org/gradle/internal/impldep/com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **jadx** — `/usr/share/java/jadx/lib/jadx-1.5.6-all.jar!libj2v8_linux_x86_64.so` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
