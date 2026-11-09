@@ -160,7 +160,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **meilisearch** — `/usr/bin/meilisearch` · includes ECC G3
 - [ ] **mirro-rs** — `/usr/bin/mirro-rs` · includes ECC G3 · includes AAA
 - [ ] **mise** — `/usr/bin/mise`
-- [ ] **modrinth-app** — `/usr/lib/modrinth-app` · includes ECC G3
+- [ ] **modrinth-app** — `/usr/lib/modrinth-app`
 - [ ] **mullvad-vpn-daemon** — `/usr/bin/mullvad-daemon` · includes ECC G3
 - [ ] **naev** — `/usr/bin/naev` · includes ECC G3
 - [ ] **nethsm-cli** — `/usr/bin/nethsm` · includes ECC G3

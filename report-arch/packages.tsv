@@ -1,7 +1,7 @@
 package	base	classes	ecc_g3	aaa_anchor	sslcom_2022	n_files	example_files
 acme-redirect-0.8.1-1-x86_64	acme-redirect	compiled-in:1	1	0	1	1	/usr/bin/acme-redirect
 aichat-0.30.0-4-x86_64	aichat	compiled-in:1	1	0	1	1	/usr/bin/aichat
-anki-26.09.4-1-x86_64	anki	compiled-in:1	0	0	1	1	/usr/lib/python3.14/site-packages/anki/_rsbridge.so
+anki-26.09.4-2-x86_64	anki	compiled-in:1	0	0	1	1	/usr/lib/python3.14/site-packages/anki/_rsbridge.so
 apt-swarm-0.6.1-1-x86_64	apt-swarm	compiled-in:1	0	0	1	1	/usr/bin/apt-swarm
 archlinux-userland-fs-cmp-0.1.0-3-x86_64	archlinux-userland-fs-cmp	compiled-in:1	1	1	1	1	/usr/bin/archlinux-userland-fs-cmp
 artem-3.0.0-4-x86_64	artem	compiled-in:1	1	1	1	1	/usr/bin/artem
@@ -77,7 +77,7 @@ halp-0.2.0-2-x86_64	halp	compiled-in:1	1	1	1	1	/usr/bin/halp
 hazelnut-0.3.0-1-x86_64	hazelnut	compiled-in:1	1	0	1	1	/usr/bin/hazelnut
 health-0.95.0-6-x86_64	health	compiled-in:1	1	1	0	1	/usr/bin/dev.Cogitri.Health
 hieroglyphic-2.3.0-5-x86_64	hieroglyphic	compiled-in:1	1	0	1	1	/usr/bin/hieroglyphic
-i3status-rust-0.40.0-1-x86_64	i3status-rust	compiled-in:1	1	0	1	1	/usr/bin/i3status-rs
+i3status-rust-0.40.1-1-x86_64	i3status-rust	compiled-in:1	1	0	1	1	/usr/bin/i3status-rs
 intel-oneapi-toolkit-2026.0.1.27+c9c3d3e3_ddb4_490e_bb41_6e9041ba32a7-2-x86_64	intel-oneapi-toolkit	compiled-in:2	1	1	1	2	/opt/intel/oneapi/vtune/2026.2/backend/bin64/amplxe-node /opt/intel/oneapi/vtune/2026.2/bin64/vtune-gui.bin
 intelli-shell-3.4.5-1-x86_64	intelli-shell	compiled-in:1	1	0	1	1	/usr/bin/intelli-shell
 intellij-idea-oss-2026.2.3-1-x86_64	intellij-idea-oss	compiled-in:2,vendored-in-archive:2,vendored-keystore:1	1	1	1	5	/usr/share/idea/jbr/lib/security/cacerts /usr/share/idea/plugins/gradle-plugin/lib/gradle-api-9.6.0.jar /usr/share/idea/plugins/gradle-plugin/lib/gradle-api-9.6.0.jar!org/gradle/internal/impldep/com/google/api/client/googleapis/google.p12
@@ -103,7 +103,7 @@ meilisearch-1:1.56.1-1-x86_64	meilisearch	compiled-in:1	1	0	1	1	/usr/bin/meilise
 metasploit-6.5.6-1-x86_64	metasploit	vendored-pem-file:3	0	1	0	3	/opt/metasploit/vendor/bundle/ruby/3.4.0/gems/aws-sdk-core-3.220.1/ca-bundle.crt /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.9.0/lib/httpclient/cacert.pem /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.9.0/lib/httpclient/cacert1024.pem
 mirro-rs-0.2.3-2-x86_64	mirro-rs	compiled-in:1	1	1	1	1	/usr/bin/mirro-rs
 mise-2026.11.3-1-x86_64	mise	compiled-in:1	0	0	1	1	/usr/bin/mise
-modrinth-app-0.22.0-1-x86_64	modrinth-app	compiled-in:1	1	0	1	1	/usr/lib/modrinth-app
+modrinth-app-0.22.1-1-x86_64	modrinth-app	compiled-in:1	0	0	1	1	/usr/lib/modrinth-app
 mullvad-vpn-daemon-2026.5-1-x86_64	mullvad-vpn-daemon	compiled-in:1	1	0	1	1	/usr/bin/mullvad-daemon
 naev-0.13.5-2-x86_64	naev	compiled-in:1	1	0	1	1	/usr/bin/naev
 nethsm-cli-0.10.0-1-x86_64	nethsm-cli	compiled-in:1	1	0	1	1	/usr/bin/nethsm
