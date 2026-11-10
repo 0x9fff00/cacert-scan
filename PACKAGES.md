@@ -48,7 +48,7 @@ Fix: Patch the bundle inside the archive at build time, or patch the code to use
 - [ ] **gitlab** — `/usr/share/webapps/gitlab/vendor/bundle/ruby/3.4.0/cache/excon-1.3.0.gem!data.tar.gz!gunzip` (+8 more) · includes ECC G3 · includes AAA
 - [ ] **gitlab-runner** — `/usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.5.3.tar.xz!unxz` (+3 more)
 - [ ] **gradle** — `/usr/share/java/gradle/lib/plugins/google-api-client-1.34.0.jar!com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
-- [ ] **intellij-idea-oss** — `/usr/share/idea/plugins/gradle-plugin/lib/gradle-api-9.6.0.jar!org/gradle/internal/impldep/com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **intellij-idea-oss** — `/usr/share/idea/plugins/gradle-plugin/lib/intellij.libraries.gradle.jar!org/gradle/internal/impldep/com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **jadx** — `/usr/share/java/jadx/lib/jadx-1.5.6-all.jar!libj2v8_linux_x86_64.so` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **jython** — `/opt/jython/Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **nsight-compute** — `/usr/lib/nsight-compute/host/target-linux-x64/python/lib/python3.12/ensurepip/_bundled/pip-26.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem` · includes ECC G3
@@ -69,9 +69,9 @@ Fix: Patch the bundle inside the archive at build time, or patch the code to use
 
 Fix: Generate the keystore from `${cacert}/etc/ssl/certs/ca-bundle.crt` at build time with `jre-generate-cacerts`, as openjdk does. `cacert` has no Java keystore output.
 
-- [ ] **intellij-idea-oss** — `/usr/share/idea/jbr/lib/security/cacerts` · includes ECC G3 · includes AAA
+- [ ] **intellij-idea-oss** — `/usr/share/idea/jbr/lib/security/cacerts`
 - [ ] **openfire** — `/etc/openfire/security/truststore` · includes ECC G3 · includes AAA
-- [ ] **pycharm-community-edition** — `/usr/share/pycharm/jbr/lib/security/cacerts` · includes ECC G3 · includes AAA
+- [ ] **pycharm-community-edition** — `/usr/share/pycharm/jbr/lib/security/cacerts`
 
 ### Compiled into a binary (174)
 
@@ -162,7 +162,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **mise** — `/usr/bin/mise`
 - [ ] **modrinth-app** — `/usr/lib/modrinth-app`
 - [ ] **mullvad-vpn-daemon** — `/usr/bin/mullvad-daemon` · includes ECC G3
-- [ ] **naev** — `/usr/bin/naev` · includes ECC G3
+- [ ] **naev** — `/usr/bin/naev`
 - [ ] **nethsm-cli** — `/usr/bin/nethsm` · includes ECC G3
 - [ ] **nethsm-pkcs11** — `/usr/lib/pkcs11/libnethsm_pkcs11.so`
 - [ ] **nextcloud-app-notify_push** — `/usr/share/webapps/nextcloud/apps/notify_push/bin/x86_64/notify_push`
@@ -174,7 +174,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **nsight-systems** — `/usr/lib/nsight-systems/host-linux-x64/libQt6WebEngineCore.so.6` · includes ECC G3 · includes AAA
 - [ ] **numa** — `/usr/bin/numa` · includes ECC G3
 - [ ] **numbat** — `/usr/bin/numbat` · includes ECC G3
-- [ ] **nushell** — `/usr/bin/nu` · includes ECC G3
+- [ ] **nushell** — `/usr/bin/nu`
 - [ ] **oculante** — `/usr/bin/oculante` · includes ECC G3
 - [ ] **openai-codex** — `/usr/lib/openai-codex/bin/codex` (+2 more)
 - [ ] **opencode** — `/usr/bin/opencode`
@@ -202,7 +202,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **sccache** — `/usr/bin/sccache` (+1 more) · includes ECC G3
 - [ ] **selene** — `/usr/bin/selene` · includes ECC G3 · includes AAA
 - [ ] **sendme** — `/usr/bin/sendme`
-- [ ] **servo** — `/opt/servo/servoshell` · includes ECC G3
+- [ ] **servo** — `/opt/servo/servoshell`
 - [ ] **shadowsocks-rust** — `/usr/bin/sslocal` (+3 more) · includes ECC G3
 - [ ] **signal-desktop** — `/usr/lib/signal-desktop/signal-desktop` · includes ECC G3 · includes AAA
 - [ ] **signstar-configure** — `/usr/bin/signstar-configure`
