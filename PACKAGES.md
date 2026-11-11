@@ -20,7 +20,7 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 - [ ] **gsoap** — `/usr/share/gsoap/plugin/cacerts.c` · includes ECC G3 · includes AAA
 - [ ] **jython** — `/opt/jython/Lib/site-packages/pip/_vendor/certifi/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **libressl** — `/etc/libressl/cert.pem`
-- [ ] **metasploit** — `/opt/metasploit/vendor/bundle/ruby/3.4.0/gems/aws-sdk-core-3.220.1/ca-bundle.crt` (+2 more) · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **metasploit** — `/opt/metasploit/vendor/bundle/ruby/3.4.0/gems/aws-sdk-core-3.263.0/ca-bundle.crt` (+2 more) · includes AAA
 - [ ] **netsurf** — `/usr/share/netsurf/ca-bundle.txt` · includes ECC G3 · includes AAA
 - [ ] **nextcloud** — `/usr/share/webapps/nextcloud/resources/config/ca-bundle.crt` · includes ECC G3
 - [ ] **nmap** — `/usr/share/ncat/ca-bundle.crt` · includes ECC G3
@@ -33,7 +33,7 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 - [ ] **python-wassima** — `/usr/lib/python3.14/site-packages/wassima/_os/_embed.py` (+2 more)
 - [ ] **ruby-grpc** — `/usr/lib/ruby/gems/3.4.0/gems/grpc-1.85.1/etc/roots.pem`
 - [ ] **ruby-httpclient** — `/usr/lib/ruby/gems/3.4.0/gems/httpclient-2.8.3/lib/httpclient/cacert.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
-- [ ] **smolvm** — `/usr/lib/smolvm/agent-rootfs/etc/ssl/certs/ca-certificates.crt` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **smolvm** — `/usr/lib/smolvm/agent-rootfs/etc/ssl/certs/ca-certificates.crt`
 - [ ] **supertuxkart** — `/usr/share/supertuxkart/data/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **testssl.sh** — `/usr/share/testssl.sh/etc/Java.pem` (+4 more) · includes ECC G3 · includes AAA
 - [ ] **unrealircd** — `/etc/unrealircd/tls/curl-ca-bundle.crt` · includes ECC G3
@@ -44,7 +44,7 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 
 Fix: Patch the bundle inside the archive at build time, or patch the code to use the system store.
 
-- [ ] **ghidra** — `/opt/ghidra/Extensions/Ghidra/ghidra_12.1.2_DEV_20260629_Jython.zip!Jython/data/jython-2.7.4/Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
+- [ ] **ghidra** — `/opt/ghidra/Extensions/Ghidra/ghidra_12.2_DEV_20261110_Jython.zip!Jython/data/jython-2.7.4/Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **gitlab** — `/usr/share/webapps/gitlab/vendor/bundle/ruby/3.4.0/cache/excon-1.3.0.gem!data.tar.gz!gunzip` (+8 more) · includes ECC G3 · includes AAA
 - [ ] **gitlab-runner** — `/usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.5.3.tar.xz!unxz` (+3 more)
 - [ ] **gradle** — `/usr/share/java/gradle/lib/plugins/google-api-client-1.34.0.jar!com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
@@ -61,7 +61,7 @@ Fix: Patch the bundle inside the archive at build time, or patch the code to use
 - [ ] **pypy3** — `/opt/pypy3/lib/pypy3.12/ensurepip/_bundled/pip-25.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem` · includes ECC G3 · includes AAA
 - [ ] **python** — `/usr/lib/python3.14/ensurepip/_bundled/pip-26.2.2-py3-none-any.whl!pip/_vendor/certifi/cacert.pem`
 - [ ] **python-virtualenv** — `/usr/lib/python3.14/site-packages/virtualenv/seed/wheels/embed/pip-26.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem` (+1 more) · includes ECC G3
-- [ ] **schemacrawler** — `/opt/schemacrawler/lib/snowflake-jdbc-4.4.0.jar!net/snowflake/client/jdbc/internal/google/api/client/googleapis/google.jks` (+2 more) · includes ECC G3 · includes AAA
+- [ ] **schemacrawler** — `/opt/schemacrawler/lib/python-resources-25.5.5.0.3.jar!META-INF/resources/libpython/ensurepip/_bundled/pip-26.1.2-py3-none-any.whl!pip/_vendor/certifi/cacert.pem` · includes ECC G3
 - [ ] **solr** — `/usr/share/solr/modules/gcs-repository/lib/google-api-client-2.7.2.jar!com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **zaproxy** — `/usr/share/zaproxy/plugin/webdriverlinux-release-169.zap!webdriver/linux/64/chromedriver` (+3 more) · includes ECC G3
 
@@ -122,7 +122,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **espflash** — `/usr/bin/espflash` (+1 more) · includes ECC G3
 - [ ] **espup** — `/usr/bin/espup` · includes ECC G3
 - [ ] **findomain** — `/usr/bin/findomain` · includes ECC G3
-- [ ] **firefox** — `/usr/lib/firefox/libxul.so` · includes ECC G3 · includes AAA
+- [ ] **firefox** — `/usr/lib/firefox/libxul.so` · includes AAA
 - [ ] **firefox-developer-edition** — `/usr/lib/firefox-developer-edition/libxul.so` · includes AAA
 - [ ] **flawz** — `/usr/bin/flawz` · includes ECC G3
 - [ ] **fnm** — `/usr/bin/fnm` · includes ECC G3 · includes AAA
@@ -189,7 +189,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **pycharm-community-edition** — `/usr/share/pycharm/plugins/jcef-plugin/jcef/libcef.so` · includes ECC G3 · includes AAA
 - [ ] **pyflow** — `/usr/bin/pyflow` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **python-primp** — `/usr/lib/python3.14/site-packages/primp/primp.abi3.so` · includes ECC G3
-- [ ] **python-proton-vpn-api-core** — `/usr/lib/nm-protun-service` (+1 more) · includes ECC G3
+- [ ] **python-proton-vpn-api-core** — `/usr/lib/nm-protun-service` (+1 more)
 - [ ] **python-vl-convert** — `/usr/lib/python3.14/site-packages/vl_convert/vl_convert.abi3.so` · includes ECC G3 · includes AAA
 - [ ] **qt6-webengine** — `/usr/lib/qt6/webenginedriver` (+1 more) · includes ECC G3 · includes AAA
 - [ ] **rainfrog** — `/usr/bin/rainfrog` · includes ECC G3
