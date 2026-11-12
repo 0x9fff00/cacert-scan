@@ -147,7 +147,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **kwaak** — `/usr/bin/kwaak` · includes ECC G3
 - [ ] **lact** — `/usr/bin/lact` · includes ECC G3
 - [ ] **legba** — `/usr/bin/legba` · includes ECC G3 · includes AAA
-- [ ] **librewolf** — `/usr/lib/librewolf/libxul.so` · includes ECC G3 · includes AAA
+- [ ] **librewolf** — `/usr/lib/librewolf/libxul.so` · includes AAA
 - [ ] **libtg_owt** — `/usr/lib/libtg_owt.a` · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **links** — `/usr/bin/links` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **llmfit** — `/usr/bin/llmfit`
