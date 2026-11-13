@@ -24,7 +24,7 @@ cargo-tauri-2.11.5-1-x86_64	cargo-tauri	compiled-in:1	1	0	1	1	/usr/bin/cargo-tau
 cef-156.0.27-2-x86_64	cef	compiled-in:1	1	1	1	1	/usr/lib/cef/libcef.so
 chromium-157.0.8103.38-1-x86_64	chromium	compiled-in:2	1	1	1	2	/usr/bin/chromedriver /usr/lib/chromium/chromium
 cilium-cli-0.19.6-1-x86_64	cilium-cli	compiled-in:1	1	1	0	1	/usr/bin/cilium-cli
-clamui-0.5.1-1-x86_64	clamui	compiled-in:3	0	0	1	3	/usr/bin/clamui /usr/bin/clamui-cli /usr/bin/clamui-scheduled-scan
+clamui-0.6.0-1-x86_64	clamui	compiled-in:3	0	0	1	3	/usr/bin/clamui /usr/bin/clamui-cli /usr/bin/clamui-scheduled-scan
 cloudflare-speed-cli-1.0.12-1-x86_64	cloudflare-speed-cli	compiled-in:1	1	0	1	1	/usr/bin/cloudflare-speed-cli
 code-1.138.0-2-x86_64	code	compiled-in:2,vendored-pem-file:1	1	1	1	3	/usr/lib/code/node_modules.asar /usr/lib/code/node_modules.asar.unpacked/@microsoft/mxc-sdk/bin/x64/lxc-exec /usr/lib/code/node_modules.asar.unpacked/@microsoft/mxc-sdk/bin/x64/wxc-exec.exe
 codebook-lsp-0.3.42-1-x86_64	codebook-lsp	compiled-in:1	1	0	1	1	/usr/bin/codebook-lsp
@@ -47,8 +47,8 @@ electron39-39.8.10-3-x86_64	electron39	compiled-in:1	1	1	1	1	/usr/lib/electron39
 electron40-40.10.6-2-x86_64	electron40	compiled-in:1	1	1	1	1	/usr/lib/electron40/electron
 electron41-41.10.7-2-x86_64	electron41	compiled-in:1	1	1	1	1	/usr/lib/electron41/electron
 electron42-42.11.18-1-x86_64	electron42	compiled-in:1	1	1	1	1	/usr/lib/electron42/electron
-electron43-43.8.8-1-x86_64	electron43	compiled-in:1	1	1	1	1	/usr/lib/electron43/electron
-electron44-44.11.1-1-x86_64	electron44	compiled-in:1	1	1	1	1	/usr/lib/electron44/electron
+electron43-43.8.9-1-x86_64	electron43	compiled-in:1	1	1	1	1	/usr/lib/electron43/electron
+electron44-44.11.2-1-x86_64	electron44	compiled-in:1	1	1	1	1	/usr/lib/electron44/electron
 emby-theater-3.0.21-3-x86_64	emby-theater	compiled-in:1	1	1	0	1	/usr/lib/emby-theater/emby-theater
 esp-generate-2.0.0-1-x86_64	esp-generate	compiled-in:1	1	0	1	1	/usr/bin/esp-generate
 espflash-4.6.0-1-x86_64	espflash	compiled-in:2	1	0	1	2	/usr/bin/cargo-espflash /usr/bin/espflash
@@ -102,7 +102,7 @@ mdfried-0.22.8-1-x86_64	mdfried	compiled-in:1	1	1	1	1	/usr/bin/mdfried
 meilisearch-1:1.56.2-1-x86_64	meilisearch	compiled-in:1	1	0	1	1	/usr/bin/meilisearch
 metasploit-6.5.9-1-x86_64	metasploit	vendored-pem-file:3	0	1	1	3	/opt/metasploit/vendor/bundle/ruby/3.4.0/gems/aws-sdk-core-3.263.0/ca-bundle.crt /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.10.0/lib/httpclient/cacert.pem /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.10.0/lib/httpclient/cacert1024.pem
 mirro-rs-0.2.3-2-x86_64	mirro-rs	compiled-in:1	1	1	1	1	/usr/bin/mirro-rs
-mise-2026.11.5-2-x86_64	mise	compiled-in:1	0	0	1	1	/usr/bin/mise
+mise-2026.11.7-1-x86_64	mise	compiled-in:1	0	0	1	1	/usr/bin/mise
 modrinth-app-0.23.1-1-x86_64	modrinth-app	compiled-in:1	0	0	1	1	/usr/lib/modrinth-app
 mullvad-vpn-daemon-2026.5-1-x86_64	mullvad-vpn-daemon	compiled-in:1	1	0	1	1	/usr/bin/mullvad-daemon
 naev-0.13.5-3-x86_64	naev	compiled-in:1	0	0	1	1	/usr/bin/naev
@@ -122,7 +122,7 @@ numa-0.24.1-1-x86_64	numa	compiled-in:1	1	0	1	1	/usr/bin/numa
 numbat-1.24.0-1-x86_64	numbat	compiled-in:1	1	0	1	1	/usr/bin/numbat
 nushell-0.117.0-2-x86_64	nushell	compiled-in:1	0	0	1	1	/usr/bin/nu
 oculante-0.9.6-1-x86_64	oculante	compiled-in:1	1	0	1	1	/usr/bin/oculante
-openai-codex-0.167.2-1-x86_64	openai-codex	compiled-in:3	0	0	1	3	/usr/lib/openai-codex/bin/codex /usr/lib/openai-codex/bin/codex-code-mode-host /usr/lib/openai-codex/bin/codex-responses-api-proxy
+openai-codex-0.168.0-1-x86_64	openai-codex	compiled-in:3	0	0	1	3	/usr/lib/openai-codex/bin/codex /usr/lib/openai-codex/bin/codex-code-mode-host /usr/lib/openai-codex/bin/codex-responses-api-proxy
 opencode-2.2.7-1-x86_64	opencode	compiled-in:1	0	0	1	1	/usr/bin/opencode
 opendeck-2.14.2-2-x86_64	opendeck	compiled-in:1	1	0	1	1	/usr/bin/opendeck
 openfire-5.1.2-1-any	openfire	vendored-keystore:1	1	1	1	1	/etc/openfire/security/truststore
@@ -189,7 +189,7 @@ task-3.5.0-2-x86_64	task	compiled-in:1	1	0	1	1	/usr/bin/task
 tealdeer-1.9.1-1-x86_64	tealdeer	compiled-in:1	0	0	1	1	/usr/bin/tldr
 teamspeak3-3.6.2-7-x86_64	teamspeak3	compiled-in:2	1	1	0	2	/opt/teamspeak3/libQt5WebEngineCore.so.5 /opt/teamspeak3/ts3client_linux_amd64
 teamtype-0.9.3-1-x86_64	teamtype	compiled-in:1	0	0	1	1	/usr/bin/teamtype
-telegram-desktop-7.4.2-1-x86_64	telegram-desktop	compiled-in:1	0	1	0	1	/usr/bin/Telegram
+telegram-desktop-7.4.3-1-x86_64	telegram-desktop	compiled-in:1	0	1	0	1	/usr/bin/Telegram
 television-0.15.9-1-x86_64	television	compiled-in:1	1	0	1	1	/usr/bin/tv
 tensorboard-2.21.0-1-x86_64	tensorboard	compiled-in:1	1	1	0	1	/usr/lib/python3.14/site-packages/tensorboard_data_server/bin/server
 testssl.sh-3.2.5-1-any	testssl.sh	vendored-pem-file:5	1	1	1	5	/usr/share/testssl.sh/etc/Apple.pem /usr/share/testssl.sh/etc/Java.pem /usr/share/testssl.sh/etc/Linux.pem
@@ -199,7 +199,7 @@ treemd-0.10.0-1-x86_64	treemd	compiled-in:1	1	0	1	1	/usr/bin/treemd
 tuicr-0.28.0-1-x86_64	tuicr	compiled-in:1	0	0	1	1	/usr/bin/tuicr
 turbo-2.9.16-2-x86_64	turbo	compiled-in:1	1	0	1	1	/usr/bin/turbo
 unrealircd-6.2.7.1-1-x86_64	unrealircd	vendored-pem-file:1	1	0	1	1	/etc/unrealircd/tls/curl-ca-bundle.crt
-uv-0.13.7-1-x86_64	uv	compiled-in:1	0	0	1	1	/usr/bin/uv
+uv-0.13.8-1-x86_64	uv	compiled-in:1	0	0	1	1	/usr/bin/uv
 vector-0.57.0-1-x86_64	vector	compiled-in:1	1	1	1	1	/usr/bin/vector
 vivaldi-8.3.4191.35-1-x86_64	vivaldi	compiled-in:1	1	1	1	1	/opt/vivaldi/vivaldi-bin
 vl-convert-1.9.0-2-x86_64	vl-convert	compiled-in:1	1	1	1	1	/usr/bin/vl-convert
