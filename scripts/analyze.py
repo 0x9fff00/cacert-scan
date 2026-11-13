@@ -160,8 +160,11 @@ with open(f"{rep}/packages.tsv", "w", newline="") as fh:
         )
 
 done = len(os.listdir(f"{out}/done"))
-with open(f"{out}/failed") as fh:
-    failed = fh.read().splitlines() if os.path.exists(f"{out}/failed") else []
+try:
+    with open(f"{out}/failed") as fh:
+        failed = fh.read().splitlines()
+except FileNotFoundError:
+    failed = []
 cls = collections.Counter(f["class"] for f in rows)
 bases = collections.defaultdict(set)
 for f in rows:
