@@ -22,7 +22,7 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 - [ ] **libressl** — `/etc/libressl/cert.pem`
 - [ ] **metasploit** — `/opt/metasploit/vendor/bundle/ruby/3.4.0/gems/aws-sdk-core-3.263.0/ca-bundle.crt` (+2 more) · includes AAA
 - [ ] **netsurf** — `/usr/share/netsurf/ca-bundle.txt` · includes ECC G3 · includes AAA
-- [ ] **nextcloud** — `/usr/share/webapps/nextcloud/resources/config/ca-bundle.crt` · includes ECC G3
+- [ ] **nextcloud** — `/usr/share/webapps/nextcloud/resources/config/ca-bundle.crt`
 - [ ] **nmap** — `/usr/share/ncat/ca-bundle.crt` · includes ECC G3
 - [ ] **nsight-compute** — `/usr/lib/nsight-compute/extras/python/cacert.pem` (+1 more) · includes ECC G3
 - [ ] **nsight-systems** — `/usr/lib/nsight-systems/host-linux-x64/python/lib/python3.12/site-packages/pip/_vendor/certifi/cacert.pem` (+1 more) · includes ECC G3
@@ -73,7 +73,7 @@ Fix: Generate the keystore from `${cacert}/etc/ssl/certs/ca-bundle.crt` at build
 - [ ] **openfire** — `/etc/openfire/security/truststore` · includes ECC G3 · includes AAA
 - [ ] **pycharm-community-edition** — `/usr/share/pycharm/jbr/lib/security/cacerts`
 
-### Compiled into a binary (174)
+### Compiled into a binary (173)
 
 Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`, NSS from cacert), or bump the embedded root crate.
 
@@ -91,7 +91,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **cargo-edit** — `/usr/bin/cargo-upgrade`
 - [ ] **cargo-make** — `/usr/bin/makers` (+1 more) · includes ECC G3 · includes AAA
 - [ ] **cargo-msrv** — `/usr/bin/cargo-msrv`
-- [ ] **cargo-pgrx** — `/usr/bin/cargo-pgrx` · includes ECC G3
+- [ ] **cargo-pgrx** — `/usr/bin/cargo-pgrx`
 - [ ] **cargo-release** — `/usr/bin/cargo-release`
 - [ ] **cargo-shuttle** — `/usr/bin/shuttle` (+1 more) · includes ECC G3
 - [ ] **cargo-tauri** — `/usr/bin/cargo-tauri` · includes ECC G3
@@ -140,7 +140,6 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **hieroglyphic** — `/usr/bin/hieroglyphic` · includes ECC G3
 - [ ] **i3status-rust** — `/usr/bin/i3status-rs` · includes ECC G3
 - [ ] **intel-oneapi-toolkit** — `/opt/intel/oneapi/vtune/2026.2/bin64/vtune-gui.bin` (+1 more) · includes ECC G3 · includes AAA
-- [ ] **intelli-shell** — `/usr/bin/intelli-shell` · includes ECC G3
 - [ ] **intellij-idea-oss** — `/usr/share/idea/plugins/jcef-plugin/jcef/libcef.so` (+1 more) · includes ECC G3 · includes AAA
 - [ ] **jolt** — `/usr/bin/jolt` · includes ECC G3
 - [ ] **jumpy** — `/usr/lib/jumpy` · includes ECC G3 · includes AAA
@@ -166,7 +165,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **nethsm-cli** — `/usr/bin/nethsm` · includes ECC G3
 - [ ] **nethsm-pkcs11** — `/usr/lib/pkcs11/libnethsm_pkcs11.so`
 - [ ] **nextcloud-app-notify_push** — `/usr/share/webapps/nextcloud/apps/notify_push/bin/x86_64/notify_push`
-- [ ] **nim** — `/usr/bin/nimble` · includes ECC G3
+- [ ] **nim** — `/usr/bin/nimble`
 - [ ] **nodejs** — `/usr/bin/node`
 - [ ] **nodejs-lts-jod** — `/usr/bin/node`
 - [ ] **nodejs-lts-krypton** — `/usr/bin/node`
