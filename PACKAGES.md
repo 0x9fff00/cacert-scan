@@ -190,7 +190,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **python-primp** — `/usr/lib/python3.14/site-packages/primp/primp.abi3.so` · includes ECC G3
 - [ ] **python-proton-vpn-api-core** — `/usr/lib/nm-protun-service` (+1 more)
 - [ ] **python-vl-convert** — `/usr/lib/python3.14/site-packages/vl_convert/vl_convert.abi3.so` · includes ECC G3 · includes AAA
-- [ ] **qt6-webengine** — `/usr/lib/qt6/webenginedriver` (+1 more) · includes ECC G3 · includes AAA
+- [ ] **qt6-webengine** — `/usr/lib/qt6/webenginedriver` (+1 more) · includes AAA
 - [ ] **rainfrog** — `/usr/bin/rainfrog` · includes ECC G3
 - [ ] **rattler-build** — `/usr/bin/rattler-build` · includes ECC G3
 - [ ] **readest** — `/usr/share/Readest/readest` (+1 more) · includes ECC G3 · includes AAA
