@@ -213,7 +213,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **sn0int** — `/usr/bin/sn0int` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **snapper-fmt** — `/usr/bin/snapper-fmt` · includes ECC G3 · includes AAA
 - [ ] **sshx** — `/usr/bin/sshx` (+1 more) · includes ECC G3 · includes AAA
-- [ ] **stalwart** — `/usr/bin/stalwart`
+- [ ] **stalwart** — `/usr/bin/stalwart` · includes AAA
 - [ ] **stalwart-proxy** — `/usr/bin/stalwart-proxy` · includes ECC G3
 - [ ] **symposium** — `/usr/bin/cargo-agents` · includes ECC G3
 - [ ] **syndicationd** — `/usr/bin/synd` · includes ECC G3
