@@ -16,7 +16,7 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 - [ ] **gitlab** — `/usr/share/webapps/gitlab/vendor/bundle/ruby/3.4.0/gems/grpc-1.81.1/etc/roots.pem` (+4 more) · includes ECC G3 · includes AAA
 - [ ] **gnustep-base** — `/usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.31/Resources/GSTLS/ca-certificates.crt` · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **gpac** — `/usr/share/gpac/res/ca-bundle.crt` · includes ECC G3 · includes AAA
-- [ ] **grpc** — `/usr/share/grpc/roots.pem` · includes ECC G3
+- [ ] **grpc** — `/usr/share/grpc/roots.pem`
 - [ ] **gsoap** — `/usr/share/gsoap/plugin/cacerts.c` · includes ECC G3 · includes AAA
 - [ ] **jython** — `/opt/jython/Lib/site-packages/pip/_vendor/certifi/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **libressl** — `/etc/libressl/cert.pem`
@@ -28,7 +28,7 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 - [ ] **nsight-systems** — `/usr/lib/nsight-systems/host-linux-x64/python/lib/python3.12/site-packages/pip/_vendor/certifi/cacert.pem` (+1 more) · includes ECC G3
 - [ ] **osquery** — `/usr/share/osquery/certs/certs.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **python-botocore** — `/usr/lib/python3.14/site-packages/botocore/cacert.pem` · stale bundle, no SSL.com 2022 · includes AAA
-- [ ] **python-grpcio** — `/usr/lib/python3.14/site-packages/grpc/_cython/_credentials/roots.pem` · includes ECC G3
+- [ ] **python-grpcio** — `/usr/lib/python3.14/site-packages/grpc/_cython/_credentials/roots.pem`
 - [ ] **python-pip** — `/usr/lib/python3.14/site-packages/pip/_vendor/certifi/cacert.pem`
 - [ ] **python-wassima** — `/usr/lib/python3.14/site-packages/wassima/_os/_embed.py` (+2 more)
 - [ ] **ruby-grpc** — `/usr/lib/ruby/gems/3.4.0/gems/grpc-1.85.1/etc/roots.pem`
@@ -227,7 +227,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **telegram-desktop** — `/usr/bin/Telegram` · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **television** — `/usr/bin/tv` · includes ECC G3
 - [ ] **tensorboard** — `/usr/lib/python3.14/site-packages/tensorboard_data_server/bin/server` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
-- [ ] **thunderbird** — `/usr/lib/thunderbird/libxul.so` · includes ECC G3 · includes AAA
+- [ ] **thunderbird** — `/usr/lib/thunderbird/libxul.so` · includes AAA
 - [ ] **tinymist** — `/usr/bin/tinymist` · includes ECC G3
 - [ ] **treemd** — `/usr/bin/treemd` · includes ECC G3
 - [ ] **tuicr** — `/usr/bin/tuicr`

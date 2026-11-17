@@ -32,7 +32,7 @@ composer-2.11.2-1-any	composer	vendored-pem-file:1	0	0	1	1	/usr/bin/composer
 deltachat-rpc-server-2.65.0-2-x86_64	deltachat-rpc-server	compiled-in:1	0	0	1	1	/usr/bin/deltachat-rpc-server
 deno-2.9.8-1-x86_64	deno	compiled-in:1	0	0	1	1	/usr/bin/deno
 dioxus-cli-0.7.10-2-x86_64	dioxus-cli	compiled-in:1	1	0	1	1	/usr/bin/dx
-discord-1:1.0.169-1-x86_64	discord	compiled-in:1	0	0	1	1	/usr/share/discord/updater_bootstrap
+discord-1:1.0.170-1-x86_64	discord	compiled-in:1	0	0	1	1	/usr/share/discord/updater_bootstrap
 dotnet-sdk-10.0-10.0.14.sdk114-2-x86_64	dotnet-sdk-10.0	vendored-pem-file:2	1	1	0	2	/usr/share/dotnet/sdk/10.0.114/trustedroots/codesignctl.pem /usr/share/dotnet/sdk/10.0.114/trustedroots/timestampctl.pem
 dotnet-sdk-10.0.14.sdk114-2-x86_64	dotnet-sdk	vendored-pem-file:2	1	1	0	2	/usr/share/dotnet/sdk/10.0.114/trustedroots/codesignctl.pem /usr/share/dotnet/sdk/10.0.114/trustedroots/timestampctl.pem
 dotnet-sdk-8.0-8.0.33.sdk133-2-x86_64	dotnet-sdk-8.0	vendored-pem-file:2	1	1	0	2	/usr/share/dotnet/sdk/8.0.133/trustedroots/codesignctl.pem /usr/share/dotnet/sdk/8.0.133/trustedroots/timestampctl.pem
@@ -68,7 +68,7 @@ gradle-9.9.0-1-any	gradle	vendored-in-archive:2	0	1	0	2	/usr/share/java/gradle/l
 grafana-agent-0.44.8-1-x86_64	grafana-agent	compiled-in:1	1	1	1	1	/usr/bin/grafana-agent
 grafana-agentctl-0.44.8-1-x86_64	grafana-agentctl	compiled-in:1	1	1	1	1	/usr/bin/grafana-agentctl
 grafana-alloy-1.21.3-1-x86_64	grafana-alloy	compiled-in:1	1	1	1	1	/usr/bin/grafana-alloy
-grpc-1.84.0-2-x86_64	grpc	vendored-pem-file:1	1	0	1	1	/usr/share/grpc/roots.pem
+grpc-1.84.3-1-x86_64	grpc	vendored-pem-file:1	0	0	1	1	/usr/share/grpc/roots.pem
 gsoap-2.8.147-1-x86_64	gsoap	vendored-pem-file:1	1	1	1	1	/usr/share/gsoap/plugin/cacerts.c
 gst-plugin-burn-0.15.4-2-x86_64	gst-plugin-burn	compiled-in:1	1	0	1	1	/usr/lib/gstreamer-1.0/libgstburn.so
 gst-plugin-deepgram-0.15.4-2-x86_64	gst-plugin-deepgram	compiled-in:1	1	0	1	1	/usr/lib/gstreamer-1.0/libgstdeepgram.so
@@ -101,7 +101,7 @@ mdfried-0.22.8-1-x86_64	mdfried	compiled-in:1	1	1	1	1	/usr/bin/mdfried
 meilisearch-1:1.56.2-1-x86_64	meilisearch	compiled-in:1	1	0	1	1	/usr/bin/meilisearch
 metasploit-6.5.9-1-x86_64	metasploit	vendored-pem-file:3	0	1	1	3	/opt/metasploit/vendor/bundle/ruby/3.4.0/gems/aws-sdk-core-3.263.0/ca-bundle.crt /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.10.0/lib/httpclient/cacert.pem /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.10.0/lib/httpclient/cacert1024.pem
 mirro-rs-0.2.3-2-x86_64	mirro-rs	compiled-in:1	1	1	1	1	/usr/bin/mirro-rs
-mise-2026.11.8-1-x86_64	mise	compiled-in:1	0	0	1	1	/usr/bin/mise
+mise-2026.11.9-1-x86_64	mise	compiled-in:1	0	0	1	1	/usr/bin/mise
 modrinth-app-0.23.3-1-x86_64	modrinth-app	compiled-in:1	0	0	1	1	/usr/lib/modrinth-app
 mullvad-vpn-daemon-2026.5-1-x86_64	mullvad-vpn-daemon	compiled-in:1	1	0	1	1	/usr/bin/mullvad-daemon
 naev-0.13.5-3-x86_64	naev	compiled-in:1	0	0	1	1	/usr/bin/naev
@@ -133,7 +133,7 @@ osquery-5.23.1-2-x86_64	osquery	vendored-pem-file:1	1	1	0	1	/usr/share/osquery/c
 pixi-0.84.2-1-x86_64	pixi	compiled-in:1	0	0	1	1	/usr/bin/pixi
 pnpm-12.21.0-1-x86_64	pnpm	compiled-in:1	0	0	1	1	/usr/bin/pnpm
 pop-launcher-1.11.0-1-x86_64	pop-launcher	compiled-in:1	1	0	1	1	/usr/bin/pop-launcher
-prek-0.5.10-1-x86_64	prek	compiled-in:1	0	0	1	1	/usr/bin/prek
+prek-0.5.11-1-x86_64	prek	compiled-in:1	0	0	1	1	/usr/bin/prek
 probe-rs-0.32.0-1-x86_64	probe-rs	compiled-in:1	1	0	1	1	/usr/bin/probe-rs
 proxyboi-0.5.0-3-x86_64	proxyboi	compiled-in:1	1	1	0	1	/usr/bin/proxyboi
 pycharm-community-edition-2026.3-1-x86_64	pycharm-community-edition	vendored-in-archive:3,vendored-keystore:1,compiled-in:1	1	1	1	5	/usr/share/pycharm/jbr/lib/security/cacerts /usr/share/pycharm/plugins/jcef-plugin/jcef/libcef.so /usr/share/pycharm/plugins/python-ce/helpers/pip-25.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem
@@ -142,7 +142,7 @@ pypy-8.0.1-2-x86_64	pypy	vendored-in-archive:1	1	1	0	1	/opt/pypy/lib-python/2.7/
 pypy3-8.0.1-2-x86_64	pypy3	vendored-in-archive:1	1	1	1	1	/opt/pypy3/lib/pypy3.12/ensurepip/_bundled/pip-25.0.1-py3-none-any.whl!pip/_vendor/certifi/cacert.pem
 python-3.14.10-1-x86_64	python	vendored-in-archive:1	0	0	1	1	/usr/lib/python3.14/ensurepip/_bundled/pip-26.2.2-py3-none-any.whl!pip/_vendor/certifi/cacert.pem
 python-botocore-1.43.108-1-any	python-botocore	vendored-pem-file:1	0	1	0	1	/usr/lib/python3.14/site-packages/botocore/cacert.pem
-python-grpcio-1.84.0-2-x86_64	python-grpcio	vendored-pem-file:1	1	0	1	1	/usr/lib/python3.14/site-packages/grpc/_cython/_credentials/roots.pem
+python-grpcio-1.84.3-1-x86_64	python-grpcio	vendored-pem-file:1	0	0	1	1	/usr/lib/python3.14/site-packages/grpc/_cython/_credentials/roots.pem
 python-pip-26.2.2-1-any	python-pip	vendored-pem-file:1	0	0	1	1	/usr/lib/python3.14/site-packages/pip/_vendor/certifi/cacert.pem
 python-primp-2.0.1-1-x86_64	python-primp	compiled-in:1	1	0	1	1	/usr/lib/python3.14/site-packages/primp/primp.abi3.so
 python-proton-vpn-api-core-6.1.1-1-x86_64	python-proton-vpn-api-core	compiled-in:2	0	0	1	2	/usr/lib/nm-protun-service /usr/lib/python3.14/site-packages/proton/vpn/platform.abi3.so
@@ -192,7 +192,7 @@ telegram-desktop-7.4.4-1-x86_64	telegram-desktop	compiled-in:1	0	1	0	1	/usr/bin/
 television-0.15.9-1-x86_64	television	compiled-in:1	1	0	1	1	/usr/bin/tv
 tensorboard-2.21.0-1-x86_64	tensorboard	compiled-in:1	1	1	0	1	/usr/lib/python3.14/site-packages/tensorboard_data_server/bin/server
 testssl.sh-3.2.5-1-any	testssl.sh	vendored-pem-file:5	1	1	1	5	/usr/share/testssl.sh/etc/Apple.pem /usr/share/testssl.sh/etc/Java.pem /usr/share/testssl.sh/etc/Linux.pem
-thunderbird-159.0-2-x86_64	thunderbird	compiled-in:1	1	1	1	1	/usr/lib/thunderbird/libxul.so
+thunderbird-160.0-1-x86_64	thunderbird	compiled-in:1	0	1	1	1	/usr/lib/thunderbird/libxul.so
 tinymist-1:0.15.12-1-x86_64	tinymist	compiled-in:1	1	0	1	1	/usr/bin/tinymist
 treemd-0.10.0-1-x86_64	treemd	compiled-in:1	1	0	1	1	/usr/bin/treemd
 tuicr-0.28.0-1-x86_64	tuicr	compiled-in:1	0	0	1	1	/usr/bin/tuicr
@@ -205,7 +205,7 @@ vl-convert-1.9.0-2-x86_64	vl-convert	compiled-in:1	1	1	1	1	/usr/bin/vl-convert
 vortix-0.4.3-1-x86_64	vortix	compiled-in:1	1	0	1	1	/usr/bin/vortix
 wasm-bindgen-0.2.128-2-x86_64	wasm-bindgen	compiled-in:1	1	0	1	1	/usr/bin/wasm-bindgen-test-runner
 wasm-pack-0.15.1-1-x86_64	wasm-pack	compiled-in:1	1	0	1	1	/usr/bin/wasm-pack
-wasmtime-50.0.1-1-x86_64	wasmtime	compiled-in:1	1	0	1	1	/usr/bin/wasmtime
+wasmtime-50.0.2-1-x86_64	wasmtime	compiled-in:1	1	0	1	1	/usr/bin/wasmtime
 wine-gecko-2.47.4-2-x86_64	wine-gecko	compiled-in:2	0	1	0	2	/usr/share/wine/gecko/wine-gecko-2.47.4-x86/nssckbi.dll /usr/share/wine/gecko/wine-gecko-2.47.4-x86_64/nssckbi.dll
 wireman-0.3.8-1-x86_64	wireman	compiled-in:1	1	0	1	1	/usr/bin/wireman
 wordpress-7.1.4-1-any	wordpress	vendored-pem-file:1	0	0	1	1	/usr/share/webapps/wordpress/wp-includes/certificates/ca-bundle.crt
