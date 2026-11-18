@@ -73,7 +73,7 @@ Fix: Generate the keystore from `${cacert}/etc/ssl/certs/ca-bundle.crt` at build
 - [ ] **openfire** — `/etc/openfire/security/truststore` · includes ECC G3 · includes AAA
 - [ ] **pycharm-community-edition** — `/usr/share/pycharm/jbr/lib/security/cacerts`
 
-### Compiled into a binary (173)
+### Compiled into a binary (171)
 
 Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`, NSS from cacert), or bump the embedded root crate.
 
@@ -121,7 +121,6 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **esp-generate** — `/usr/bin/esp-generate` · includes ECC G3
 - [ ] **espflash** — `/usr/bin/espflash` (+1 more) · includes ECC G3
 - [ ] **espup** — `/usr/bin/espup` · includes ECC G3
-- [ ] **findomain** — `/usr/bin/findomain` · includes ECC G3
 - [ ] **firefox** — `/usr/lib/firefox/libxul.so` · includes AAA
 - [ ] **firefox-developer-edition** — `/usr/lib/firefox-developer-edition/libxul.so` · includes AAA
 - [ ] **flawz** — `/usr/bin/flawz` · includes ECC G3
@@ -162,6 +161,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **modrinth-app** — `/usr/lib/modrinth-app`
 - [ ] **mullvad-vpn-daemon** — `/usr/bin/mullvad-daemon` · includes ECC G3
 - [ ] **naev** — `/usr/bin/naev`
+- [ ] **nethsm** — `/usr/bin/nethsm`
 - [ ] **nethsm-cli** — `/usr/bin/nethsm` · includes ECC G3
 - [ ] **nethsm-pkcs11** — `/usr/lib/pkcs11/libnethsm_pkcs11.so`
 - [ ] **nextcloud-app-notify_push** — `/usr/share/webapps/nextcloud/apps/notify_push/bin/x86_64/notify_push`
@@ -171,7 +171,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **nodejs-lts-krypton** — `/usr/bin/node`
 - [ ] **nsight-compute** — `/usr/lib/nsight-compute/host/linux-desktop-glibc_2_11_3-x64/libQt6WebEngineCore.so.6` · includes ECC G3 · includes AAA
 - [ ] **nsight-systems** — `/usr/lib/nsight-systems/host-linux-x64/libQt6WebEngineCore.so.6` · includes ECC G3 · includes AAA
-- [ ] **numa** — `/usr/bin/numa` · includes ECC G3
+- [ ] **numa** — `/usr/bin/numa`
 - [ ] **numbat** — `/usr/bin/numbat` · includes ECC G3
 - [ ] **nushell** — `/usr/bin/nu`
 - [ ] **oculante** — `/usr/bin/oculante` · includes ECC G3
@@ -204,9 +204,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **servo** — `/opt/servo/servoshell`
 - [ ] **shadowsocks-rust** — `/usr/bin/sslocal` (+3 more) · includes ECC G3
 - [ ] **signal-desktop** — `/usr/lib/signal-desktop/signal-desktop` · includes ECC G3 · includes AAA
-- [ ] **signstar-configure** — `/usr/bin/signstar-configure`
-- [ ] **signstar-download-key-certificates** — `/usr/bin/signstar-download-key-certificates`
-- [ ] **signstar-sign** — `/usr/bin/signstar-sign`
+- [ ] **signstar-host** — `/usr/bin/signstar-sign` (+2 more)
 - [ ] **sing-box** — `/usr/bin/sing-box` · includes ECC G3 · includes AAA
 - [ ] **smartcat** — `/usr/bin/sc` · includes ECC G3 · includes AAA
 - [ ] **smolvm** — `/usr/lib/smolvm/smolvm-bin` (+1 more)
