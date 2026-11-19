@@ -73,7 +73,7 @@ Fix: Generate the keystore from `${cacert}/etc/ssl/certs/ca-bundle.crt` at build
 - [ ] **openfire** — `/etc/openfire/security/truststore` · includes ECC G3 · includes AAA
 - [ ] **pycharm-community-edition** — `/usr/share/pycharm/jbr/lib/security/cacerts`
 
-### Compiled into a binary (171)
+### Compiled into a binary (172)
 
 Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`, NSS from cacert), or bump the embedded root crate.
 
@@ -197,6 +197,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **rebels-in-the-sky** — `/usr/bin/rebels-in-the-sky` · includes ECC G3
 - [ ] **retroarch** — `/usr/bin/retroarch` · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **rustypaste-cli** — `/usr/bin/rpaste` · includes ECC G3
+- [ ] **sable** — `/usr/lib/sable/app.asar.unpacked/dist/sable_node.node`
 - [ ] **samply** — `/usr/bin/samply` · includes ECC G3 · includes AAA
 - [ ] **sccache** — `/usr/bin/sccache` (+1 more) · includes ECC G3
 - [ ] **selene** — `/usr/bin/selene` · includes ECC G3 · includes AAA
