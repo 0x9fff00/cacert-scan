@@ -45,7 +45,7 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 Fix: Patch the bundle inside the archive at build time, or patch the code to use the system store.
 
 - [ ] **ghidra** — `/opt/ghidra/Extensions/Ghidra/ghidra_12.2_DEV_20261110_Jython.zip!Jython/data/jython-2.7.4/Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
-- [ ] **gitlab** — `/usr/share/webapps/gitlab/vendor/bundle/ruby/3.4.0/cache/excon-1.3.0.gem!data.tar.gz!gunzip` (+8 more) · includes ECC G3 · includes AAA
+- [ ] **gitlab** — `/usr/share/webapps/gitlab/vendor/bundle/ruby/3.4.0/cache/excon-1.8.0.gem!data.tar.gz!gunzip` (+8 more) · includes ECC G3 · includes AAA
 - [ ] **gitlab-runner** — `/usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.5.3.tar.xz!unxz` (+3 more)
 - [ ] **gradle** — `/usr/share/java/gradle/lib/plugins/google-api-client-1.34.0.jar!com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **intellij-idea-oss** — `/usr/share/idea/plugins/gradle-plugin/lib/intellij.libraries.gradle.jar!org/gradle/internal/impldep/com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
@@ -96,7 +96,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **cargo-shuttle** — `/usr/bin/shuttle` (+1 more) · includes ECC G3
 - [ ] **cargo-tauri** — `/usr/bin/cargo-tauri` · includes ECC G3
 - [ ] **cef** — `/usr/lib/cef/libcef.so` · includes ECC G3 · includes AAA
-- [ ] **chromium** — `/usr/bin/chromedriver` (+1 more) · includes ECC G3 · includes AAA
+- [ ] **chromium** — `/usr/bin/chromedriver` (+1 more)
 - [ ] **cilium-cli** — `/usr/bin/cilium-cli` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **clamui** — `/usr/bin/clamui` (+2 more)
 - [ ] **cloudflare-speed-cli** — `/usr/bin/cloudflare-speed-cli` · includes ECC G3
