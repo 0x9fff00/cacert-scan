@@ -60,7 +60,7 @@ fnm-1.39.0-1-x86_64	fnm	compiled-in:1	1	1	1	1	/usr/bin/fnm
 ghidra-12.2-1-x86_64	ghidra	vendored-in-archive:2	1	1	0	2	/opt/ghidra/Extensions/Ghidra/ghidra_12.2_DEV_20261110_Jython.zip!Jython/data/jython-2.7.4/Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem /opt/ghidra/Extensions/Ghidra/ghidra_12.2_DEV_20261110_Jython.zip!Jython/lib/jython-standalone-2.7.4.jar!Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem
 git-cliff-2.14.2-1-x86_64	git-cliff	compiled-in:1	1	0	1	1	/usr/bin/git-cliff
 gitlab-19.6.1-1-x86_64	gitlab	vendored-in-archive:9,compiled-in:7,vendored-pem-file:5	1	1	1	21	/usr/bin/gitlab-workhorse /usr/bin/gitlab-zip-cat /usr/bin/gitlab-zip-metadata
-gitlab-runner-19.5.3-1-x86_64	gitlab-runner	vendored-in-archive:4	0	0	1	4	/usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.5.3.tar.xz!unxz /usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.5.3.tar.xz!unxz!etc/ssl/certs/ca-certificates.crt /usr/lib/gitlab-runner/helper-images/prebuilt-ubuntu-x86_64-19.5.3.tar.xz!unxz
+gitlab-runner-19.6.0-1-x86_64	gitlab-runner	vendored-in-archive:4	0	0	1	4	/usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.6.0.tar.xz!unxz /usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.6.0.tar.xz!unxz!etc/ssl/certs/ca-certificates.crt /usr/lib/gitlab-runner/helper-images/prebuilt-ubuntu-x86_64-19.6.0.tar.xz!unxz
 gnustep-base-1.31.1-3-x86_64	gnustep-base	vendored-pem-file:1	0	1	0	1	/usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.31/Resources/GSTLS/ca-certificates.crt
 gpac-1:26.07.0-3-x86_64	gpac	vendored-pem-file:1	1	1	1	1	/usr/share/gpac/res/ca-bundle.crt
 gradle-9.9.0-1-any	gradle	vendored-in-archive:2	0	1	0	2	/usr/share/java/gradle/lib/plugins/google-api-client-1.34.0.jar!com/google/api/client/googleapis/google.p12 /usr/share/java/gradle/lib/plugins/google-api-client-1.34.0.jar!com/google/api/client/googleapis/google.jks
@@ -100,7 +100,7 @@ mdfried-0.22.8-1-x86_64	mdfried	compiled-in:1	1	1	1	1	/usr/bin/mdfried
 meilisearch-1:1.57.0-1-x86_64	meilisearch	compiled-in:1	1	0	1	1	/usr/bin/meilisearch
 metasploit-6.5.9-1-x86_64	metasploit	vendored-pem-file:3	0	1	1	3	/opt/metasploit/vendor/bundle/ruby/3.4.0/gems/aws-sdk-core-3.263.0/ca-bundle.crt /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.10.0/lib/httpclient/cacert.pem /opt/metasploit/vendor/bundle/ruby/3.4.0/gems/httpclient-2.10.0/lib/httpclient/cacert1024.pem
 mirro-rs-0.2.3-2-x86_64	mirro-rs	compiled-in:1	1	1	1	1	/usr/bin/mirro-rs
-mise-2026.11.10-1-x86_64	mise	compiled-in:1	0	0	1	1	/usr/bin/mise
+mise-2026.11.11-1-x86_64	mise	compiled-in:1	0	0	1	1	/usr/bin/mise
 modrinth-app-0.23.3-1-x86_64	modrinth-app	compiled-in:1	0	0	1	1	/usr/lib/modrinth-app
 mullvad-vpn-daemon-2026.5-1-x86_64	mullvad-vpn-daemon	compiled-in:1	1	0	1	1	/usr/bin/mullvad-daemon
 naev-0.13.5-3-x86_64	naev	compiled-in:1	0	0	1	1	/usr/bin/naev
@@ -166,7 +166,7 @@ selene-0.32.0-1-x86_64	selene	compiled-in:1	1	1	1	1	/usr/bin/selene
 sendme-0.37.1-1-x86_64	sendme	compiled-in:1	0	0	1	1	/usr/bin/sendme
 servo-0.8.0-1-x86_64	servo	compiled-in:1	0	0	1	1	/opt/servo/servoshell
 shadowsocks-rust-1.25.0-1-x86_64	shadowsocks-rust	compiled-in:4	1	0	1	4	/usr/bin/sslocal /usr/bin/ssmanager /usr/bin/ssserver
-signal-desktop-8.35.0-1-x86_64	signal-desktop	compiled-in:1	1	1	1	1	/usr/lib/signal-desktop/signal-desktop
+signal-desktop-8.36.0-1-x86_64	signal-desktop	compiled-in:1	1	1	1	1	/usr/lib/signal-desktop/signal-desktop
 signstar-host-0.1.1-1-x86_64	signstar-host	compiled-in:3	0	0	1	3	/usr/bin/signstar-configure /usr/bin/signstar-download-key-certificates /usr/bin/signstar-sign
 sing-box-1.14.4-1-x86_64	sing-box	compiled-in:1	1	1	1	1	/usr/bin/sing-box
 smartcat-2.2.0-1-x86_64	smartcat	compiled-in:1	1	1	1	1	/usr/bin/sc
@@ -180,7 +180,7 @@ stalwart-proxy-1.0.5-1-x86_64	stalwart-proxy	compiled-in:1	1	0	1	1	/usr/bin/stal
 supertuxkart-1.5-2-x86_64	supertuxkart	vendored-pem-file:1	1	1	0	1	/usr/share/supertuxkart/data/cacert.pem
 symposium-0.7.0-1-x86_64	symposium	compiled-in:1	1	0	1	1	/usr/bin/cargo-agents
 syndicationd-0.4.0-1-x86_64	syndicationd	compiled-in:1	1	0	1	1	/usr/bin/synd
-systing-1.31.13-1-x86_64	systing	compiled-in:1	1	0	1	1	/usr/bin/systing
+systing-1.31.14-1-x86_64	systing	compiled-in:1	1	0	1	1	/usr/bin/systing
 tabiew-0.16.0-1-x86_64	tabiew	compiled-in:1	0	0	1	1	/usr/bin/tw
 taplo-cli-0.10.0-2-x86_64	taplo-cli	compiled-in:1	1	1	1	1	/usr/bin/taplo
 task-3.5.0-2-x86_64	task	compiled-in:1	1	0	1	1	/usr/bin/task
@@ -199,12 +199,12 @@ turbo-2.9.16-2-x86_64	turbo	compiled-in:1	1	0	1	1	/usr/bin/turbo
 unrealircd-6.2.7.1-1-x86_64	unrealircd	vendored-pem-file:1	1	0	1	1	/etc/unrealircd/tls/curl-ca-bundle.crt
 uv-0.13.9-1-x86_64	uv	compiled-in:1	0	0	1	1	/usr/bin/uv
 vector-0.57.0-1-x86_64	vector	compiled-in:1	1	1	1	1	/usr/bin/vector
-vivaldi-8.3.4191.45-1-x86_64	vivaldi	compiled-in:1	1	1	1	1	/opt/vivaldi/vivaldi-bin
+vivaldi-8.3.4191.47-1-x86_64	vivaldi	compiled-in:1	1	1	1	1	/opt/vivaldi/vivaldi-bin
 vl-convert-1.9.0-2-x86_64	vl-convert	compiled-in:1	1	1	1	1	/usr/bin/vl-convert
 vortix-0.4.3-1-x86_64	vortix	compiled-in:1	1	0	1	1	/usr/bin/vortix
 wasm-bindgen-0.2.128-2-x86_64	wasm-bindgen	compiled-in:1	1	0	1	1	/usr/bin/wasm-bindgen-test-runner
 wasm-pack-0.15.1-1-x86_64	wasm-pack	compiled-in:1	1	0	1	1	/usr/bin/wasm-pack
-wasmtime-50.0.3-1-x86_64	wasmtime	compiled-in:1	1	0	1	1	/usr/bin/wasmtime
+wasmtime-51.0.0-1-x86_64	wasmtime	compiled-in:1	0	0	1	1	/usr/bin/wasmtime
 wine-gecko-2.47.4-2-x86_64	wine-gecko	compiled-in:2	0	1	0	2	/usr/share/wine/gecko/wine-gecko-2.47.4-x86/nssckbi.dll /usr/share/wine/gecko/wine-gecko-2.47.4-x86_64/nssckbi.dll
 wireman-0.3.8-1-x86_64	wireman	compiled-in:1	1	0	1	1	/usr/bin/wireman
 wordpress-7.1.5-1-any	wordpress	vendored-pem-file:1	0	0	1	1	/usr/share/webapps/wordpress/wp-includes/certificates/ca-bundle.crt
@@ -213,7 +213,7 @@ wp-cli-2.12.0-1-any	wp-cli	vendored-pem-file:1	1	1	1	1	/usr/bin/wp
 xbuild-0.2.0-3-x86_64	xbuild	compiled-in:1	1	1	0	1	/usr/bin/x
 xlinks-2.30-3-x86_64	xlinks	compiled-in:1	1	1	0	1	/usr/bin/xlinks
 zaproxy-2.17.0-4-any	zaproxy	vendored-in-archive:4	1	0	1	4	/usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/linux/selenium-manager /usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/macos/selenium-manager /usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/windows/selenium-manager.exe
-zed-1.29.2-1-x86_64	zed	compiled-in:1	0	1	1	1	/usr/lib/zed/zed-editor
+zed-1.29.3-1-x86_64	zed	compiled-in:1	0	1	1	1	/usr/lib/zed/zed-editor
 zeroclaw-0.9.0-1-x86_64	zeroclaw	compiled-in:1	0	0	1	1	/usr/bin/zeroclaw
 zeroclaw-acp-bridge-0.9.0-1-x86_64	zeroclaw-acp-bridge	compiled-in:1	0	0	1	1	/usr/bin/zeroclaw-acp-bridge
 zerocode-0.9.0-1-x86_64	zerocode	compiled-in:1	0	0	1	1	/usr/bin/zerocode

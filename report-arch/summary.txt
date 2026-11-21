@@ -1,6 +1,6 @@
-packages scanned: 15773  failed: 0  findings: 1672
+packages scanned: 15775  failed: 0  findings: 1673
 cacert bundle hashes used to detect injected copies (Nix only): 0
-fixture-or-other                 files=   797 distinct-packages=  213
+fixture-or-other                 files=   798 distinct-packages=  214
 keystore-no-known-roots          files=   283 distinct-packages=  230
 has-emudhra-spki-blocklist       files=   220 distinct-packages=  148
 compiled-in                      files=   205 distinct-packages=  172
