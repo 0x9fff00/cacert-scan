@@ -1,4 +1,4 @@
-### Vendored PEM bundle (37)
+### Vendored PEM bundle (38)
 
 Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`, or point the program at it.
 
@@ -15,6 +15,7 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 - [ ] **ejabberd** — `/usr/lib/pkix-1.0.10/priv/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **gitlab** — `/usr/share/webapps/gitlab/vendor/bundle/ruby/3.4.0/gems/grpc-1.81.1/etc/roots.pem` (+4 more) · includes ECC G3 · includes AAA
 - [ ] **gnustep-base** — `/usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.31/Resources/GSTLS/ca-certificates.crt` · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **google-cloud-cli** — `/opt/google-cloud-cli/lib/third_party/certifi/cacert.pem` (+6 more)
 - [ ] **gpac** — `/usr/share/gpac/res/ca-bundle.crt` · includes ECC G3 · includes AAA
 - [ ] **grpc** — `/usr/share/grpc/roots.pem`
 - [ ] **gsoap** — `/usr/share/gsoap/plugin/cacerts.c` · includes ECC G3 · includes AAA
@@ -240,7 +241,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **wasm-pack** — `/usr/bin/wasm-pack` · includes ECC G3
 - [ ] **wasmtime** — `/usr/bin/wasmtime`
 - [ ] **wine-gecko** — `/usr/share/wine/gecko/wine-gecko-2.47.4-x86/nssckbi.dll` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
-- [ ] **wireman** — `/usr/bin/wireman` · includes ECC G3
+- [ ] **wireman** — `/usr/bin/wireman`
 - [ ] **worker-build** — `/usr/bin/worker-build` · includes ECC G3
 - [ ] **xbuild** — `/usr/bin/x` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **xlinks** — `/usr/bin/xlinks` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA

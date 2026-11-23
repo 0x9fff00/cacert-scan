@@ -62,11 +62,12 @@ git-cliff-2.14.2-1-x86_64	git-cliff	compiled-in:1	1	0	1	1	/usr/bin/git-cliff
 gitlab-19.6.1-1-x86_64	gitlab	vendored-in-archive:9,compiled-in:7,vendored-pem-file:5	1	1	1	21	/usr/bin/gitlab-workhorse /usr/bin/gitlab-zip-cat /usr/bin/gitlab-zip-metadata
 gitlab-runner-19.6.0-1-x86_64	gitlab-runner	vendored-in-archive:4	0	0	1	4	/usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.6.0.tar.xz!unxz /usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.6.0.tar.xz!unxz!etc/ssl/certs/ca-certificates.crt /usr/lib/gitlab-runner/helper-images/prebuilt-ubuntu-x86_64-19.6.0.tar.xz!unxz
 gnustep-base-1.31.1-3-x86_64	gnustep-base	vendored-pem-file:1	0	1	0	1	/usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.31/Resources/GSTLS/ca-certificates.crt
+google-cloud-cli-594.0.0-4-x86_64	google-cloud-cli	vendored-pem-file:7	0	0	1	7	/opt/google-cloud-cli/lib/third_party/botocore/cacert.pem /opt/google-cloud-cli/lib/third_party/certifi/cacert.pem /opt/google-cloud-cli/lib/third_party/httplib2/python2/httplib2/cacerts.txt
 gpac-1:26.07.0-3-x86_64	gpac	vendored-pem-file:1	1	1	1	1	/usr/share/gpac/res/ca-bundle.crt
 gradle-9.9.0-1-any	gradle	vendored-in-archive:2	0	1	0	2	/usr/share/java/gradle/lib/plugins/google-api-client-1.34.0.jar!com/google/api/client/googleapis/google.p12 /usr/share/java/gradle/lib/plugins/google-api-client-1.34.0.jar!com/google/api/client/googleapis/google.jks
 grafana-agent-0.44.8-1-x86_64	grafana-agent	compiled-in:1	1	1	1	1	/usr/bin/grafana-agent
 grafana-agentctl-0.44.8-1-x86_64	grafana-agentctl	compiled-in:1	1	1	1	1	/usr/bin/grafana-agentctl
-grafana-alloy-1.21.3-1-x86_64	grafana-alloy	compiled-in:1	1	1	1	1	/usr/bin/grafana-alloy
+grafana-alloy-1.22.0-1-x86_64	grafana-alloy	compiled-in:1	1	1	1	1	/usr/bin/grafana-alloy
 grpc-1.84.3-1-x86_64	grpc	vendored-pem-file:1	0	0	1	1	/usr/share/grpc/roots.pem
 gsoap-2.8.147-1-x86_64	gsoap	vendored-pem-file:1	1	1	1	1	/usr/share/gsoap/plugin/cacerts.c
 gst-plugin-burn-0.15.4-2-x86_64	gst-plugin-burn	compiled-in:1	1	0	1	1	/usr/lib/gstreamer-1.0/libgstburn.so
@@ -206,14 +207,14 @@ wasm-bindgen-0.2.128-2-x86_64	wasm-bindgen	compiled-in:1	1	0	1	1	/usr/bin/wasm-b
 wasm-pack-0.15.1-1-x86_64	wasm-pack	compiled-in:1	1	0	1	1	/usr/bin/wasm-pack
 wasmtime-51.0.0-1-x86_64	wasmtime	compiled-in:1	0	0	1	1	/usr/bin/wasmtime
 wine-gecko-2.47.4-2-x86_64	wine-gecko	compiled-in:2	0	1	0	2	/usr/share/wine/gecko/wine-gecko-2.47.4-x86/nssckbi.dll /usr/share/wine/gecko/wine-gecko-2.47.4-x86_64/nssckbi.dll
-wireman-0.3.8-1-x86_64	wireman	compiled-in:1	1	0	1	1	/usr/bin/wireman
+wireman-0.3.9-1-x86_64	wireman	compiled-in:1	0	0	1	1	/usr/bin/wireman
 wordpress-7.1.5-1-any	wordpress	vendored-pem-file:1	0	0	1	1	/usr/share/webapps/wordpress/wp-includes/certificates/ca-bundle.crt
 worker-build-0.8.7-2-x86_64	worker-build	compiled-in:1	1	0	1	1	/usr/bin/worker-build
 wp-cli-2.12.0-1-any	wp-cli	vendored-pem-file:1	1	1	1	1	/usr/bin/wp
 xbuild-0.2.0-3-x86_64	xbuild	compiled-in:1	1	1	0	1	/usr/bin/x
 xlinks-2.30-3-x86_64	xlinks	compiled-in:1	1	1	0	1	/usr/bin/xlinks
 zaproxy-2.17.0-4-any	zaproxy	vendored-in-archive:4	1	0	1	4	/usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/linux/selenium-manager /usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/macos/selenium-manager /usr/share/zaproxy/plugin/selenium-release-15.43.0.zap!libs/selenium-manager-4.39.0.jar!org/openqa/selenium/manager/windows/selenium-manager.exe
-zed-1.29.3-1-x86_64	zed	compiled-in:1	0	1	1	1	/usr/lib/zed/zed-editor
+zed-1.29.3-2-x86_64	zed	compiled-in:1	0	1	1	1	/usr/lib/zed/zed-editor
 zeroclaw-0.9.0-1-x86_64	zeroclaw	compiled-in:1	0	0	1	1	/usr/bin/zeroclaw
 zeroclaw-acp-bridge-0.9.0-1-x86_64	zeroclaw-acp-bridge	compiled-in:1	0	0	1	1	/usr/bin/zeroclaw-acp-bridge
 zerocode-0.9.0-1-x86_64	zerocode	compiled-in:1	0	0	1	1	/usr/bin/zerocode
