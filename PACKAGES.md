@@ -74,7 +74,7 @@ Fix: Generate the keystore from `${cacert}/etc/ssl/certs/ca-bundle.crt` at build
 - [ ] **openfire** — `/etc/openfire/security/truststore` · includes ECC G3 · includes AAA
 - [ ] **pycharm-community-edition** — `/usr/share/pycharm/jbr/lib/security/cacerts`
 
-### Compiled into a binary (172)
+### Compiled into a binary (173)
 
 Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`, NSS from cacert), or bump the embedded root crate.
 
@@ -250,4 +250,5 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **zeroclaw-acp-bridge** — `/usr/bin/zeroclaw-acp-bridge`
 - [ ] **zerocode** — `/usr/bin/zerocode`
 - [ ] **zigbee2mqtt** — `/usr/share/webapps/zigbee2mqtt/node_modules/.pnpm/@biomejs+cli-linux-x64@2.5.11/node_modules/@biomejs/cli-linux-x64/biome` · includes ECC G3
+- [ ] **zotero** — `/usr/lib/zotero/libxul.so` · includes ECC G3 · includes AAA
 
