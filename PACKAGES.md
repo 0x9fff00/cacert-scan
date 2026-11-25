@@ -1,4 +1,4 @@
-### Vendored PEM bundle (38)
+### Vendored PEM bundle (37)
 
 Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`, or point the program at it.
 
@@ -11,7 +11,6 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 - [ ] **dotnet-sdk** — `/usr/share/dotnet/sdk/10.0.114/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **dotnet-sdk-10.0** — `/usr/share/dotnet/sdk/10.0.114/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **dotnet-sdk-8.0** — `/usr/share/dotnet/sdk/8.0.133/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
-- [ ] **dotnet-sdk-9.0** — `/usr/share/dotnet/sdk/9.0.123/trustedroots/codesignctl.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **ejabberd** — `/usr/lib/pkix-1.0.10/priv/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **gitlab** — `/usr/share/webapps/gitlab/vendor/bundle/ruby/3.4.0/gems/grpc-1.81.1/etc/roots.pem` (+4 more) · includes ECC G3 · includes AAA
 - [ ] **gnustep-base** — `/usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.31/Resources/GSTLS/ca-certificates.crt` · stale bundle, no SSL.com 2022 · includes AAA
@@ -47,7 +46,7 @@ Fix: Patch the bundle inside the archive at build time, or patch the code to use
 
 - [ ] **ghidra** — `/opt/ghidra/Extensions/Ghidra/ghidra_12.2_DEV_20261110_Jython.zip!Jython/data/jython-2.7.4/Lib/ensurepip/_bundled/pip-19.1-py2.py3-none-any.whl!pip/_vendor/certifi/cacert.pem` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **gitlab** — `/usr/share/webapps/gitlab/vendor/bundle/ruby/3.4.0/cache/excon-1.8.0.gem!data.tar.gz!gunzip` (+8 more) · includes ECC G3 · includes AAA
-- [ ] **gitlab-runner** — `/usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.6.0.tar.xz!unxz` (+3 more)
+- [ ] **gitlab-runner** — `/usr/lib/gitlab-runner/helper-images/prebuilt-alpine-x86_64-19.6.1.tar.xz!unxz` (+3 more)
 - [ ] **gradle** — `/usr/share/java/gradle/lib/plugins/google-api-client-1.34.0.jar!com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **intellij-idea-oss** — `/usr/share/idea/plugins/gradle-plugin/lib/intellij.libraries.gradle.jar!org/gradle/internal/impldep/com/google/api/client/googleapis/google.jks` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **jadx** — `/usr/share/java/jadx/lib/jadx-1.5.6-all.jar!libj2v8_linux_x86_64.so` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
@@ -214,7 +213,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **snapper-fmt** — `/usr/bin/snapper-fmt` · includes ECC G3 · includes AAA
 - [ ] **sshx** — `/usr/bin/sshx` (+1 more) · includes ECC G3 · includes AAA
 - [ ] **stalwart** — `/usr/bin/stalwart` · includes AAA
-- [ ] **stalwart-proxy** — `/usr/bin/stalwart-proxy` · includes ECC G3
+- [ ] **stalwart-proxy** — `/usr/bin/stalwart-proxy`
 - [ ] **symposium** — `/usr/bin/cargo-agents` · includes ECC G3
 - [ ] **syndicationd** — `/usr/bin/synd` · includes ECC G3
 - [ ] **systing** — `/usr/bin/systing` · includes ECC G3
