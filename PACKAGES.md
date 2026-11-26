@@ -73,11 +73,11 @@ Fix: Generate the keystore from `${cacert}/etc/ssl/certs/ca-bundle.crt` at build
 - [ ] **openfire** — `/etc/openfire/security/truststore` · includes ECC G3 · includes AAA
 - [ ] **pycharm-community-edition** — `/usr/share/pycharm/jbr/lib/security/cacerts`
 
-### Compiled into a binary (173)
+### Compiled into a binary (171)
 
 Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`, NSS from cacert), or bump the embedded root crate.
 
-- [ ] **acme-redirect** — `/usr/bin/acme-redirect` · includes ECC G3
+- [ ] **acme-redirect** — `/usr/bin/acme-redirect`
 - [ ] **aichat** — `/usr/bin/aichat` · includes ECC G3
 - [ ] **anki** — `/usr/lib/python3.14/site-packages/anki/_rsbridge.so`
 - [ ] **apt-swarm** — `/usr/bin/apt-swarm`
@@ -119,8 +119,8 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **electron44** — `/usr/lib/electron44/electron` · includes ECC G3 · includes AAA
 - [ ] **emby-theater** — `/usr/lib/emby-theater/emby-theater` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **esp-generate** — `/usr/bin/esp-generate` · includes ECC G3
-- [ ] **espflash** — `/usr/bin/espflash` (+1 more) · includes ECC G3
-- [ ] **espup** — `/usr/bin/espup` · includes ECC G3
+- [ ] **espflash** — `/usr/bin/espflash` (+1 more)
+- [ ] **espup** — `/usr/bin/espup`
 - [ ] **firefox** — `/usr/lib/firefox/libxul.so` · includes AAA
 - [ ] **firefox-developer-edition** — `/usr/lib/firefox-developer-edition/libxul.so` · includes AAA
 - [ ] **flawz** — `/usr/bin/flawz` · includes ECC G3
@@ -146,7 +146,6 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **lact** — `/usr/bin/lact` · includes ECC G3
 - [ ] **legba** — `/usr/bin/legba` · includes ECC G3 · includes AAA
 - [ ] **librewolf** — `/usr/lib/librewolf/libxul.so` · includes AAA
-- [ ] **libtg_owt** — `/usr/lib/libtg_owt.a` · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **links** — `/usr/bin/links` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **llmfit** — `/usr/bin/llmfit`
 - [ ] **marmite** — `/usr/bin/marmite` · includes ECC G3
@@ -181,7 +180,6 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **openobserve** — `/usr/bin/openobserve`
 - [ ] **pixi** — `/usr/bin/pixi`
 - [ ] **pnpm** — `/usr/bin/pnpm`
-- [ ] **pop-launcher** — `/usr/bin/pop-launcher` · includes ECC G3
 - [ ] **prek** — `/usr/bin/prek`
 - [ ] **probe-rs** — `/usr/bin/probe-rs` · includes ECC G3
 - [ ] **proxyboi** — `/usr/bin/proxyboi` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
@@ -196,6 +194,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **readest** — `/usr/share/Readest/readest` (+1 more) · includes ECC G3 · includes AAA
 - [ ] **rebels-in-the-sky** — `/usr/bin/rebels-in-the-sky` · includes ECC G3
 - [ ] **retroarch** — `/usr/bin/retroarch` · stale bundle, no SSL.com 2022 · includes AAA
+- [ ] **rustdesk** — `/usr/lib/rustdesk/lib/librustdesk.so`
 - [ ] **rustypaste-cli** — `/usr/bin/rpaste` · includes ECC G3
 - [ ] **sable** — `/usr/lib/sable/app.asar.unpacked/dist/sable_node.node`
 - [ ] **samply** — `/usr/bin/samply` · includes ECC G3 · includes AAA
@@ -223,7 +222,6 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **tealdeer** — `/usr/bin/tldr`
 - [ ] **teamspeak3** — `/opt/teamspeak3/ts3client_linux_amd64` (+1 more) · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **teamtype** — `/usr/bin/teamtype`
-- [ ] **telegram-desktop** — `/usr/bin/Telegram` · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **television** — `/usr/bin/tv` · includes ECC G3
 - [ ] **tensorboard** — `/usr/lib/python3.14/site-packages/tensorboard_data_server/bin/server` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **thunderbird** — `/usr/lib/thunderbird/libxul.so` · includes AAA
@@ -241,7 +239,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **wasmtime** — `/usr/bin/wasmtime`
 - [ ] **wine-gecko** — `/usr/share/wine/gecko/wine-gecko-2.47.4-x86/nssckbi.dll` (+1 more) · stale bundle, no SSL.com 2022 · includes AAA
 - [ ] **wireman** — `/usr/bin/wireman`
-- [ ] **worker-build** — `/usr/bin/worker-build` · includes ECC G3
+- [ ] **worker-build** — `/usr/bin/worker-build`
 - [ ] **xbuild** — `/usr/bin/x` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **xlinks** — `/usr/bin/xlinks` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **zed** — `/usr/lib/zed/zed-editor` · includes AAA
