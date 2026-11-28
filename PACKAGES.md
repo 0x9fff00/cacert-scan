@@ -36,7 +36,7 @@ Fix: Replace the file with a symlink to `${cacert}/etc/ssl/certs/ca-bundle.crt`,
 - [ ] **smolvm** — `/usr/lib/smolvm/agent-rootfs/etc/ssl/certs/ca-certificates.crt`
 - [ ] **supertuxkart** — `/usr/share/supertuxkart/data/cacert.pem` · stale bundle, no SSL.com 2022 · includes ECC G3 · includes AAA
 - [ ] **testssl.sh** — `/usr/share/testssl.sh/etc/Java.pem` (+4 more) · includes ECC G3 · includes AAA
-- [ ] **unrealircd** — `/etc/unrealircd/tls/curl-ca-bundle.crt` · includes ECC G3
+- [ ] **unrealircd** — `/etc/unrealircd/tls/curl-ca-bundle.crt`
 - [ ] **wordpress** — `/usr/share/webapps/wordpress/wp-includes/certificates/ca-bundle.crt`
 - [ ] **wp-cli** — `/usr/bin/wp` · includes ECC G3 · includes AAA
 
@@ -73,7 +73,7 @@ Fix: Generate the keystore from `${cacert}/etc/ssl/certs/ca-bundle.crt` at build
 - [ ] **openfire** — `/etc/openfire/security/truststore` · includes ECC G3 · includes AAA
 - [ ] **pycharm-community-edition** — `/usr/share/pycharm/jbr/lib/security/cacerts`
 
-### Compiled into a binary (171)
+### Compiled into a binary (172)
 
 Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`, NSS from cacert), or bump the embedded root crate.
 
@@ -230,6 +230,7 @@ Fix: Rebuild with a system-store option (rustls-native-certs, `--use-system-ca`,
 - [ ] **tuicr** — `/usr/bin/tuicr`
 - [ ] **turbo** — `/usr/bin/turbo` · includes ECC G3
 - [ ] **uv** — `/usr/bin/uv`
+- [ ] **varlink-http-bridge** — `/usr/bin/varlink-httpd`
 - [ ] **vector** — `/usr/bin/vector` · includes ECC G3 · includes AAA
 - [ ] **vivaldi** — `/opt/vivaldi/vivaldi-bin` · includes ECC G3 · includes AAA
 - [ ] **vl-convert** — `/usr/bin/vl-convert` · includes ECC G3 · includes AAA
